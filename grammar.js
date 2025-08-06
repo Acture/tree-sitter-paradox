@@ -10,8 +10,12 @@
 module.exports = grammar({
 	name: "paradox",
 
-	extras: $ => [/\s|\\\r?\n/,  // whitespace + line continuation
-		$.comment,],
+	extras: $ => [
+		/\s/,        // 空格、tab、换行（包括 \n）
+		$.comment,   // 注释
+	],
+	conflicts: $ => [
+	],
 
 	rules: {
 		source_file: $ => repeat($.statement),
@@ -22,16 +26,29 @@ module.exports = grammar({
 
 		block: $ => seq($.key, "=", "{", repeat($.statement), "}"),
 
-		value: $ => choice($.string, $.number, $.boolean, $.array, $.block, $.key,     // raw identifier value
+
+		value: $ => choice(
+			$.array,
+			$.simple_value
 		),
 
 		array: $ => seq("{", repeat1($.value), "}"),
 
-		key: $ => /[A-Za-z0-9_:.@!$%<>-]+/,  // mod 中允许相当多的字符
+		key: $ => /[A-Za-z_][A-Za-z0-9_:.@!$%<>-]*/,  // mod 中允许相当多的字符
+
+		simple_value: $ => choice(
+			$.string,
+			$.boolean,
+			$.number,
+			$.literal
+		),
+		literal: $ => /[A-Za-z0-9_:.@!$%<>-]+/,
 
 		string: $ => /"(?:[^"\\]|\\.)*"/,
 
-		number: $ => /-?\d+(\.\d+)?/,  // int / float
+		number: $ => token(
+			/-?(?:\d+\.\d+|\d+|\.\d+)(?:[eE][+-]?\d+)?/
+		),
 
 		boolean: $ => choice("yes", "no", "true", "false"),
 
