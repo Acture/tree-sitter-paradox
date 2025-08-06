@@ -15,19 +15,21 @@ module.exports = grammar({
 		$.comment,   // 注释
 	],
 	conflicts: $ => [
+		[$.block, $.array],
 	],
 
 	rules: {
 		source_file: $ => repeat($.statement),
 
-		statement: $ => choice($.assignment, $.block),
+		statement: $ => choice($.assignment),
 
 		assignment: $ => seq($.key, "=", $.value),
 
-		block: $ => seq($.key, "=", "{", repeat($.statement), "}"),
+		block: $ => seq("{", repeat($.statement), "}"),
 
 
 		value: $ => choice(
+			$.block,
 			$.array,
 			$.simple_value
 		),

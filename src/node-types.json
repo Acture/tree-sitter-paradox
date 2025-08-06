@@ -39,12 +39,8 @@
     "fields": {},
     "children": {
       "multiple": true,
-      "required": true,
+      "required": false,
       "types": [
-        {
-          "type": "key",
-          "named": true
-        },
         {
           "type": "statement",
           "named": true
@@ -111,10 +107,6 @@
         {
           "type": "assignment",
           "named": true
-        },
-        {
-          "type": "block",
-          "named": true
         }
       ]
     }
@@ -129,6 +121,10 @@
       "types": [
         {
           "type": "array",
+          "named": true
+        },
+        {
+          "type": "block",
           "named": true
         },
         {

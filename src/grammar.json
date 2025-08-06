@@ -15,10 +15,6 @@
         {
           "type": "SYMBOL",
           "name": "assignment"
-        },
-        {
-          "type": "SYMBOL",
-          "name": "block"
         }
       ]
     },
@@ -43,14 +39,6 @@
       "type": "SEQ",
       "members": [
         {
-          "type": "SYMBOL",
-          "name": "key"
-        },
-        {
-          "type": "STRING",
-          "value": "="
-        },
-        {
           "type": "STRING",
           "value": "{"
         },
@@ -70,6 +58,10 @@
     "value": {
       "type": "CHOICE",
       "members": [
+        {
+          "type": "SYMBOL",
+          "name": "block"
+        },
         {
           "type": "SYMBOL",
           "name": "array"
@@ -188,7 +180,12 @@
       "name": "comment"
     }
   ],
-  "conflicts": [],
+  "conflicts": [
+    [
+      "block",
+      "array"
+    ]
+  ],
   "precedences": [],
   "externals": [],
   "inline": [],
