@@ -9,13 +9,13 @@
 
 module.exports = grammar({
 	name: "paradox",
+	fileTypes: ["mod", "txt", "asset", "gui"],
 
 	extras: $ => [
 		/\s/,        // 空格、tab、换行（包括 \n）
 		$.comment,   // 注释
 	],
 	conflicts: $ => [
-		[$.block, $.array],
 	],
 
 	rules: {
@@ -23,7 +23,7 @@ module.exports = grammar({
 
 		statement: $ => choice($.assignment),
 
-		assignment: $ => seq($.key, "=", $.value),
+		assignment: $ => seq(field("key", $.key), "=", field("value", $.value)),
 
 		block: $ => seq("{", repeat($.statement), "}"),
 

@@ -22,16 +22,24 @@
       "type": "SEQ",
       "members": [
         {
-          "type": "SYMBOL",
-          "name": "key"
+          "type": "FIELD",
+          "name": "key",
+          "content": {
+            "type": "SYMBOL",
+            "name": "key"
+          }
         },
         {
           "type": "STRING",
           "value": "="
         },
         {
-          "type": "SYMBOL",
-          "name": "value"
+          "type": "FIELD",
+          "name": "value",
+          "content": {
+            "type": "SYMBOL",
+            "name": "value"
+          }
         }
       ]
     },
@@ -180,12 +188,7 @@
       "name": "comment"
     }
   ],
-  "conflicts": [
-    [
-      "block",
-      "array"
-    ]
-  ],
+  "conflicts": [],
   "precedences": [],
   "externals": [],
   "inline": [],

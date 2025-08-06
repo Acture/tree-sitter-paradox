@@ -1,42 +1,43 @@
 {
-  "$schema": "https://tree-sitter.github.io/tree-sitter/assets/schemas/config.schema.json",
-  "grammars": [
-    {
-      "name": "paradox",
-      "camelcase": "Paradox",
-      "title": "Paradox",
-      "scope": "source.paradox",
-      "file-types": [
-        ".asset",
-        ".txt",
-        ".gui",
-        ".mod"
-      ],
-      "injection-regex": "^paradox$",
-      "class-name": "TreeSitterParadox"
-    }
-  ],
-  "metadata": {
-    "version": "0.1.0",
-    "license": "AGPL",
-    "description": "Paradox grammar for tree-sitter",
-    "authors": [
-      {
-        "name": "acture",
-        "email": "acturea@gmail.com"
-      }
-    ],
-    "links": {
-      "repository": "https://github.com/Acture/tree-sitter-paradox.git"
-    }
-  },
-  "bindings": {
-    "c": true,
-    "go": true,
-    "node": true,
-    "python": true,
-    "rust": true,
-    "swift": true,
-    "zig": false
-  }
+	"$schema": "https://tree-sitter.github.io/tree-sitter/assets/schemas/config.schema.json",
+	"grammars": [
+		{
+			"name": "paradox",
+			"camelcase": "Paradox",
+			"title": "Paradox",
+			"scope": "source.paradox",
+			"file-types": [
+				"asset",
+				"txt",
+				"gui",
+				"mod"
+			],
+			"highlights": "queries/highlights.scm",
+			"injection-regex": "^paradox$",
+			"class-name": "TreeSitterParadox"
+		}
+	],
+	"metadata": {
+		"version": "0.1.0",
+		"license": "AGPL",
+		"description": "Paradox grammar for tree-sitter",
+		"authors": [
+			{
+				"name": "acture",
+				"email": "acturea@gmail.com"
+			}
+		],
+		"links": {
+			"repository": "https://github.com/Acture/tree-sitter-paradox.git"
+		}
+	},
+	"bindings": {
+		"c": true,
+		"go": true,
+		"node": true,
+		"python": true,
+		"rust": true,
+		"swift": true,
+		"zig": false
+	}
 }

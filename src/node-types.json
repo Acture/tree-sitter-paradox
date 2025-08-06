@@ -17,20 +17,27 @@
   {
     "type": "assignment",
     "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": true,
-      "types": [
-        {
-          "type": "key",
-          "named": true
-        },
-        {
-          "type": "value",
-          "named": true
-        }
-      ]
+    "fields": {
+      "key": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "key",
+            "named": true
+          }
+        ]
+      },
+      "value": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "value",
+            "named": true
+          }
+        ]
+      }
     }
   },
   {
