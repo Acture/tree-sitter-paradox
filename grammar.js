@@ -80,17 +80,17 @@ module.exports = grammar({
 		variable_embedded_identifier: $ =>
 			choice(
 				seq(
-					$.identifier,
+					choice($.number, $.identifier),
 					$.variable,
 				),
 				seq(
 					$.variable,
-					$.identifier
+					choice($.number, $.identifier)
 				),
 				seq(
-					$.identifier,
+					choice($.number, $.identifier),
 					$.variable,
-					$.identifier
+					choice($.number, $.identifier)
 				),
 			),
 
