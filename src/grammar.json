@@ -130,6 +130,10 @@
         {
           "type": "SYMBOL",
           "name": "variable_embedded_identifier"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "simple_value"
         }
       ]
     },
@@ -581,6 +585,10 @@
       "array",
       "statement",
       "variable_embedded_identifier"
+    ],
+    [
+      "assignment",
+      "simple_value"
     ]
   ],
   "precedences": [],

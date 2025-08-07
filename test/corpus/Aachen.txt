@@ -502,6 +502,7 @@ fleet_names = {
   (statement
     (assignment
       (identifier)
-      (array
-        (simple_value
-          (string))))))
+      (map
+        (statement
+          (simple_value
+            (string)))))))

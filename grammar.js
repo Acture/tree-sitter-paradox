@@ -22,6 +22,7 @@ module.exports = grammar({
 		[$.variable_embedded_identifier, $.statement],
 		[$.array, $.statement],
 		[$.array, $.statement, $.variable_embedded_identifier],
+		[$.assignment, $.simple_value]
 
 	],
 
@@ -46,6 +47,7 @@ module.exports = grammar({
 			$.condition_statement,
 			$.logical_statement,
 			$.variable, $.variable_embedded_identifier,
+			$.simple_value
 		),
 
 

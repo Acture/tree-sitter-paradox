@@ -823,13 +823,15 @@ reduce_propagate_religion_requirements = {
                     (statement
                       (assignment
                         (identifier)
-                        (variable
+                        (variable_embedded_identifier
+                          (variable
+                            (identifier))
                           (identifier))))
                     (statement
-                      (assignment
-                        (identifier)
-                        (simple_value
-                          (string)))))))))))))
+                      (condition_statement))
+                    (statement
+                      (simple_value
+                        (string))))))))))))
   (statement
     (assignment
       (identifier)
@@ -858,8 +860,12 @@ reduce_propagate_religion_requirements = {
   (comment)
   (comment)
   (statement
-    (assignment
-      (identifier)
+    (simple_value
+      (identifier)))
+  (statement
+    (condition_statement))
+  (statement
+    (condition_statement
       (map
         (statement
           (assignment
@@ -1034,8 +1040,12 @@ reduce_propagate_religion_requirements = {
   (comment)
   (comment)
   (statement
-    (assignment
-      (identifier)
+    (simple_value
+      (identifier)))
+  (statement
+    (condition_statement))
+  (statement
+    (condition_statement
       (map
         (statement
           (assignment
@@ -1103,8 +1113,12 @@ reduce_propagate_religion_requirements = {
               (number)))))))
   (comment)
   (statement
-    (assignment
-      (identifier)
+    (simple_value
+      (identifier)))
+  (statement
+    (condition_statement))
+  (statement
+    (condition_statement
       (map
         (statement
           (condition_statement))
@@ -1217,8 +1231,12 @@ reduce_propagate_religion_requirements = {
   (comment)
   (comment)
   (statement
-    (assignment
-      (identifier)
+    (simple_value
+      (identifier)))
+  (statement
+    (condition_statement))
+  (statement
+    (condition_statement
       (map
         (comment)
         (statement
@@ -2095,13 +2113,15 @@ reduce_propagate_religion_requirements = {
                     (statement
                       (assignment
                         (identifier)
-                        (variable
+                        (variable_embedded_identifier
+                          (variable
+                            (identifier))
                           (identifier))))
                     (statement
-                      (assignment
-                        (identifier)
-                        (simple_value
-                          (string)))))))))))))
+                      (condition_statement))
+                    (statement
+                      (simple_value
+                        (string))))))))))))
   (statement
     (assignment
       (identifier)
@@ -2131,13 +2151,15 @@ reduce_propagate_religion_requirements = {
                     (statement
                       (assignment
                         (identifier)
-                        (variable
+                        (variable_embedded_identifier
+                          (variable
+                            (identifier))
                           (identifier))))
                     (statement
-                      (assignment
-                        (identifier)
-                        (simple_value
-                          (string)))))))))))))
+                      (condition_statement))
+                    (statement
+                      (simple_value
+                        (string))))))))))))
   (statement
     (assignment
       (identifier)
@@ -2186,13 +2208,15 @@ reduce_propagate_religion_requirements = {
                           (statement
                             (assignment
                               (identifier)
-                              (variable
+                              (variable_embedded_identifier
+                                (variable
+                                  (identifier))
                                 (identifier))))
                           (statement
-                            (assignment
-                              (identifier)
-                              (simple_value
-                                (string)))))))))))))
+                            (condition_statement))
+                          (statement
+                            (simple_value
+                              (string))))))))))))
         (statement
           (assignment
             (identifier)
@@ -2400,8 +2424,12 @@ reduce_propagate_religion_requirements = {
   (comment)
   (comment)
   (statement
-    (assignment
-      (identifier)
+    (simple_value
+      (identifier)))
+  (statement
+    (condition_statement))
+  (statement
+    (condition_statement
       (map
         (statement
           (macro_map
@@ -2431,13 +2459,15 @@ reduce_propagate_religion_requirements = {
                         (statement
                           (assignment
                             (identifier)
-                            (variable
+                            (variable_embedded_identifier
+                              (variable
+                                (identifier))
                               (identifier))))
                         (statement
-                          (assignment
-                            (identifier)
-                            (simple_value
-                              (string))))))))))))
+                          (condition_statement))
+                        (statement
+                          (simple_value
+                            (string)))))))))))
         (statement
           (macro_map
             (identifier)
@@ -2466,17 +2496,23 @@ reduce_propagate_religion_requirements = {
                         (statement
                           (assignment
                             (identifier)
-                            (variable
+                            (variable_embedded_identifier
+                              (variable
+                                (identifier))
                               (identifier))))
                         (statement
-                          (assignment
-                            (identifier)
-                            (simple_value
-                              (string)))))))))))))))
+                          (condition_statement))
+                        (statement
+                          (simple_value
+                            (string))))))))))))))
   (comment)
   (statement
-    (assignment
-      (identifier)
+    (simple_value
+      (identifier)))
+  (statement
+    (condition_statement))
+  (statement
+    (condition_statement
       (map
         (statement
           (assignment
@@ -2578,13 +2614,15 @@ reduce_propagate_religion_requirements = {
                                 (statement
                                   (assignment
                                     (identifier)
-                                    (variable
+                                    (variable_embedded_identifier
+                                      (variable
+                                        (identifier))
                                       (identifier))))
                                 (statement
-                                  (assignment
-                                    (identifier)
-                                    (simple_value
-                                      (string)))))))))))))
+                                  (condition_statement))
+                                (statement
+                                  (simple_value
+                                    (string))))))))))))
               (statement
                 (assignment
                   (identifier)
@@ -2633,13 +2671,15 @@ reduce_propagate_religion_requirements = {
                                       (statement
                                         (assignment
                                           (identifier)
-                                          (variable
+                                          (variable_embedded_identifier
+                                            (variable
+                                              (identifier))
                                             (identifier))))
                                       (statement
-                                        (assignment
-                                          (identifier)
-                                          (simple_value
-                                            (string)))))))))))))
+                                        (condition_statement))
+                                      (statement
+                                        (simple_value
+                                          (string))))))))))))
                     (statement
                       (assignment
                         (identifier)
@@ -2681,13 +2721,15 @@ reduce_propagate_religion_requirements = {
                                       (statement
                                         (assignment
                                           (identifier)
-                                          (variable
+                                          (variable_embedded_identifier
+                                            (variable
+                                              (identifier))
                                             (identifier))))
                                       (statement
-                                        (assignment
-                                          (identifier)
-                                          (simple_value
-                                            (string)))))))))))))
+                                        (condition_statement))
+                                      (statement
+                                        (simple_value
+                                          (string))))))))))))
                     (statement
                       (assignment
                         (identifier)
@@ -2729,13 +2771,15 @@ reduce_propagate_religion_requirements = {
                                       (statement
                                         (assignment
                                           (identifier)
-                                          (variable
+                                          (variable_embedded_identifier
+                                            (variable
+                                              (identifier))
                                             (identifier))))
                                       (statement
-                                        (assignment
-                                          (identifier)
-                                          (simple_value
-                                            (string)))))))))))))
+                                        (condition_statement))
+                                      (statement
+                                        (simple_value
+                                          (string))))))))))))
                     (statement
                       (assignment
                         (identifier)
@@ -2765,13 +2809,15 @@ reduce_propagate_religion_requirements = {
                                       (statement
                                         (assignment
                                           (identifier)
-                                          (variable
+                                          (variable_embedded_identifier
+                                            (variable
+                                              (identifier))
                                             (identifier))))
                                       (statement
-                                        (assignment
-                                          (identifier)
-                                          (simple_value
-                                            (string))))))))))))))))))))))
+                                        (condition_statement))
+                                      (statement
+                                        (simple_value
+                                          (string)))))))))))))))))))))
   (statement
     (assignment
       (identifier)
@@ -2953,8 +2999,12 @@ reduce_propagate_religion_requirements = {
                   (simple_value
                     (identifier))))))))))
   (statement
-    (assignment
-      (identifier)
+    (simple_value
+      (identifier)))
+  (statement
+    (condition_statement))
+  (statement
+    (condition_statement
       (map
         (statement
           (condition_statement))

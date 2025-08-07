@@ -1126,11 +1126,14 @@ ISR = "countries/Israel.txt"
         (string))))
   (comment)
   (statement
-    (assignment
-      (identifier)
-      (simple_value
-        (string))))
+    (simple_value
+      (identifier)))
+  (statement
+    (condition_statement))
   (statement
+    (simple_value
+      (string)))
+  (statement
     (assignment
       (identifier)
       (simple_value
@@ -1192,11 +1195,14 @@ ISR = "countries/Israel.txt"
         (string))))
   (comment)
   (statement
-    (assignment
-      (identifier)
-      (simple_value
-        (string))))
+    (simple_value
+      (identifier)))
+  (statement
+    (condition_statement))
   (statement
+    (simple_value
+      (string)))
+  (statement
     (assignment
       (identifier)
       (simple_value
@@ -1328,11 +1334,14 @@ ISR = "countries/Israel.txt"
         (string))))
   (comment)
   (statement
-    (assignment
-      (identifier)
-      (simple_value
-        (string))))
+    (simple_value
+      (identifier)))
+  (statement
+    (condition_statement))
   (statement
+    (simple_value
+      (string)))
+  (statement
     (assignment
       (identifier)
       (simple_value
@@ -1404,11 +1413,14 @@ ISR = "countries/Israel.txt"
         (string))))
   (comment)
   (statement
-    (assignment
-      (identifier)
-      (simple_value
-        (string))))
+    (simple_value
+      (identifier)))
+  (statement
+    (condition_statement))
   (statement
+    (simple_value
+      (string)))
+  (statement
     (assignment
       (identifier)
       (simple_value
@@ -1440,11 +1452,14 @@ ISR = "countries/Israel.txt"
         (string))))
   (comment)
   (statement
-    (assignment
-      (identifier)
-      (simple_value
-        (string))))
+    (simple_value
+      (identifier)))
+  (statement
+    (condition_statement))
   (statement
+    (simple_value
+      (string)))
+  (statement
     (assignment
       (identifier)
       (simple_value
@@ -1456,11 +1471,14 @@ ISR = "countries/Israel.txt"
         (string))))
   (comment)
   (statement
-    (assignment
-      (identifier)
-      (simple_value
-        (string))))
+    (simple_value
+      (identifier)))
+  (statement
+    (condition_statement))
   (statement
+    (simple_value
+      (string)))
+  (statement
     (assignment
       (identifier)
       (simple_value
@@ -1587,11 +1605,14 @@ ISR = "countries/Israel.txt"
         (string))))
   (comment)
   (statement
-    (assignment
-      (identifier)
-      (simple_value
-        (string))))
+    (simple_value
+      (identifier)))
+  (statement
+    (condition_statement))
   (statement
+    (simple_value
+      (string)))
+  (statement
     (assignment
       (identifier)
       (simple_value
@@ -1663,11 +1684,14 @@ ISR = "countries/Israel.txt"
         (string))))
   (comment)
   (statement
-    (assignment
-      (identifier)
-      (simple_value
-        (string))))
+    (simple_value
+      (identifier)))
+  (statement
+    (condition_statement))
   (statement
+    (simple_value
+      (string)))
+  (statement
     (assignment
       (identifier)
       (simple_value
@@ -1774,11 +1798,14 @@ ISR = "countries/Israel.txt"
         (string))))
   (comment)
   (statement
-    (assignment
-      (identifier)
-      (simple_value
-        (string))))
+    (simple_value
+      (identifier)))
   (statement
+    (condition_statement))
+  (statement
+    (simple_value
+      (string)))
+  (statement
     (assignment
       (identifier)
       (simple_value
@@ -2035,11 +2062,14 @@ ISR = "countries/Israel.txt"
         (string))))
   (comment)
   (statement
-    (assignment
-      (identifier)
-      (simple_value
-        (string))))
+    (simple_value
+      (identifier)))
   (statement
+    (condition_statement))
+  (statement
+    (simple_value
+      (string)))
+  (statement
     (assignment
       (identifier)
       (simple_value
@@ -2101,11 +2131,14 @@ ISR = "countries/Israel.txt"
         (string))))
   (comment)
   (statement
-    (assignment
-      (identifier)
-      (simple_value
-        (string))))
+    (simple_value
+      (identifier)))
   (statement
+    (condition_statement))
+  (statement
+    (simple_value
+      (string)))
+  (statement
     (assignment
       (identifier)
       (simple_value
@@ -2217,11 +2250,14 @@ ISR = "countries/Israel.txt"
         (string))))
   (comment)
   (statement
-    (assignment
-      (identifier)
-      (simple_value
-        (string))))
+    (simple_value
+      (identifier)))
   (statement
+    (condition_statement))
+  (statement
+    (simple_value
+      (string)))
+  (statement
     (assignment
       (identifier)
       (simple_value
@@ -2273,11 +2309,14 @@ ISR = "countries/Israel.txt"
         (string))))
   (comment)
   (statement
-    (assignment
-      (identifier)
-      (simple_value
-        (string))))
+    (simple_value
+      (identifier)))
   (statement
+    (condition_statement))
+  (statement
+    (simple_value
+      (string)))
+  (statement
     (assignment
       (identifier)
       (simple_value
@@ -2399,11 +2438,14 @@ ISR = "countries/Israel.txt"
         (string))))
   (comment)
   (statement
-    (assignment
-      (identifier)
-      (simple_value
-        (string))))
+    (simple_value
+      (identifier)))
   (statement
+    (condition_statement))
+  (statement
+    (simple_value
+      (string)))
+  (statement
     (assignment
       (identifier)
       (simple_value
@@ -2540,11 +2582,14 @@ ISR = "countries/Israel.txt"
         (string))))
   (comment)
   (statement
-    (assignment
-      (identifier)
-      (simple_value
-        (string))))
+    (simple_value
+      (identifier)))
   (statement
+    (condition_statement))
+  (statement
+    (simple_value
+      (string)))
+  (statement
     (assignment
       (identifier)
       (simple_value
@@ -2626,11 +2671,14 @@ ISR = "countries/Israel.txt"
         (string))))
   (comment)
   (statement
-    (assignment
-      (identifier)
-      (simple_value
-        (string))))
+    (simple_value
+      (identifier)))
   (statement
+    (condition_statement))
+  (statement
+    (simple_value
+      (string)))
+  (statement
     (assignment
       (identifier)
       (simple_value
@@ -2717,10 +2765,13 @@ ISR = "countries/Israel.txt"
         (string))))
   (comment)
   (statement
-    (assignment
-      (identifier)
-      (simple_value
-        (string))))
+    (simple_value
+      (identifier)))
+  (statement
+    (condition_statement))
+  (statement
+    (simple_value
+      (string)))
   (statement
     (assignment
       (identifier)
@@ -2743,10 +2794,13 @@ ISR = "countries/Israel.txt"
         (string))))
   (comment)
   (statement
-    (assignment
-      (identifier)
-      (simple_value
-        (string))))
+    (simple_value
+      (identifier)))
+  (statement
+    (condition_statement))
+  (statement
+    (simple_value
+      (string)))
   (statement
     (assignment
       (identifier)
@@ -2864,10 +2918,13 @@ ISR = "countries/Israel.txt"
         (string))))
   (comment)
   (statement
-    (assignment
-      (identifier)
-      (simple_value
-        (string))))
+    (simple_value
+      (identifier)))
+  (statement
+    (condition_statement))
+  (statement
+    (simple_value
+      (string)))
   (statement
     (assignment
       (identifier)
@@ -2915,10 +2972,13 @@ ISR = "countries/Israel.txt"
         (string))))
   (comment)
   (statement
-    (assignment
-      (identifier)
-      (simple_value
-        (string))))
+    (simple_value
+      (identifier)))
+  (statement
+    (condition_statement))
+  (statement
+    (simple_value
+      (string)))
   (statement
     (assignment
       (identifier)
@@ -3102,10 +3162,13 @@ ISR = "countries/Israel.txt"
   (comment)
   (comment)
   (statement
-    (assignment
-      (identifier)
-      (simple_value
-        (string))))
+    (simple_value
+      (identifier)))
+  (statement
+    (condition_statement))
+  (statement
+    (simple_value
+      (string)))
   (statement
     (assignment
       (identifier)
@@ -3208,10 +3271,13 @@ ISR = "countries/Israel.txt"
         (string))))
   (comment)
   (statement
-    (assignment
-      (identifier)
-      (simple_value
-        (string))))
+    (simple_value
+      (identifier)))
+  (statement
+    (condition_statement))
+  (statement
+    (simple_value
+      (string)))
   (statement
     (assignment
       (identifier)
@@ -3329,28 +3395,40 @@ ISR = "countries/Israel.txt"
         (string))))
   (comment)
   (statement
-    (assignment
-      (identifier)
-      (simple_value
-        (string))))
+    (simple_value
+      (identifier)))
+  (statement
+    (condition_statement))
+  (statement
+    (simple_value
+      (string)))
   (comment)
   (statement
-    (assignment
-      (identifier)
-      (simple_value
-        (string))))
+    (simple_value
+      (identifier)))
+  (statement
+    (condition_statement))
+  (statement
+    (simple_value
+      (string)))
   (comment)
   (statement
-    (assignment
-      (identifier)
-      (simple_value
-        (string))))
+    (simple_value
+      (identifier)))
+  (statement
+    (condition_statement))
+  (statement
+    (simple_value
+      (string)))
   (comment)
   (statement
-    (assignment
-      (identifier)
-      (simple_value
-        (string))))
+    (simple_value
+      (identifier)))
+  (statement
+    (condition_statement))
+  (statement
+    (simple_value
+      (string)))
   (statement
     (assignment
       (identifier)
@@ -3358,10 +3436,13 @@ ISR = "countries/Israel.txt"
         (string))))
   (comment)
   (statement
-    (assignment
-      (identifier)
-      (simple_value
-        (string))))
+    (simple_value
+      (identifier)))
+  (statement
+    (condition_statement))
+  (statement
+    (simple_value
+      (string)))
   (statement
     (assignment
       (identifier)
@@ -3419,10 +3500,13 @@ ISR = "countries/Israel.txt"
         (string))))
   (comment)
   (statement
-    (assignment
-      (identifier)
-      (simple_value
-        (string))))
+    (simple_value
+      (identifier)))
+  (statement
+    (condition_statement))
+  (statement
+    (simple_value
+      (string)))
   (statement
     (assignment
       (identifier)
@@ -3540,10 +3624,13 @@ ISR = "countries/Israel.txt"
         (string))))
   (comment)
   (statement
-    (assignment
-      (identifier)
-      (simple_value
-        (string))))
+    (simple_value
+      (identifier)))
+  (statement
+    (condition_statement))
+  (statement
+    (simple_value
+      (string)))
   (statement
     (assignment
       (identifier)
@@ -3751,10 +3838,13 @@ ISR = "countries/Israel.txt"
         (string))))
   (comment)
   (statement
-    (assignment
-      (identifier)
-      (simple_value
-        (string))))
+    (simple_value
+      (identifier)))
+  (statement
+    (condition_statement))
+  (statement
+    (simple_value
+      (string)))
   (statement
     (assignment
       (identifier)
@@ -3767,42 +3857,60 @@ ISR = "countries/Israel.txt"
         (string))))
   (comment)
   (statement
-    (assignment
-      (identifier)
-      (simple_value
-        (string))))
+    (simple_value
+      (identifier)))
+  (statement
+    (condition_statement))
+  (statement
+    (simple_value
+      (string)))
   (comment)
   (statement
-    (assignment
-      (identifier)
-      (simple_value
-        (string))))
+    (simple_value
+      (identifier)))
+  (statement
+    (condition_statement))
+  (statement
+    (simple_value
+      (string)))
   (comment)
   (statement
-    (assignment
-      (identifier)
-      (simple_value
-        (string))))
+    (simple_value
+      (identifier)))
+  (statement
+    (condition_statement))
+  (statement
+    (simple_value
+      (string)))
   (comment)
   (statement
-    (assignment
-      (identifier)
-      (simple_value
-        (string))))
+    (simple_value
+      (identifier)))
+  (statement
+    (condition_statement))
+  (statement
+    (simple_value
+      (string)))
   (comment)
   (statement
-    (assignment
-      (identifier)
-      (simple_value
-        (string))))
+    (simple_value
+      (identifier)))
+  (statement
+    (condition_statement))
+  (statement
+    (simple_value
+      (string)))
   (comment)
   (comment)
   (statement
-    (assignment
-      (identifier)
-      (simple_value
-        (string))))
+    (simple_value
+      (identifier)))
+  (statement
+    (condition_statement))
   (statement
+    (simple_value
+      (string)))
+  (statement
     (assignment
       (identifier)
       (simple_value
@@ -3814,11 +3922,14 @@ ISR = "countries/Israel.txt"
         (string))))
   (comment)
   (statement
-    (assignment
-      (identifier)
-      (simple_value
-        (string))))
+    (simple_value
+      (identifier)))
+  (statement
+    (condition_statement))
   (statement
+    (simple_value
+      (string)))
+  (statement
     (assignment
       (identifier)
       (simple_value
@@ -3845,11 +3956,14 @@ ISR = "countries/Israel.txt"
         (string))))
   (comment)
   (statement
-    (assignment
-      (identifier)
-      (simple_value
-        (string))))
+    (simple_value
+      (identifier)))
+  (statement
+    (condition_statement))
   (statement
+    (simple_value
+      (string)))
+  (statement
     (assignment
       (identifier)
       (simple_value
@@ -3876,11 +3990,14 @@ ISR = "countries/Israel.txt"
         (string))))
   (comment)
   (statement
-    (assignment
-      (identifier)
-      (simple_value
-        (string))))
+    (simple_value
+      (identifier)))
+  (statement
+    (condition_statement))
   (statement
+    (simple_value
+      (string)))
+  (statement
     (assignment
       (identifier)
       (simple_value
@@ -3892,11 +4009,14 @@ ISR = "countries/Israel.txt"
         (string))))
   (comment)
   (statement
-    (assignment
-      (identifier)
-      (simple_value
-        (string))))
+    (simple_value
+      (identifier)))
   (statement
+    (condition_statement))
+  (statement
+    (simple_value
+      (string)))
+  (statement
     (assignment
       (identifier)
       (simple_value
@@ -3963,11 +4083,14 @@ ISR = "countries/Israel.txt"
         (string))))
   (comment)
   (statement
-    (assignment
-      (identifier)
-      (simple_value
-        (string))))
+    (simple_value
+      (identifier)))
   (statement
+    (condition_statement))
+  (statement
+    (simple_value
+      (string)))
+  (statement
     (assignment
       (identifier)
       (simple_value
@@ -4669,11 +4792,14 @@ ISR = "countries/Israel.txt"
         (string))))
   (comment)
   (statement
-    (assignment
-      (identifier)
-      (simple_value
-        (string))))
+    (simple_value
+      (identifier)))
   (statement
+    (condition_statement))
+  (statement
+    (simple_value
+      (string)))
+  (statement
     (assignment
       (identifier)
       (simple_value
@@ -4760,11 +4886,14 @@ ISR = "countries/Israel.txt"
         (string))))
   (comment)
   (statement
-    (assignment
-      (identifier)
-      (simple_value
-        (string))))
+    (simple_value
+      (identifier)))
   (statement
+    (condition_statement))
+  (statement
+    (simple_value
+      (string)))
+  (statement
     (assignment
       (identifier)
       (simple_value
@@ -4801,11 +4930,14 @@ ISR = "countries/Israel.txt"
         (string))))
   (comment)
   (statement
-    (assignment
-      (identifier)
-      (simple_value
-        (string))))
+    (simple_value
+      (identifier)))
   (statement
+    (condition_statement))
+  (statement
+    (simple_value
+      (string)))
+  (statement
     (assignment
       (identifier)
       (simple_value
@@ -4837,11 +4969,14 @@ ISR = "countries/Israel.txt"
         (string))))
   (comment)
   (statement
-    (assignment
-      (identifier)
-      (simple_value
-        (string))))
+    (simple_value
+      (identifier)))
   (statement
+    (condition_statement))
+  (statement
+    (simple_value
+      (string)))
+  (statement
     (assignment
       (identifier)
       (simple_value
@@ -4863,11 +4998,14 @@ ISR = "countries/Israel.txt"
         (string))))
   (comment)
   (statement
-    (assignment
-      (identifier)
-      (simple_value
-        (string))))
+    (simple_value
+      (identifier)))
   (statement
+    (condition_statement))
+  (statement
+    (simple_value
+      (string)))
+  (statement
     (assignment
       (identifier)
       (simple_value
@@ -4944,11 +5082,14 @@ ISR = "countries/Israel.txt"
         (string))))
   (comment)
   (statement
-    (assignment
-      (identifier)
-      (simple_value
-        (string))))
+    (simple_value
+      (identifier)))
   (statement
+    (condition_statement))
+  (statement
+    (simple_value
+      (string)))
+  (statement
     (assignment
       (identifier)
       (simple_value
@@ -5060,10 +5201,13 @@ ISR = "countries/Israel.txt"
         (string))))
   (comment)
   (statement
-    (assignment
-      (identifier)
-      (simple_value
-        (string))))
+    (simple_value
+      (identifier)))
+  (statement
+    (condition_statement))
+  (statement
+    (simple_value
+      (string)))
   (statement
     (assignment
       (identifier)
@@ -5166,10 +5310,13 @@ ISR = "countries/Israel.txt"
         (string))))
   (comment)
   (statement
-    (assignment
-      (identifier)
-      (simple_value
-        (string))))
+    (simple_value
+      (identifier)))
+  (statement
+    (condition_statement))
+  (statement
+    (simple_value
+      (string)))
   (statement
     (assignment
       (identifier)
@@ -5282,10 +5429,13 @@ ISR = "countries/Israel.txt"
         (string))))
   (comment)
   (statement
-    (assignment
-      (identifier)
-      (simple_value
-        (string))))
+    (simple_value
+      (identifier)))
+  (statement
+    (condition_statement))
+  (statement
+    (simple_value
+      (string)))
   (statement
     (assignment
       (identifier)
@@ -5303,10 +5453,13 @@ ISR = "countries/Israel.txt"
         (string))))
   (comment)
   (statement
-    (assignment
-      (identifier)
-      (simple_value
-        (string))))
+    (simple_value
+      (identifier)))
+  (statement
+    (condition_statement))
+  (statement
+    (simple_value
+      (string)))
   (statement
     (assignment
       (identifier)
@@ -5494,10 +5647,13 @@ ISR = "countries/Israel.txt"
         (string))))
   (comment)
   (statement
-    (assignment
-      (identifier)
-      (simple_value
-        (string))))
+    (simple_value
+      (identifier)))
+  (statement
+    (condition_statement))
+  (statement
+    (simple_value
+      (string)))
   (statement
     (assignment
       (identifier)
@@ -5510,10 +5666,13 @@ ISR = "countries/Israel.txt"
         (string))))
   (comment)
   (statement
-    (assignment
-      (identifier)
-      (simple_value
-        (string))))
+    (simple_value
+      (identifier)))
+  (statement
+    (condition_statement))
+  (statement
+    (simple_value
+      (string)))
   (statement
     (assignment
       (identifier)
@@ -5576,10 +5735,13 @@ ISR = "countries/Israel.txt"
         (string))))
   (comment)
   (statement
-    (assignment
-      (identifier)
-      (simple_value
-        (string))))
+    (simple_value
+      (identifier)))
+  (statement
+    (condition_statement))
+  (statement
+    (simple_value
+      (string)))
   (statement
     (assignment
       (identifier)
@@ -5647,10 +5809,13 @@ ISR = "countries/Israel.txt"
         (string))))
   (comment)
   (statement
-    (assignment
-      (identifier)
-      (simple_value
-        (string))))
+    (simple_value
+      (identifier)))
+  (statement
+    (condition_statement))
+  (statement
+    (simple_value
+      (string)))
   (statement
     (assignment
       (identifier)
@@ -5688,10 +5853,13 @@ ISR = "countries/Israel.txt"
         (string))))
   (comment)
   (statement
-    (assignment
-      (identifier)
-      (simple_value
-        (string))))
+    (simple_value
+      (identifier)))
+  (statement
+    (condition_statement))
+  (statement
+    (simple_value
+      (string)))
   (statement
     (assignment
       (identifier)
@@ -5744,10 +5912,13 @@ ISR = "countries/Israel.txt"
         (string))))
   (comment)
   (statement
-    (assignment
-      (identifier)
-      (simple_value
-        (string))))
+    (simple_value
+      (identifier)))
+  (statement
+    (condition_statement))
+  (statement
+    (simple_value
+      (string)))
   (statement
     (assignment
       (identifier)
@@ -5850,10 +6021,13 @@ ISR = "countries/Israel.txt"
         (string))))
   (comment)
   (statement
-    (assignment
-      (identifier)
-      (simple_value
-        (string))))
+    (simple_value
+      (identifier)))
+  (statement
+    (condition_statement))
+  (statement
+    (simple_value
+      (string)))
   (statement
     (assignment
       (identifier)
@@ -5931,10 +6105,13 @@ ISR = "countries/Israel.txt"
         (string))))
   (comment)
   (statement
-    (assignment
-      (identifier)
-      (simple_value
-        (string))))
+    (simple_value
+      (identifier)))
+  (statement
+    (condition_statement))
+  (statement
+    (simple_value
+      (string)))
   (statement
     (assignment
       (identifier)
@@ -5947,10 +6124,13 @@ ISR = "countries/Israel.txt"
         (string))))
   (comment)
   (statement
-    (assignment
-      (identifier)
-      (simple_value
-        (string))))
+    (simple_value
+      (identifier)))
+  (statement
+    (condition_statement))
+  (statement
+    (simple_value
+      (string)))
   (statement
     (assignment
       (identifier)
@@ -6013,10 +6193,13 @@ ISR = "countries/Israel.txt"
         (string))))
   (comment)
   (statement
-    (assignment
-      (identifier)
-      (simple_value
-        (string))))
+    (simple_value
+      (identifier)))
+  (statement
+    (condition_statement))
+  (statement
+    (simple_value
+      (string)))
   (statement
     (assignment
       (identifier)
@@ -6029,10 +6212,13 @@ ISR = "countries/Israel.txt"
         (string))))
   (comment)
   (statement
-    (assignment
-      (identifier)
-      (simple_value
-        (string))))
+    (simple_value
+      (identifier)))
+  (statement
+    (condition_statement))
+  (statement
+    (simple_value
+      (string)))
   (statement
     (assignment
       (identifier)
@@ -6045,10 +6231,13 @@ ISR = "countries/Israel.txt"
         (string))))
   (comment)
   (statement
-    (assignment
-      (identifier)
-      (simple_value
-        (string))))
+    (simple_value
+      (identifier)))
+  (statement
+    (condition_statement))
+  (statement
+    (simple_value
+      (string)))
   (comment)
   (comment)
   (comment)

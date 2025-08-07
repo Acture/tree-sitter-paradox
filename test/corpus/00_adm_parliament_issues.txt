@@ -1911,8 +1911,12 @@ treason_act = {
               (number))))
         (comment)
         (statement
-          (assignment
-            (identifier)
+          (simple_value
+            (identifier)))
+        (statement
+          (condition_statement))
+        (statement
+          (condition_statement
             (map
               (statement
                 (assignment
@@ -5384,8 +5388,12 @@ treason_act = {
                     (boolean))))
               (comment)
               (statement
-                (assignment
-                  (identifier)
+                (simple_value
+                  (identifier)))
+              (statement
+                (condition_statement))
+              (statement
+                (condition_statement
                   (map
                     (statement
                       (assignment

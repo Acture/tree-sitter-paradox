@@ -6726,8 +6726,12 @@ adopt_technology_group_from_target = {
   (comment)
   (comment)
   (statement
-    (assignment
-      (identifier)
+    (simple_value
+      (identifier)))
+  (statement
+    (condition_statement))
+  (statement
+    (condition_statement
       (map
         (statement
           (condition_statement))
@@ -7007,8 +7011,12 @@ adopt_technology_group_from_target = {
   (comment)
   (comment)
   (statement
-    (assignment
-      (identifier)
+    (simple_value
+      (identifier)))
+  (statement
+    (condition_statement))
+  (statement
+    (condition_statement
       (map
         (statement
           (assignment
@@ -7022,13 +7030,15 @@ adopt_technology_group_from_target = {
               (statement
                 (assignment
                   (identifier)
-                  (variable
+                  (variable_embedded_identifier
+                    (variable
+                      (identifier))
                     (identifier))))
               (statement
-                (assignment
-                  (identifier)
-                  (simple_value
-                    (number)))))))
+                (condition_statement))
+              (statement
+                (simple_value
+                  (number))))))
         (statement
           (condition_statement))
         (statement
@@ -7313,8 +7323,12 @@ adopt_technology_group_from_target = {
   (comment)
   (comment)
   (statement
-    (assignment
-      (identifier)
+    (simple_value
+      (identifier)))
+  (statement
+    (condition_statement))
+  (statement
+    (condition_statement
       (map
         (statement
           (assignment
@@ -7354,8 +7368,12 @@ adopt_technology_group_from_target = {
   (comment)
   (comment)
   (statement
-    (assignment
-      (identifier)
+    (simple_value
+      (identifier)))
+  (statement
+    (condition_statement))
+  (statement
+    (condition_statement
       (map
         (statement
           (condition_statement))
@@ -7444,8 +7462,12 @@ adopt_technology_group_from_target = {
   (comment)
   (comment)
   (statement
-    (assignment
-      (identifier)
+    (simple_value
+      (identifier)))
+  (statement
+    (condition_statement))
+  (statement
+    (condition_statement
       (map
         (statement
           (condition_statement))
@@ -7708,8 +7730,12 @@ adopt_technology_group_from_target = {
                           (identifier)))))))))))))
   (comment)
   (statement
-    (assignment
-      (identifier)
+    (simple_value
+      (identifier)))
+  (statement
+    (condition_statement))
+  (statement
+    (condition_statement
       (map
         (statement
           (condition_statement))
@@ -8258,8 +8284,12 @@ adopt_technology_group_from_target = {
                     (boolean))))))))))
   (comment)
   (statement
-    (assignment
-      (identifier)
+    (simple_value
+      (identifier)))
+  (statement
+    (condition_statement))
+  (statement
+    (condition_statement
       (map
         (statement
           (condition_statement))
@@ -8304,8 +8334,12 @@ adopt_technology_group_from_target = {
                           (number)))))))))))))
   (comment)
   (statement
-    (assignment
-      (identifier)
+    (simple_value
+      (identifier)))
+  (statement
+    (condition_statement))
+  (statement
+    (condition_statement
       (map
         (statement
           (condition_statement))
@@ -8350,8 +8384,12 @@ adopt_technology_group_from_target = {
                           (number)))))))))))))
   (comment)
   (statement
-    (assignment
-      (identifier)
+    (simple_value
+      (identifier)))
+  (statement
+    (condition_statement))
+  (statement
+    (condition_statement
       (map
         (statement
           (assignment
@@ -8450,8 +8488,12 @@ adopt_technology_group_from_target = {
               (identifier)))))))
   (comment)
   (statement
-    (assignment
-      (identifier)
+    (simple_value
+      (identifier)))
+  (statement
+    (condition_statement))
+  (statement
+    (condition_statement
       (map
         (statement
           (assignment
@@ -9373,8 +9415,12 @@ adopt_technology_group_from_target = {
   (comment)
   (comment)
   (statement
-    (assignment
-      (identifier)
+    (simple_value
+      (identifier)))
+  (statement
+    (condition_statement))
+  (statement
+    (condition_statement
       (map
         (statement
           (assignment
@@ -9411,8 +9457,12 @@ adopt_technology_group_from_target = {
                           (identifier)))))))))))))
   (comment)
   (statement
-    (assignment
-      (identifier)
+    (simple_value
+      (identifier)))
+  (statement
+    (condition_statement))
+  (statement
+    (condition_statement
       (map
         (statement
           (condition_statement))
@@ -9712,8 +9762,12 @@ adopt_technology_group_from_target = {
                                       (identifier))))
                                 (comment)
                                 (statement
-                                  (assignment
-                                    (identifier)
+                                  (simple_value
+                                    (identifier)))
+                                (statement
+                                  (condition_statement))
+                                (statement
+                                  (condition_statement
                                     (map
                                       (statement
                                         (assignment
@@ -9757,8 +9811,12 @@ adopt_technology_group_from_target = {
                                       (identifier))))
                                 (comment)
                                 (statement
-                                  (assignment
-                                    (identifier)
+                                  (simple_value
+                                    (identifier)))
+                                (statement
+                                  (condition_statement))
+                                (statement
+                                  (condition_statement
                                     (map
                                       (statement
                                         (assignment
@@ -9800,51 +9858,6 @@ adopt_technology_group_from_target = {
                                     (identifier)
                                     (simple_value
                                       (identifier))))
-                                (statement
-                                  (assignment
-                                    (identifier)
-                                    (map
-                                      (statement
-                                        (assignment
-                                          (identifier)
-                                          (simple_value
-                                            (identifier))))
-                                      (statement
-                                        (assignment
-                                          (identifier)
-                                          (simple_value
-                                            (number)))))))))))))
-                    (statement
-                      (assignment
-                        (identifier)
-                        (map
-                          (statement
-                            (condition_statement))
-                          (statement
-                            (condition_statement))
-                          (statement
-                            (condition_statement
-                              (map
-                                (statement
-                                  (assignment
-                                    (identifier)
-                                    (simple_value
-                                      (identifier)))))))
-                          (statement
-                            (assignment
-                              (identifier)
-                              (map
-                                (statement
-                                  (assignment
-                                    (identifier)
-                                    (simple_value
-                                      (identifier))))
-                                (statement
-                                  (assignment
-                                    (identifier)
-                                    (simple_value
-                                      (identifier))))
-                                (comment)
                                 (statement
                                   (assignment
                                     (identifier)
@@ -9891,8 +9904,12 @@ adopt_technology_group_from_target = {
                                       (identifier))))
                                 (comment)
                                 (statement
-                                  (assignment
-                                    (identifier)
+                                  (simple_value
+                                    (identifier)))
+                                (statement
+                                  (condition_statement))
+                                (statement
+                                  (condition_statement
                                     (map
                                       (statement
                                         (assignment
@@ -9936,8 +9953,61 @@ adopt_technology_group_from_target = {
                                       (identifier))))
                                 (comment)
                                 (statement
+                                  (simple_value
+                                    (identifier)))
+                                (statement
+                                  (condition_statement))
+                                (statement
+                                  (condition_statement
+                                    (map
+                                      (statement
+                                        (assignment
+                                          (identifier)
+                                          (simple_value
+                                            (identifier))))
+                                      (statement
+                                        (assignment
+                                          (identifier)
+                                          (simple_value
+                                            (number)))))))))))))
+                    (statement
+                      (assignment
+                        (identifier)
+                        (map
+                          (statement
+                            (condition_statement))
+                          (statement
+                            (condition_statement))
+                          (statement
+                            (condition_statement
+                              (map
+                                (statement
                                   (assignment
                                     (identifier)
+                                    (simple_value
+                                      (identifier)))))))
+                          (statement
+                            (assignment
+                              (identifier)
+                              (map
+                                (statement
+                                  (assignment
+                                    (identifier)
+                                    (simple_value
+                                      (identifier))))
+                                (statement
+                                  (assignment
+                                    (identifier)
+                                    (simple_value
+                                      (identifier))))
+                                (comment)
+                                (statement
+                                  (simple_value
+                                    (identifier)))
+                                (statement
+                                  (condition_statement))
+                                (statement
+                                  (condition_statement
                                     (map
                                       (statement
                                         (assignment
@@ -10009,8 +10079,12 @@ adopt_technology_group_from_target = {
                                       (identifier))))
                                 (comment)
                                 (statement
-                                  (assignment
-                                    (identifier)
+                                  (simple_value
+                                    (identifier)))
+                                (statement
+                                  (condition_statement))
+                                (statement
+                                  (condition_statement
                                     (map
                                       (statement
                                         (assignment
@@ -10054,8 +10128,12 @@ adopt_technology_group_from_target = {
                                       (identifier))))
                                 (comment)
                                 (statement
-                                  (assignment
-                                    (identifier)
+                                  (simple_value
+                                    (identifier)))
+                                (statement
+                                  (condition_statement))
+                                (statement
+                                  (condition_statement
                                     (map
                                       (statement
                                         (assignment
@@ -10099,8 +10177,12 @@ adopt_technology_group_from_target = {
                                       (identifier))))
                                 (comment)
                                 (statement
-                                  (assignment
-                                    (identifier)
+                                  (simple_value
+                                    (identifier)))
+                                (statement
+                                  (condition_statement))
+                                (statement
+                                  (condition_statement
                                     (map
                                       (statement
                                         (assignment
@@ -10144,8 +10226,12 @@ adopt_technology_group_from_target = {
                                       (identifier))))
                                 (comment)
                                 (statement
-                                  (assignment
-                                    (identifier)
+                                  (simple_value
+                                    (identifier)))
+                                (statement
+                                  (condition_statement))
+                                (statement
+                                  (condition_statement
                                     (map
                                       (statement
                                         (assignment
@@ -10189,8 +10275,12 @@ adopt_technology_group_from_target = {
                                       (identifier))))
                                 (comment)
                                 (statement
-                                  (assignment
-                                    (identifier)
+                                  (simple_value
+                                    (identifier)))
+                                (statement
+                                  (condition_statement))
+                                (statement
+                                  (condition_statement
                                     (map
                                       (statement
                                         (assignment
@@ -10229,8 +10319,12 @@ adopt_technology_group_from_target = {
                                       (identifier))))
                                 (comment)
                                 (statement
-                                  (assignment
-                                    (identifier)
+                                  (simple_value
+                                    (identifier)))
+                                (statement
+                                  (condition_statement))
+                                (statement
+                                  (condition_statement
                                     (map
                                       (statement
                                         (assignment
@@ -10267,366 +10361,6 @@ adopt_technology_group_from_target = {
                                     (identifier)
                                     (simple_value
                                       (identifier))))
-                                (statement
-                                  (assignment
-                                    (identifier)
-                                    (simple_value
-                                      (identifier))))
-                                (statement
-                                  (assignment
-                                    (identifier)
-                                    (map
-                                      (statement
-                                        (assignment
-                                          (identifier)
-                                          (simple_value
-                                            (number)))))))))))))
-                    (statement
-                      (assignment
-                        (identifier)
-                        (map
-                          (statement
-                            (condition_statement))
-                          (statement
-                            (condition_statement))
-                          (statement
-                            (condition_statement
-                              (map
-                                (statement
-                                  (assignment
-                                    (identifier)
-                                    (simple_value
-                                      (identifier)))))))
-                          (statement
-                            (assignment
-                              (identifier)
-                              (map
-                                (statement
-                                  (assignment
-                                    (identifier)
-                                    (simple_value
-                                      (identifier))))
-                                (statement
-                                  (assignment
-                                    (identifier)
-                                    (simple_value
-                                      (identifier))))
-                                (comment)
-                                (statement
-                                  (assignment
-                                    (identifier)
-                                    (map
-                                      (statement
-                                        (assignment
-                                          (identifier)
-                                          (simple_value
-                                            (number)))))))))))))
-                    (statement
-                      (assignment
-                        (identifier)
-                        (map
-                          (statement
-                            (condition_statement))
-                          (statement
-                            (condition_statement))
-                          (statement
-                            (condition_statement
-                              (map
-                                (statement
-                                  (assignment
-                                    (identifier)
-                                    (simple_value
-                                      (identifier)))))))
-                          (statement
-                            (assignment
-                              (identifier)
-                              (map
-                                (statement
-                                  (assignment
-                                    (identifier)
-                                    (simple_value
-                                      (identifier))))
-                                (statement
-                                  (assignment
-                                    (identifier)
-                                    (simple_value
-                                      (identifier))))
-                                (comment)
-                                (statement
-                                  (assignment
-                                    (identifier)
-                                    (map
-                                      (statement
-                                        (assignment
-                                          (identifier)
-                                          (simple_value
-                                            (number)))))))))))))
-                    (statement
-                      (assignment
-                        (identifier)
-                        (map
-                          (statement
-                            (condition_statement))
-                          (statement
-                            (condition_statement))
-                          (statement
-                            (condition_statement
-                              (map
-                                (statement
-                                  (assignment
-                                    (identifier)
-                                    (simple_value
-                                      (identifier)))))))
-                          (statement
-                            (assignment
-                              (identifier)
-                              (map
-                                (statement
-                                  (assignment
-                                    (identifier)
-                                    (simple_value
-                                      (identifier))))
-                                (statement
-                                  (assignment
-                                    (identifier)
-                                    (simple_value
-                                      (identifier))))
-                                (comment)
-                                (statement
-                                  (assignment
-                                    (identifier)
-                                    (map
-                                      (statement
-                                        (assignment
-                                          (identifier)
-                                          (simple_value
-                                            (number)))))))))))))
-                    (statement
-                      (assignment
-                        (identifier)
-                        (map
-                          (statement
-                            (condition_statement))
-                          (statement
-                            (condition_statement))
-                          (statement
-                            (condition_statement
-                              (map
-                                (statement
-                                  (assignment
-                                    (identifier)
-                                    (simple_value
-                                      (identifier)))))))
-                          (statement
-                            (assignment
-                              (identifier)
-                              (map
-                                (statement
-                                  (assignment
-                                    (identifier)
-                                    (simple_value
-                                      (identifier))))
-                                (statement
-                                  (assignment
-                                    (identifier)
-                                    (simple_value
-                                      (identifier))))
-                                (comment)
-                                (statement
-                                  (assignment
-                                    (identifier)
-                                    (map
-                                      (statement
-                                        (assignment
-                                          (identifier)
-                                          (simple_value
-                                            (number)))))))))))))
-                    (statement
-                      (assignment
-                        (identifier)
-                        (map
-                          (statement
-                            (condition_statement))
-                          (statement
-                            (condition_statement))
-                          (statement
-                            (condition_statement
-                              (map
-                                (statement
-                                  (assignment
-                                    (identifier)
-                                    (simple_value
-                                      (identifier)))))))
-                          (statement
-                            (assignment
-                              (identifier)
-                              (map
-                                (statement
-                                  (assignment
-                                    (identifier)
-                                    (simple_value
-                                      (identifier))))
-                                (statement
-                                  (assignment
-                                    (identifier)
-                                    (simple_value
-                                      (identifier))))
-                                (comment)
-                                (statement
-                                  (assignment
-                                    (identifier)
-                                    (map
-                                      (statement
-                                        (assignment
-                                          (identifier)
-                                          (simple_value
-                                            (number)))))))))))))
-                    (statement
-                      (assignment
-                        (identifier)
-                        (map
-                          (statement
-                            (condition_statement))
-                          (statement
-                            (condition_statement))
-                          (statement
-                            (condition_statement
-                              (map
-                                (statement
-                                  (assignment
-                                    (identifier)
-                                    (simple_value
-                                      (identifier)))))))
-                          (statement
-                            (assignment
-                              (identifier)
-                              (map
-                                (statement
-                                  (assignment
-                                    (identifier)
-                                    (simple_value
-                                      (identifier))))
-                                (statement
-                                  (assignment
-                                    (identifier)
-                                    (simple_value
-                                      (identifier))))
-                                (comment)
-                                (statement
-                                  (assignment
-                                    (identifier)
-                                    (map
-                                      (statement
-                                        (assignment
-                                          (identifier)
-                                          (simple_value
-                                            (number)))))))))))))
-                    (statement
-                      (assignment
-                        (identifier)
-                        (map
-                          (statement
-                            (condition_statement))
-                          (statement
-                            (condition_statement))
-                          (statement
-                            (condition_statement
-                              (map
-                                (statement
-                                  (assignment
-                                    (identifier)
-                                    (simple_value
-                                      (identifier)))))))
-                          (statement
-                            (assignment
-                              (identifier)
-                              (map
-                                (statement
-                                  (assignment
-                                    (identifier)
-                                    (simple_value
-                                      (identifier))))
-                                (statement
-                                  (assignment
-                                    (identifier)
-                                    (simple_value
-                                      (identifier))))
-                                (comment)
-                                (statement
-                                  (assignment
-                                    (identifier)
-                                    (map
-                                      (statement
-                                        (assignment
-                                          (identifier)
-                                          (simple_value
-                                            (number)))))))))))))
-                    (statement
-                      (assignment
-                        (identifier)
-                        (map
-                          (statement
-                            (condition_statement))
-                          (statement
-                            (condition_statement))
-                          (statement
-                            (condition_statement
-                              (map
-                                (statement
-                                  (assignment
-                                    (identifier)
-                                    (simple_value
-                                      (identifier)))))))
-                          (statement
-                            (assignment
-                              (identifier)
-                              (map
-                                (statement
-                                  (assignment
-                                    (identifier)
-                                    (simple_value
-                                      (identifier))))
-                                (statement
-                                  (assignment
-                                    (identifier)
-                                    (simple_value
-                                      (identifier))))
-                                (comment)
-                                (statement
-                                  (assignment
-                                    (identifier)
-                                    (map
-                                      (statement
-                                        (assignment
-                                          (identifier)
-                                          (simple_value
-                                            (number)))))))))))))
-                    (statement
-                      (assignment
-                        (identifier)
-                        (map
-                          (statement
-                            (condition_statement))
-                          (statement
-                            (condition_statement))
-                          (statement
-                            (condition_statement
-                              (map
-                                (statement
-                                  (assignment
-                                    (identifier)
-                                    (simple_value
-                                      (identifier)))))))
-                          (statement
-                            (assignment
-                              (identifier)
-                              (map
-                                (statement
-                                  (assignment
-                                    (identifier)
-                                    (simple_value
-                                      (identifier))))
-                                (comment)
                                 (statement
                                   (assignment
                                     (identifier)
@@ -10673,6 +10407,361 @@ adopt_technology_group_from_target = {
                                       (identifier))))
                                 (comment)
                                 (statement
+                                  (simple_value
+                                    (identifier)))
+                                (statement
+                                  (condition_statement))
+                                (statement
+                                  (condition_statement
+                                    (map
+                                      (statement
+                                        (assignment
+                                          (identifier)
+                                          (simple_value
+                                            (number)))))))))))))
+                    (statement
+                      (assignment
+                        (identifier)
+                        (map
+                          (statement
+                            (condition_statement))
+                          (statement
+                            (condition_statement))
+                          (statement
+                            (condition_statement
+                              (map
+                                (statement
+                                  (assignment
+                                    (identifier)
+                                    (simple_value
+                                      (identifier)))))))
+                          (statement
+                            (assignment
+                              (identifier)
+                              (map
+                                (statement
+                                  (assignment
+                                    (identifier)
+                                    (simple_value
+                                      (identifier))))
+                                (statement
+                                  (assignment
+                                    (identifier)
+                                    (simple_value
+                                      (identifier))))
+                                (comment)
+                                (statement
+                                  (simple_value
+                                    (identifier)))
+                                (statement
+                                  (condition_statement))
+                                (statement
+                                  (condition_statement
+                                    (map
+                                      (statement
+                                        (assignment
+                                          (identifier)
+                                          (simple_value
+                                            (number)))))))))))))
+                    (statement
+                      (assignment
+                        (identifier)
+                        (map
+                          (statement
+                            (condition_statement))
+                          (statement
+                            (condition_statement))
+                          (statement
+                            (condition_statement
+                              (map
+                                (statement
+                                  (assignment
+                                    (identifier)
+                                    (simple_value
+                                      (identifier)))))))
+                          (statement
+                            (assignment
+                              (identifier)
+                              (map
+                                (statement
+                                  (assignment
+                                    (identifier)
+                                    (simple_value
+                                      (identifier))))
+                                (statement
+                                  (assignment
+                                    (identifier)
+                                    (simple_value
+                                      (identifier))))
+                                (comment)
+                                (statement
+                                  (simple_value
+                                    (identifier)))
+                                (statement
+                                  (condition_statement))
+                                (statement
+                                  (condition_statement
+                                    (map
+                                      (statement
+                                        (assignment
+                                          (identifier)
+                                          (simple_value
+                                            (number)))))))))))))
+                    (statement
+                      (assignment
+                        (identifier)
+                        (map
+                          (statement
+                            (condition_statement))
+                          (statement
+                            (condition_statement))
+                          (statement
+                            (condition_statement
+                              (map
+                                (statement
+                                  (assignment
+                                    (identifier)
+                                    (simple_value
+                                      (identifier)))))))
+                          (statement
+                            (assignment
+                              (identifier)
+                              (map
+                                (statement
+                                  (assignment
+                                    (identifier)
+                                    (simple_value
+                                      (identifier))))
+                                (statement
+                                  (assignment
+                                    (identifier)
+                                    (simple_value
+                                      (identifier))))
+                                (comment)
+                                (statement
+                                  (simple_value
+                                    (identifier)))
+                                (statement
+                                  (condition_statement))
+                                (statement
+                                  (condition_statement
+                                    (map
+                                      (statement
+                                        (assignment
+                                          (identifier)
+                                          (simple_value
+                                            (number)))))))))))))
+                    (statement
+                      (assignment
+                        (identifier)
+                        (map
+                          (statement
+                            (condition_statement))
+                          (statement
+                            (condition_statement))
+                          (statement
+                            (condition_statement
+                              (map
+                                (statement
+                                  (assignment
+                                    (identifier)
+                                    (simple_value
+                                      (identifier)))))))
+                          (statement
+                            (assignment
+                              (identifier)
+                              (map
+                                (statement
+                                  (assignment
+                                    (identifier)
+                                    (simple_value
+                                      (identifier))))
+                                (statement
+                                  (assignment
+                                    (identifier)
+                                    (simple_value
+                                      (identifier))))
+                                (comment)
+                                (statement
+                                  (simple_value
+                                    (identifier)))
+                                (statement
+                                  (condition_statement))
+                                (statement
+                                  (condition_statement
+                                    (map
+                                      (statement
+                                        (assignment
+                                          (identifier)
+                                          (simple_value
+                                            (number)))))))))))))
+                    (statement
+                      (assignment
+                        (identifier)
+                        (map
+                          (statement
+                            (condition_statement))
+                          (statement
+                            (condition_statement))
+                          (statement
+                            (condition_statement
+                              (map
+                                (statement
+                                  (assignment
+                                    (identifier)
+                                    (simple_value
+                                      (identifier)))))))
+                          (statement
+                            (assignment
+                              (identifier)
+                              (map
+                                (statement
+                                  (assignment
+                                    (identifier)
+                                    (simple_value
+                                      (identifier))))
+                                (statement
+                                  (assignment
+                                    (identifier)
+                                    (simple_value
+                                      (identifier))))
+                                (comment)
+                                (statement
+                                  (simple_value
+                                    (identifier)))
+                                (statement
+                                  (condition_statement))
+                                (statement
+                                  (condition_statement
+                                    (map
+                                      (statement
+                                        (assignment
+                                          (identifier)
+                                          (simple_value
+                                            (number)))))))))))))
+                    (statement
+                      (assignment
+                        (identifier)
+                        (map
+                          (statement
+                            (condition_statement))
+                          (statement
+                            (condition_statement))
+                          (statement
+                            (condition_statement
+                              (map
+                                (statement
+                                  (assignment
+                                    (identifier)
+                                    (simple_value
+                                      (identifier)))))))
+                          (statement
+                            (assignment
+                              (identifier)
+                              (map
+                                (statement
+                                  (assignment
+                                    (identifier)
+                                    (simple_value
+                                      (identifier))))
+                                (statement
+                                  (assignment
+                                    (identifier)
+                                    (simple_value
+                                      (identifier))))
+                                (comment)
+                                (statement
+                                  (simple_value
+                                    (identifier)))
+                                (statement
+                                  (condition_statement))
+                                (statement
+                                  (condition_statement
+                                    (map
+                                      (statement
+                                        (assignment
+                                          (identifier)
+                                          (simple_value
+                                            (number)))))))))))))
+                    (statement
+                      (assignment
+                        (identifier)
+                        (map
+                          (statement
+                            (condition_statement))
+                          (statement
+                            (condition_statement))
+                          (statement
+                            (condition_statement
+                              (map
+                                (statement
+                                  (assignment
+                                    (identifier)
+                                    (simple_value
+                                      (identifier)))))))
+                          (statement
+                            (assignment
+                              (identifier)
+                              (map
+                                (statement
+                                  (assignment
+                                    (identifier)
+                                    (simple_value
+                                      (identifier))))
+                                (statement
+                                  (assignment
+                                    (identifier)
+                                    (simple_value
+                                      (identifier))))
+                                (comment)
+                                (statement
+                                  (simple_value
+                                    (identifier)))
+                                (statement
+                                  (condition_statement))
+                                (statement
+                                  (condition_statement
+                                    (map
+                                      (statement
+                                        (assignment
+                                          (identifier)
+                                          (simple_value
+                                            (number)))))))))))))
+                    (statement
+                      (assignment
+                        (identifier)
+                        (map
+                          (statement
+                            (condition_statement))
+                          (statement
+                            (condition_statement))
+                          (statement
+                            (condition_statement
+                              (map
+                                (statement
+                                  (assignment
+                                    (identifier)
+                                    (simple_value
+                                      (identifier)))))))
+                          (statement
+                            (assignment
+                              (identifier)
+                              (map
+                                (statement
+                                  (assignment
+                                    (identifier)
+                                    (simple_value
+                                      (identifier))))
+                                (comment)
+                                (statement
+                                  (simple_value
+                                    (identifier)))
+                                (statement
+                                  (condition_statement))
+                                (statement
+                                  (simple_value
+                                    (identifier)))
+                                (statement
                                   (assignment
                                     (identifier)
                                     (map
@@ -10713,8 +10802,56 @@ adopt_technology_group_from_target = {
                                       (identifier))))
                                 (comment)
                                 (statement
+                                  (simple_value
+                                    (identifier)))
+                                (statement
+                                  (condition_statement))
+                                (statement
+                                  (condition_statement
+                                    (map
+                                      (statement
+                                        (assignment
+                                          (identifier)
+                                          (simple_value
+                                            (number)))))))))))))
+                    (statement
+                      (assignment
+                        (identifier)
+                        (map
+                          (statement
+                            (condition_statement))
+                          (statement
+                            (condition_statement))
+                          (statement
+                            (condition_statement
+                              (map
+                                (statement
                                   (assignment
                                     (identifier)
+                                    (simple_value
+                                      (identifier)))))))
+                          (statement
+                            (assignment
+                              (identifier)
+                              (map
+                                (statement
+                                  (assignment
+                                    (identifier)
+                                    (simple_value
+                                      (identifier))))
+                                (statement
+                                  (assignment
+                                    (identifier)
+                                    (simple_value
+                                      (identifier))))
+                                (comment)
+                                (statement
+                                  (simple_value
+                                    (identifier)))
+                                (statement
+                                  (condition_statement))
+                                (statement
+                                  (condition_statement
                                     (map
                                       (statement
                                         (assignment
@@ -10758,8 +10895,12 @@ adopt_technology_group_from_target = {
                                       (identifier))))
                                 (comment)
                                 (statement
-                                  (assignment
-                                    (identifier)
+                                  (simple_value
+                                    (identifier)))
+                                (statement
+                                  (condition_statement))
+                                (statement
+                                  (condition_statement
                                     (map
                                       (statement
                                         (assignment
@@ -10798,8 +10939,12 @@ adopt_technology_group_from_target = {
                                       (identifier))))
                                 (comment)
                                 (statement
-                                  (assignment
-                                    (identifier)
+                                  (simple_value
+                                    (identifier)))
+                                (statement
+                                  (condition_statement))
+                                (statement
+                                  (condition_statement
                                     (map
                                       (statement
                                         (assignment
@@ -10843,8 +10988,12 @@ adopt_technology_group_from_target = {
                                       (identifier))))
                                 (comment)
                                 (statement
-                                  (assignment
-                                    (identifier)
+                                  (simple_value
+                                    (identifier)))
+                                (statement
+                                  (condition_statement))
+                                (statement
+                                  (condition_statement
                                     (map
                                       (statement
                                         (assignment
@@ -11090,8 +11239,12 @@ adopt_technology_group_from_target = {
   (comment)
   (comment)
   (statement
-    (assignment
-      (identifier)
+    (simple_value
+      (identifier)))
+  (statement
+    (condition_statement))
+  (statement
+    (condition_statement
       (map
         (statement
           (condition_statement))
@@ -11134,13 +11287,15 @@ adopt_technology_group_from_target = {
                                 (statement
                                   (assignment
                                     (identifier)
-                                    (variable
+                                    (variable_embedded_identifier
+                                      (variable
+                                        (identifier))
                                       (identifier))))
                                 (statement
-                                  (assignment
-                                    (identifier)
-                                    (simple_value
-                                      (number))))))))))
+                                  (condition_statement))
+                                (statement
+                                  (simple_value
+                                    (number)))))))))
                     (statement
                       (assignment
                         (identifier)
@@ -11148,13 +11303,15 @@ adopt_technology_group_from_target = {
                           (statement
                             (assignment
                               (identifier)
-                              (variable
+                              (variable_embedded_identifier
+                                (variable
+                                  (identifier))
                                 (identifier))))
                           (statement
-                            (assignment
-                              (identifier)
-                              (simple_value
-                                (number))))))))))
+                            (condition_statement))
+                          (statement
+                            (simple_value
+                              (number)))))))))
               (statement
                 (assignment
                   (identifier)
@@ -11212,8 +11369,12 @@ adopt_technology_group_from_target = {
   (comment)
   (comment)
   (statement
-    (assignment
-      (identifier)
+    (simple_value
+      (identifier)))
+  (statement
+    (condition_statement))
+  (statement
+    (condition_statement
       (map
         (statement
           (condition_statement))
@@ -11255,13 +11416,15 @@ adopt_technology_group_from_target = {
                                 (statement
                                   (assignment
                                     (identifier)
-                                    (variable
+                                    (variable_embedded_identifier
+                                      (variable
+                                        (identifier))
                                       (identifier))))
                                 (statement
-                                  (assignment
-                                    (identifier)
-                                    (simple_value
-                                      (number))))))))))
+                                  (condition_statement))
+                                (statement
+                                  (simple_value
+                                    (number)))))))))
                     (statement
                       (assignment
                         (identifier)
@@ -11314,13 +11477,15 @@ adopt_technology_group_from_target = {
                                 (statement
                                   (assignment
                                     (identifier)
-                                    (variable
+                                    (variable_embedded_identifier
+                                      (variable
+                                        (identifier))
                                       (identifier))))
                                 (statement
-                                  (assignment
-                                    (identifier)
-                                    (simple_value
-                                      (number)))))))
+                                  (condition_statement))
+                                (statement
+                                  (simple_value
+                                    (number))))))
                           (statement
                             (logical_statement
                               (map
@@ -11331,13 +11496,15 @@ adopt_technology_group_from_target = {
                                       (statement
                                         (assignment
                                           (identifier)
-                                          (variable
+                                          (variable_embedded_identifier
+                                            (variable
+                                              (identifier))
                                             (identifier))))
                                       (statement
-                                        (assignment
-                                          (identifier)
-                                          (simple_value
-                                            (number)))))))))))))
+                                        (condition_statement))
+                                      (statement
+                                        (simple_value
+                                          (number))))))))))))
                     (statement
                       (assignment
                         (identifier)
@@ -11345,13 +11512,15 @@ adopt_technology_group_from_target = {
                           (statement
                             (assignment
                               (identifier)
-                              (variable
+                              (variable_embedded_identifier
+                                (variable
+                                  (identifier))
                                 (identifier))))
                           (statement
-                            (assignment
-                              (identifier)
-                              (simple_value
-                                (number)))))))
+                            (condition_statement))
+                          (statement
+                            (simple_value
+                              (number))))))
                     (statement
                       (assignment
                         (identifier)
@@ -11405,13 +11574,15 @@ adopt_technology_group_from_target = {
                                 (statement
                                   (assignment
                                     (identifier)
-                                    (variable
+                                    (variable_embedded_identifier
+                                      (variable
+                                        (identifier))
                                       (identifier))))
                                 (statement
-                                  (assignment
-                                    (identifier)
-                                    (simple_value
-                                      (number)))))))
+                                  (condition_statement))
+                                (statement
+                                  (simple_value
+                                    (number))))))
                           (statement
                             (logical_statement
                               (map
@@ -11422,13 +11593,15 @@ adopt_technology_group_from_target = {
                                       (statement
                                         (assignment
                                           (identifier)
-                                          (variable
+                                          (variable_embedded_identifier
+                                            (variable
+                                              (identifier))
                                             (identifier))))
                                       (statement
-                                        (assignment
-                                          (identifier)
-                                          (simple_value
-                                            (number)))))))))))))
+                                        (condition_statement))
+                                      (statement
+                                        (simple_value
+                                          (number))))))))))))
                     (statement
                       (assignment
                         (identifier)
@@ -11436,13 +11609,15 @@ adopt_technology_group_from_target = {
                           (statement
                             (assignment
                               (identifier)
-                              (variable
+                              (variable_embedded_identifier
+                                (variable
+                                  (identifier))
                                 (identifier))))
                           (statement
-                            (assignment
-                              (identifier)
-                              (simple_value
-                                (number)))))))))))))
+                            (condition_statement))
+                          (statement
+                            (simple_value
+                              (number))))))))))))
         (statement
           (assignment
             (identifier)
@@ -11465,8 +11640,12 @@ adopt_technology_group_from_target = {
   (comment)
   (comment)
   (statement
-    (assignment
-      (identifier)
+    (simple_value
+      (identifier)))
+  (statement
+    (condition_statement))
+  (statement
+    (condition_statement
       (map
         (statement
           (condition_statement))
@@ -11508,13 +11687,15 @@ adopt_technology_group_from_target = {
                                 (statement
                                   (assignment
                                     (identifier)
-                                    (variable
+                                    (variable_embedded_identifier
+                                      (variable
+                                        (identifier))
                                       (identifier))))
                                 (statement
-                                  (assignment
-                                    (identifier)
-                                    (simple_value
-                                      (number))))))))))
+                                  (condition_statement))
+                                (statement
+                                  (simple_value
+                                    (number)))))))))
                     (statement
                       (assignment
                         (identifier)
@@ -11567,13 +11748,15 @@ adopt_technology_group_from_target = {
                                 (statement
                                   (assignment
                                     (identifier)
-                                    (variable
+                                    (variable_embedded_identifier
+                                      (variable
+                                        (identifier))
                                       (identifier))))
                                 (statement
-                                  (assignment
-                                    (identifier)
-                                    (simple_value
-                                      (number)))))))
+                                  (condition_statement))
+                                (statement
+                                  (simple_value
+                                    (number))))))
                           (statement
                             (logical_statement
                               (map
@@ -11584,13 +11767,15 @@ adopt_technology_group_from_target = {
                                       (statement
                                         (assignment
                                           (identifier)
-                                          (variable
+                                          (variable_embedded_identifier
+                                            (variable
+                                              (identifier))
                                             (identifier))))
                                       (statement
-                                        (assignment
-                                          (identifier)
-                                          (simple_value
-                                            (number)))))))))))))
+                                        (condition_statement))
+                                      (statement
+                                        (simple_value
+                                          (number))))))))))))
                     (statement
                       (assignment
                         (identifier)
@@ -11598,13 +11783,15 @@ adopt_technology_group_from_target = {
                           (statement
                             (assignment
                               (identifier)
-                              (variable
+                              (variable_embedded_identifier
+                                (variable
+                                  (identifier))
                                 (identifier))))
                           (statement
-                            (assignment
-                              (identifier)
-                              (simple_value
-                                (number)))))))
+                            (condition_statement))
+                          (statement
+                            (simple_value
+                              (number))))))
                     (statement
                       (assignment
                         (identifier)
@@ -11657,13 +11844,15 @@ adopt_technology_group_from_target = {
                                 (statement
                                   (assignment
                                     (identifier)
-                                    (variable
+                                    (variable_embedded_identifier
+                                      (variable
+                                        (identifier))
                                       (identifier))))
                                 (statement
-                                  (assignment
-                                    (identifier)
-                                    (simple_value
-                                      (number)))))))
+                                  (condition_statement))
+                                (statement
+                                  (simple_value
+                                    (number))))))
                           (statement
                             (logical_statement
                               (map
@@ -11674,13 +11863,15 @@ adopt_technology_group_from_target = {
                                       (statement
                                         (assignment
                                           (identifier)
-                                          (variable
+                                          (variable_embedded_identifier
+                                            (variable
+                                              (identifier))
                                             (identifier))))
                                       (statement
-                                        (assignment
-                                          (identifier)
-                                          (simple_value
-                                            (number)))))))))))))
+                                        (condition_statement))
+                                      (statement
+                                        (simple_value
+                                          (number))))))))))))
                     (statement
                       (assignment
                         (identifier)
@@ -11688,13 +11879,15 @@ adopt_technology_group_from_target = {
                           (statement
                             (assignment
                               (identifier)
-                              (variable
+                              (variable_embedded_identifier
+                                (variable
+                                  (identifier))
                                 (identifier))))
                           (statement
-                            (assignment
-                              (identifier)
-                              (simple_value
-                                (number)))))))
+                            (condition_statement))
+                          (statement
+                            (simple_value
+                              (number))))))
                     (statement
                       (assignment
                         (identifier)
@@ -11748,13 +11941,15 @@ adopt_technology_group_from_target = {
                                 (statement
                                   (assignment
                                     (identifier)
-                                    (variable
+                                    (variable_embedded_identifier
+                                      (variable
+                                        (identifier))
                                       (identifier))))
                                 (statement
-                                  (assignment
-                                    (identifier)
-                                    (simple_value
-                                      (number)))))))
+                                  (condition_statement))
+                                (statement
+                                  (simple_value
+                                    (number))))))
                           (statement
                             (logical_statement
                               (map
@@ -11765,13 +11960,15 @@ adopt_technology_group_from_target = {
                                       (statement
                                         (assignment
                                           (identifier)
-                                          (variable
+                                          (variable_embedded_identifier
+                                            (variable
+                                              (identifier))
                                             (identifier))))
                                       (statement
-                                        (assignment
-                                          (identifier)
-                                          (simple_value
-                                            (number)))))))))))))
+                                        (condition_statement))
+                                      (statement
+                                        (simple_value
+                                          (number))))))))))))
                     (statement
                       (assignment
                         (identifier)
@@ -11779,13 +11976,15 @@ adopt_technology_group_from_target = {
                           (statement
                             (assignment
                               (identifier)
-                              (variable
+                              (variable_embedded_identifier
+                                (variable
+                                  (identifier))
                                 (identifier))))
                           (statement
-                            (assignment
-                              (identifier)
-                              (simple_value
-                                (number)))))))))))))
+                            (condition_statement))
+                          (statement
+                            (simple_value
+                              (number))))))))))))
         (statement
           (assignment
             (identifier)
@@ -11807,8 +12006,12 @@ adopt_technology_group_from_target = {
                     (number))))))))))
   (comment)
   (statement
-    (assignment
-      (identifier)
+    (simple_value
+      (identifier)))
+  (statement
+    (condition_statement))
+  (statement
+    (condition_statement
       (map
         (statement
           (condition_statement))
@@ -11945,8 +12148,12 @@ adopt_technology_group_from_target = {
                     (identifier))))))))))
   (comment)
   (statement
-    (assignment
-      (identifier)
+    (simple_value
+      (identifier)))
+  (statement
+    (condition_statement))
+  (statement
+    (condition_statement
       (map
         (statement
           (condition_statement))
@@ -12037,8 +12244,12 @@ adopt_technology_group_from_target = {
                           (number)))))))))))))
   (comment)
   (statement
-    (assignment
-      (identifier)
+    (simple_value
+      (identifier)))
+  (statement
+    (condition_statement))
+  (statement
+    (condition_statement
       (map
         (statement
           (condition_statement))
@@ -12160,8 +12371,12 @@ adopt_technology_group_from_target = {
                     (identifier))))))))))
   (comment)
   (statement
-    (assignment
-      (identifier)
+    (simple_value
+      (identifier)))
+  (statement
+    (condition_statement))
+  (statement
+    (condition_statement
       (map
         (statement
           (condition_statement))
@@ -12417,8 +12632,12 @@ adopt_technology_group_from_target = {
                     (number))))))))))
   (comment)
   (statement
-    (assignment
-      (identifier)
+    (simple_value
+      (identifier)))
+  (statement
+    (condition_statement))
+  (statement
+    (condition_statement
       (map
         (statement
           (assignment
@@ -12486,8 +12705,12 @@ adopt_technology_group_from_target = {
                                 (number))))))))))))))))
   (comment)
   (statement
-    (assignment
-      (identifier)
+    (simple_value
+      (identifier)))
+  (statement
+    (condition_statement))
+  (statement
+    (condition_statement
       (map
         (statement
           (macro_map
@@ -12499,8 +12722,12 @@ adopt_technology_group_from_target = {
                   (identifier))))))
         (comment)
         (statement
-          (assignment
-            (identifier)
+          (simple_value
+            (identifier)))
+        (statement
+          (condition_statement))
+        (statement
+          (condition_statement
             (map
               (statement
                 (assignment
@@ -12648,8 +12875,12 @@ adopt_technology_group_from_target = {
                                 (number))))))))))))))))
   (comment)
   (statement
-    (assignment
-      (identifier)
+    (simple_value
+      (identifier)))
+  (statement
+    (condition_statement))
+  (statement
+    (condition_statement
       (map
         (statement
           (condition_statement))
@@ -12896,8 +13127,12 @@ adopt_technology_group_from_target = {
   (comment)
   (comment)
   (statement
-    (assignment
-      (identifier)
+    (simple_value
+      (identifier)))
+  (statement
+    (condition_statement))
+  (statement
+    (condition_statement
       (map
         (statement
           (assignment
@@ -12995,8 +13230,12 @@ adopt_technology_group_from_target = {
                                       (identifier)))))))))))))))))))
   (comment)
   (statement
-    (assignment
-      (identifier)
+    (simple_value
+      (identifier)))
+  (statement
+    (condition_statement))
+  (statement
+    (condition_statement
       (map
         (statement
           (assignment
@@ -13078,8 +13317,12 @@ adopt_technology_group_from_target = {
                                 (identifier))))))))))))))))
   (comment)
   (statement
-    (assignment
-      (identifier)
+    (simple_value
+      (identifier)))
+  (statement
+    (condition_statement))
+  (statement
+    (condition_statement
       (map
         (statement
           (assignment
@@ -13161,8 +13404,12 @@ adopt_technology_group_from_target = {
                                 (identifier))))))))))))))))
   (comment)
   (statement
-    (assignment
-      (identifier)
+    (simple_value
+      (identifier)))
+  (statement
+    (condition_statement))
+  (statement
+    (condition_statement
       (map
         (statement
           (assignment
@@ -13199,8 +13446,12 @@ adopt_technology_group_from_target = {
   (comment)
   (comment)
   (statement
-    (assignment
-      (identifier)
+    (simple_value
+      (identifier)))
+  (statement
+    (condition_statement))
+  (statement
+    (condition_statement
       (map
         (comment)
         (statement
@@ -13230,13 +13481,15 @@ adopt_technology_group_from_target = {
                                       (statement
                                         (assignment
                                           (identifier)
-                                          (variable
+                                          (variable_embedded_identifier
+                                            (variable
+                                              (identifier))
                                             (identifier))))
                                       (statement
-                                        (assignment
-                                          (identifier)
-                                          (simple_value
-                                            (number))))))))))
+                                        (condition_statement))
+                                      (statement
+                                        (simple_value
+                                          (number)))))))))
                           (statement
                             (assignment
                               (variable
@@ -13259,13 +13512,15 @@ adopt_technology_group_from_target = {
                                 (statement
                                   (assignment
                                     (identifier)
-                                    (variable
+                                    (variable_embedded_identifier
+                                      (variable
+                                        (identifier))
                                       (identifier))))
                                 (statement
-                                  (assignment
-                                    (identifier)
-                                    (simple_value
-                                      (number))))))))))
+                                  (condition_statement))
+                                (statement
+                                  (simple_value
+                                    (number)))))))))
                     (statement
                       (assignment
                         (identifier)
@@ -13273,13 +13528,15 @@ adopt_technology_group_from_target = {
                           (statement
                             (assignment
                               (identifier)
-                              (variable
+                              (variable_embedded_identifier
+                                (variable
+                                  (identifier))
                                 (identifier))))
                           (statement
-                            (assignment
-                              (identifier)
-                              (simple_value
-                                (number)))))))
+                            (condition_statement))
+                          (statement
+                            (simple_value
+                              (number))))))
                     (statement
                       (assignment
                         (identifier)
@@ -13298,13 +13555,15 @@ adopt_technology_group_from_target = {
                                       (statement
                                         (assignment
                                           (identifier)
-                                          (variable
+                                          (variable_embedded_identifier
+                                            (variable
+                                              (identifier))
                                             (identifier))))
                                       (statement
-                                        (assignment
-                                          (identifier)
-                                          (simple_value
-                                            (number))))))))))
+                                        (condition_statement))
+                                      (statement
+                                        (simple_value
+                                          (number)))))))))
                           (statement
                             (assignment
                               (variable
@@ -13327,13 +13586,15 @@ adopt_technology_group_from_target = {
                                 (statement
                                   (assignment
                                     (identifier)
-                                    (variable
+                                    (variable_embedded_identifier
+                                      (variable
+                                        (identifier))
                                       (identifier))))
                                 (statement
-                                  (assignment
-                                    (identifier)
-                                    (simple_value
-                                      (number))))))))))))))))
+                                  (condition_statement))
+                                (statement
+                                  (simple_value
+                                    (number)))))))))))))))
         (statement
           (macro_map
             (identifier)
@@ -13344,8 +13605,12 @@ adopt_technology_group_from_target = {
                   (identifier)))))))))
   (comment)
   (statement
-    (assignment
-      (identifier)
+    (simple_value
+      (identifier)))
+  (statement
+    (condition_statement))
+  (statement
+    (condition_statement
       (map
         (statement
           (assignment
@@ -13368,8 +13633,12 @@ adopt_technology_group_from_target = {
                     (number))))))))))
   (comment)
   (statement
-    (assignment
-      (identifier)
+    (simple_value
+      (identifier)))
+  (statement
+    (condition_statement))
+  (statement
+    (condition_statement
       (map
         (statement
           (assignment
@@ -14002,8 +14271,12 @@ adopt_technology_group_from_target = {
                                             (identifier))))))))))))))))))))))
   (comment)
   (statement
-    (assignment
-      (identifier)
+    (simple_value
+      (identifier)))
+  (statement
+    (condition_statement))
+  (statement
+    (condition_statement
       (map
         (statement
           (assignment
@@ -14520,8 +14793,12 @@ adopt_technology_group_from_target = {
                                 (identifier))))))))))))))))
   (comment)
   (statement
-    (assignment
-      (identifier)
+    (simple_value
+      (identifier)))
+  (statement
+    (condition_statement))
+  (statement
+    (condition_statement
       (map
         (statement
           (assignment
@@ -14539,8 +14816,12 @@ adopt_technology_group_from_target = {
                     (identifier))))))))))
   (comment)
   (statement
-    (assignment
-      (identifier)
+    (simple_value
+      (identifier)))
+  (statement
+    (condition_statement))
+  (statement
+    (condition_statement
       (map
         (statement
           (condition_statement))
@@ -14601,8 +14882,12 @@ adopt_technology_group_from_target = {
                             (identifier))))))))))))))
   (comment)
   (statement
-    (assignment
-      (identifier)
+    (simple_value
+      (identifier)))
+  (statement
+    (condition_statement))
+  (statement
+    (condition_statement
       (map
         (statement
           (condition_statement))
@@ -14693,8 +14978,12 @@ adopt_technology_group_from_target = {
                             (identifier))))))))))))))
   (comment)
   (statement
-    (assignment
-      (identifier)
+    (simple_value
+      (identifier)))
+  (statement
+    (condition_statement))
+  (statement
+    (condition_statement
       (map
         (statement
           (condition_statement))
@@ -14784,8 +15073,12 @@ adopt_technology_group_from_target = {
                             (identifier))))))))))))))
   (comment)
   (statement
-    (assignment
-      (identifier)
+    (simple_value
+      (identifier)))
+  (statement
+    (condition_statement))
+  (statement
+    (condition_statement
       (map
         (statement
           (condition_statement))
@@ -15027,8 +15320,12 @@ adopt_technology_group_from_target = {
                                       (number)))))))))))))))))))
   (comment)
   (statement
-    (assignment
-      (identifier)
+    (simple_value
+      (identifier)))
+  (statement
+    (condition_statement))
+  (statement
+    (condition_statement
       (map
         (statement
           (macro_map
@@ -15520,8 +15817,12 @@ adopt_technology_group_from_target = {
                         (identifier))))))))))))
   (comment)
   (statement
-    (assignment
-      (identifier)
+    (simple_value
+      (identifier)))
+  (statement
+    (condition_statement))
+  (statement
+    (condition_statement
       (map
         (statement
           (macro_map
@@ -15858,8 +16159,12 @@ adopt_technology_group_from_target = {
                         (identifier))))))))))))
   (comment)
   (statement
-    (assignment
-      (identifier)
+    (simple_value
+      (identifier)))
+  (statement
+    (condition_statement))
+  (statement
+    (condition_statement
       (map
         (statement
           (assignment
@@ -16100,8 +16405,12 @@ adopt_technology_group_from_target = {
                   (identifier)))))))))
   (comment)
   (statement
-    (assignment
-      (identifier)
+    (simple_value
+      (identifier)))
+  (statement
+    (condition_statement))
+  (statement
+    (condition_statement
       (map
         (statement
           (assignment
@@ -16146,16 +16455,16 @@ adopt_technology_group_from_target = {
                     (statement
                       (assignment
                         (identifier)
-                        (simple_value
-                          (identifier))))
-                    (statement
-                      (assignment
                         (variable_embedded_identifier
+                          (identifier)
                           (variable
                             (identifier))
-                          (identifier))
-                        (simple_value
-                          (number)))))))
+                          (identifier))))
+                    (statement
+                      (condition_statement))
+                    (statement
+                      (simple_value
+                        (number))))))
               (statement
                 (condition_statement))
               (statement
@@ -16182,16 +16491,16 @@ adopt_technology_group_from_target = {
                           (statement
                             (assignment
                               (identifier)
-                              (simple_value
-                                (identifier))))
-                          (statement
-                            (assignment
                               (variable_embedded_identifier
+                                (identifier)
                                 (variable
                                   (identifier))
-                                (identifier))
-                              (simple_value
-                                (number))))
+                                (identifier))))
+                          (statement
+                            (condition_statement))
+                          (statement
+                            (simple_value
+                              (number)))
                           (statement
                             (assignment
                               (identifier)
@@ -16199,8 +16508,12 @@ adopt_technology_group_from_target = {
                                 (identifier))))))))))))))))
   (comment)
   (statement
-    (assignment
-      (identifier)
+    (simple_value
+      (identifier)))
+  (statement
+    (condition_statement))
+  (statement
+    (condition_statement
       (map
         (statement
           (assignment
@@ -16540,8 +16853,12 @@ adopt_technology_group_from_target = {
                                 (identifier))))))))))))))))
   (comment)
   (statement
-    (assignment
-      (identifier)
+    (simple_value
+      (identifier)))
+  (statement
+    (condition_statement))
+  (statement
+    (condition_statement
       (map
         (statement
           (assignment
@@ -16711,8 +17028,12 @@ adopt_technology_group_from_target = {
                                 (identifier))))))))))))))))
   (comment)
   (statement
-    (assignment
-      (identifier)
+    (simple_value
+      (identifier)))
+  (statement
+    (condition_statement))
+  (statement
+    (condition_statement
       (map
         (statement
           (condition_statement))
@@ -17159,8 +17480,12 @@ adopt_technology_group_from_target = {
                                 (number))))))))))))))))
   (comment)
   (statement
-    (assignment
-      (identifier)
+    (simple_value
+      (identifier)))
+  (statement
+    (condition_statement))
+  (statement
+    (condition_statement
       (map
         (statement
           (condition_statement))
@@ -18816,8 +19141,12 @@ adopt_technology_group_from_target = {
                     (identifier))))))))))
   (comment)
   (statement
-    (assignment
-      (identifier)
+    (simple_value
+      (identifier)))
+  (statement
+    (condition_statement))
+  (statement
+    (condition_statement
       (map
         (statement
           (macro_map
@@ -18963,8 +19292,12 @@ adopt_technology_group_from_target = {
   (comment)
   (comment)
   (statement
-    (assignment
-      (identifier)
+    (simple_value
+      (identifier)))
+  (statement
+    (condition_statement))
+  (statement
+    (condition_statement
       (map
         (statement
           (macro_map
@@ -18985,18 +19318,24 @@ adopt_technology_group_from_target = {
                     (statement
                       (assignment
                         (identifier)
-                        (variable
+                        (variable_embedded_identifier
+                          (variable
+                            (identifier))
                           (identifier))))
                     (statement
-                      (assignment
-                        (identifier)
-                        (simple_value
-                          (string)))))))))))))
+                      (condition_statement))
+                    (statement
+                      (simple_value
+                        (string))))))))))))
   (comment)
   (comment)
   (statement
-    (assignment
-      (identifier)
+    (simple_value
+      (identifier)))
+  (statement
+    (condition_statement))
+  (statement
+    (condition_statement
       (map
         (statement
           (macro_map
@@ -19022,13 +19361,15 @@ adopt_technology_group_from_target = {
                           (statement
                             (assignment
                               (identifier)
-                              (variable
+                              (variable_embedded_identifier
+                                (variable
+                                  (identifier))
                                 (identifier))))
                           (statement
-                            (assignment
-                              (identifier)
-                              (simple_value
-                                (string))))))))))))))))
+                            (condition_statement))
+                          (statement
+                            (simple_value
+                              (string)))))))))))))))
   (comment)
   (comment)
   (comment)
@@ -19046,8 +19387,12 @@ adopt_technology_group_from_target = {
   (comment)
   (comment)
   (statement
-    (assignment
-      (identifier)
+    (simple_value
+      (identifier)))
+  (statement
+    (condition_statement))
+  (statement
+    (condition_statement
       (map
         (statement
           (condition_statement))
@@ -19127,8 +19472,12 @@ adopt_technology_group_from_target = {
   (comment)
   (comment)
   (statement
-    (assignment
-      (identifier)
+    (simple_value
+      (identifier)))
+  (statement
+    (condition_statement))
+  (statement
+    (condition_statement
       (map
         (statement
           (assignment
@@ -19163,16 +19512,16 @@ adopt_technology_group_from_target = {
                         (statement
                           (assignment
                             (identifier)
-                            (simple_value
-                              (identifier))))
-                        (statement
-                          (assignment
                             (variable_embedded_identifier
+                              (identifier)
                               (variable
                                 (identifier))
-                              (identifier))
-                            (simple_value
-                              (number))))
+                              (identifier))))
+                        (statement
+                          (condition_statement))
+                        (statement
+                          (simple_value
+                            (number)))
                         (statement
                           (assignment
                             (identifier)
@@ -19896,8 +20245,12 @@ adopt_technology_group_from_target = {
                   (string)))))))))
   (comment)
   (statement
-    (assignment
-      (identifier)
+    (simple_value
+      (identifier)))
+  (statement
+    (condition_statement))
+  (statement
+    (condition_statement
       (map
         (statement
           (condition_statement))
@@ -19995,8 +20348,12 @@ adopt_technology_group_from_target = {
                         (identifier))))))))))))
   (comment)
   (statement
-    (assignment
-      (identifier)
+    (simple_value
+      (identifier)))
+  (statement
+    (condition_statement))
+  (statement
+    (condition_statement
       (map
         (statement
           (assignment
@@ -21140,8 +21497,12 @@ adopt_technology_group_from_target = {
   (comment)
   (comment)
   (statement
-    (assignment
-      (identifier)
+    (simple_value
+      (identifier)))
+  (statement
+    (condition_statement))
+  (statement
+    (condition_statement
       (map
         (statement
           (condition_statement))
@@ -22280,8 +22641,12 @@ adopt_technology_group_from_target = {
                           (identifier)))))))))))))
   (comment)
   (statement
-    (assignment
-      (identifier)
+    (simple_value
+      (identifier)))
+  (statement
+    (condition_statement))
+  (statement
+    (condition_statement
       (map
         (statement
           (assignment
@@ -26286,8 +26651,12 @@ adopt_technology_group_from_target = {
   (comment)
   (comment)
   (statement
-    (assignment
-      (identifier)
+    (simple_value
+      (identifier)))
+  (statement
+    (condition_statement))
+  (statement
+    (condition_statement
       (map
         (statement
           (assignment
@@ -26472,8 +26841,12 @@ adopt_technology_group_from_target = {
   (comment)
   (comment)
   (statement
-    (assignment
-      (identifier)
+    (simple_value
+      (identifier)))
+  (statement
+    (condition_statement))
+  (statement
+    (condition_statement
       (map
         (statement
           (condition_statement))
@@ -26687,8 +27060,12 @@ adopt_technology_group_from_target = {
               (identifier)))))))
   (comment)
   (statement
-    (assignment
-      (identifier)
+    (simple_value
+      (identifier)))
+  (statement
+    (condition_statement))
+  (statement
+    (condition_statement
       (map
         (statement
           (condition_statement))
@@ -27087,8 +27464,12 @@ adopt_technology_group_from_target = {
               (identifier)))))))
   (comment)
   (statement
-    (assignment
-      (identifier)
+    (simple_value
+      (identifier)))
+  (statement
+    (condition_statement))
+  (statement
+    (condition_statement
       (map
         (statement
           (assignment
@@ -27141,13 +27522,15 @@ adopt_technology_group_from_target = {
                           (statement
                             (assignment
                               (identifier)
-                              (variable
+                              (variable_embedded_identifier
+                                (variable
+                                  (identifier))
                                 (identifier))))
                           (statement
-                            (assignment
-                              (identifier)
-                              (simple_value
-                                (number))))
+                            (condition_statement))
+                          (statement
+                            (simple_value
+                              (number)))
                           (statement
                             (assignment
                               (identifier)
@@ -27185,13 +27568,15 @@ adopt_technology_group_from_target = {
                           (statement
                             (assignment
                               (identifier)
-                              (variable
+                              (variable_embedded_identifier
+                                (variable
+                                  (identifier))
                                 (identifier))))
                           (statement
-                            (assignment
-                              (identifier)
-                              (simple_value
-                                (number))))
+                            (condition_statement))
+                          (statement
+                            (simple_value
+                              (number)))
                           (statement
                             (assignment
                               (identifier)
@@ -27229,13 +27614,15 @@ adopt_technology_group_from_target = {
                           (statement
                             (assignment
                               (identifier)
-                              (variable
+                              (variable_embedded_identifier
+                                (variable
+                                  (identifier))
                                 (identifier))))
                           (statement
-                            (assignment
-                              (identifier)
-                              (simple_value
-                                (number))))
+                            (condition_statement))
+                          (statement
+                            (simple_value
+                              (number)))
                           (statement
                             (assignment
                               (identifier)
@@ -27273,13 +27660,15 @@ adopt_technology_group_from_target = {
                           (statement
                             (assignment
                               (identifier)
-                              (variable
+                              (variable_embedded_identifier
+                                (variable
+                                  (identifier))
                                 (identifier))))
                           (statement
-                            (assignment
-                              (identifier)
-                              (simple_value
-                                (number))))
+                            (condition_statement))
+                          (statement
+                            (simple_value
+                              (number)))
                           (statement
                             (assignment
                               (identifier)
@@ -27301,13 +27690,15 @@ adopt_technology_group_from_target = {
                           (statement
                             (assignment
                               (identifier)
-                              (variable
+                              (variable_embedded_identifier
+                                (variable
+                                  (identifier))
                                 (identifier))))
                           (statement
-                            (assignment
-                              (identifier)
-                              (simple_value
-                                (number))))
+                            (condition_statement))
+                          (statement
+                            (simple_value
+                              (number)))
                           (statement
                             (assignment
                               (identifier)
@@ -31907,13 +32298,15 @@ adopt_technology_group_from_target = {
                           (statement
                             (assignment
                               (identifier)
-                              (variable
+                              (variable_embedded_identifier
+                                (variable
+                                  (identifier))
                                 (identifier))))
                           (statement
-                            (assignment
-                              (identifier)
-                              (simple_value
-                                (number))))))))))
+                            (condition_statement))
+                          (statement
+                            (simple_value
+                              (number)))))))))
               (statement
                 (variable
                   (identifier)))
@@ -31938,13 +32331,15 @@ adopt_technology_group_from_target = {
                                 (statement
                                   (assignment
                                     (identifier)
-                                    (variable
+                                    (variable_embedded_identifier
+                                      (variable
+                                        (identifier))
                                       (identifier))))
                                 (statement
-                                  (assignment
-                                    (identifier)
-                                    (simple_value
-                                      (number))))))))))
+                                  (condition_statement))
+                                (statement
+                                  (simple_value
+                                    (number)))))))))
                     (statement
                       (variable
                         (identifier)))
@@ -31969,13 +32364,15 @@ adopt_technology_group_from_target = {
                                       (statement
                                         (assignment
                                           (identifier)
-                                          (variable
+                                          (variable_embedded_identifier
+                                            (variable
+                                              (identifier))
                                             (identifier))))
                                       (statement
-                                        (assignment
-                                          (identifier)
-                                          (simple_value
-                                            (number))))))))))
+                                        (condition_statement))
+                                      (statement
+                                        (simple_value
+                                          (number)))))))))
                           (statement
                             (variable
                               (identifier)))
@@ -32000,13 +32397,15 @@ adopt_technology_group_from_target = {
                                             (statement
                                               (assignment
                                                 (identifier)
-                                                (variable
+                                                (variable_embedded_identifier
+                                                  (variable
+                                                    (identifier))
                                                   (identifier))))
                                             (statement
-                                              (assignment
-                                                (identifier)
-                                                (simple_value
-                                                  (number))))))))))
+                                              (condition_statement))
+                                            (statement
+                                              (simple_value
+                                                (number)))))))))
                                 (statement
                                   (variable
                                     (identifier)))
@@ -32031,13 +32430,15 @@ adopt_technology_group_from_target = {
                                                   (statement
                                                     (assignment
                                                       (identifier)
-                                                      (variable
+                                                      (variable_embedded_identifier
+                                                        (variable
+                                                          (identifier))
                                                         (identifier))))
                                                   (statement
-                                                    (assignment
-                                                      (identifier)
-                                                      (simple_value
-                                                        (number))))))))))
+                                                    (condition_statement))
+                                                  (statement
+                                                    (simple_value
+                                                      (number)))))))))
                                       (statement
                                         (variable
                                           (identifier)))))))))))))))))))))
@@ -32045,8 +32446,12 @@ adopt_technology_group_from_target = {
   (comment)
   (comment)
   (statement
-    (assignment
-      (identifier)
+    (simple_value
+      (identifier)))
+  (statement
+    (condition_statement))
+  (statement
+    (condition_statement
       (map
         (statement
           (assignment
@@ -33554,8 +33959,12 @@ adopt_technology_group_from_target = {
   (comment)
   (comment)
   (statement
-    (assignment
-      (identifier)
+    (simple_value
+      (identifier)))
+  (statement
+    (condition_statement))
+  (statement
+    (condition_statement
       (map
         (statement
           (macro_map
@@ -33564,11 +33973,6 @@ adopt_technology_group_from_target = {
               (assignment
                 (identifier)
                 (map
-                  (statement
-                    (assignment
-                      (identifier)
-                      (variable
-                        (identifier))))
                   (statement
                     (assignment
                       (identifier)
@@ -33584,8 +33988,15 @@ adopt_technology_group_from_target = {
                         (variable
                           (identifier))
                         (identifier))
-                      (simple_value
-                        (string))))
+                      (variable_embedded_identifier
+                        (variable
+                          (identifier))
+                        (identifier))))
+                  (statement
+                    (condition_statement))
+                  (statement
+                    (simple_value
+                      (string)))
                   (statement
                     (assignment
                       (number)
@@ -33752,13 +34163,15 @@ adopt_technology_group_from_target = {
                               (statement
                                 (assignment
                                   (identifier)
-                                  (variable
+                                  (variable_embedded_identifier
+                                    (variable
+                                      (identifier))
                                     (identifier))))
                               (statement
-                                (assignment
-                                  (identifier)
-                                  (simple_value
-                                    (string))))
+                                (condition_statement))
+                              (statement
+                                (simple_value
+                                  (string)))
                               (statement
                                 (assignment
                                   (identifier)
@@ -33803,13 +34216,15 @@ adopt_technology_group_from_target = {
                               (statement
                                 (assignment
                                   (identifier)
-                                  (variable
+                                  (variable_embedded_identifier
+                                    (variable
+                                      (identifier))
                                     (identifier))))
                               (statement
-                                (assignment
-                                  (identifier)
-                                  (simple_value
-                                    (string))))
+                                (condition_statement))
+                              (statement
+                                (simple_value
+                                  (string)))
                               (statement
                                 (assignment
                                   (identifier)
@@ -33832,13 +34247,15 @@ adopt_technology_group_from_target = {
                               (statement
                                 (assignment
                                   (identifier)
-                                  (variable
+                                  (variable_embedded_identifier
+                                    (variable
+                                      (identifier))
                                     (identifier))))
                               (statement
-                                (assignment
-                                  (identifier)
-                                  (simple_value
-                                    (string))))
+                                (condition_statement))
+                              (statement
+                                (simple_value
+                                  (string)))
                               (statement
                                 (assignment
                                   (identifier)
@@ -33883,13 +34300,15 @@ adopt_technology_group_from_target = {
                               (statement
                                 (assignment
                                   (identifier)
-                                  (variable
+                                  (variable_embedded_identifier
+                                    (variable
+                                      (identifier))
                                     (identifier))))
                               (statement
-                                (assignment
-                                  (identifier)
-                                  (simple_value
-                                    (string))))
+                                (condition_statement))
+                              (statement
+                                (simple_value
+                                  (string)))
                               (statement
                                 (assignment
                                   (identifier)
@@ -33912,13 +34331,15 @@ adopt_technology_group_from_target = {
                               (statement
                                 (assignment
                                   (identifier)
-                                  (variable
+                                  (variable_embedded_identifier
+                                    (variable
+                                      (identifier))
                                     (identifier))))
                               (statement
-                                (assignment
-                                  (identifier)
-                                  (simple_value
-                                    (string))))
+                                (condition_statement))
+                              (statement
+                                (simple_value
+                                  (string)))
                               (statement
                                 (assignment
                                   (identifier)
@@ -33941,13 +34362,15 @@ adopt_technology_group_from_target = {
                               (statement
                                 (assignment
                                   (identifier)
-                                  (variable
+                                  (variable_embedded_identifier
+                                    (variable
+                                      (identifier))
                                     (identifier))))
                               (statement
-                                (assignment
-                                  (identifier)
-                                  (simple_value
-                                    (string))))
+                                (condition_statement))
+                              (statement
+                                (simple_value
+                                  (string)))
                               (statement
                                 (assignment
                                   (identifier)
@@ -33992,13 +34415,15 @@ adopt_technology_group_from_target = {
                               (statement
                                 (assignment
                                   (identifier)
-                                  (variable
+                                  (variable_embedded_identifier
+                                    (variable
+                                      (identifier))
                                     (identifier))))
                               (statement
-                                (assignment
-                                  (identifier)
-                                  (simple_value
-                                    (string))))
+                                (condition_statement))
+                              (statement
+                                (simple_value
+                                  (string)))
                               (statement
                                 (assignment
                                   (identifier)
@@ -34021,13 +34446,15 @@ adopt_technology_group_from_target = {
                               (statement
                                 (assignment
                                   (identifier)
-                                  (variable
+                                  (variable_embedded_identifier
+                                    (variable
+                                      (identifier))
                                     (identifier))))
                               (statement
-                                (assignment
-                                  (identifier)
-                                  (simple_value
-                                    (string))))
+                                (condition_statement))
+                              (statement
+                                (simple_value
+                                  (string)))
                               (statement
                                 (assignment
                                   (identifier)
@@ -34050,13 +34477,15 @@ adopt_technology_group_from_target = {
                               (statement
                                 (assignment
                                   (identifier)
-                                  (variable
+                                  (variable_embedded_identifier
+                                    (variable
+                                      (identifier))
                                     (identifier))))
                               (statement
-                                (assignment
-                                  (identifier)
-                                  (simple_value
-                                    (string))))
+                                (condition_statement))
+                              (statement
+                                (simple_value
+                                  (string)))
                               (statement
                                 (assignment
                                   (identifier)
@@ -34079,13 +34508,15 @@ adopt_technology_group_from_target = {
                               (statement
                                 (assignment
                                   (identifier)
-                                  (variable
+                                  (variable_embedded_identifier
+                                    (variable
+                                      (identifier))
                                     (identifier))))
                               (statement
-                                (assignment
-                                  (identifier)
-                                  (simple_value
-                                    (string))))
+                                (condition_statement))
+                              (statement
+                                (simple_value
+                                  (string)))
                               (statement
                                 (assignment
                                   (identifier)
@@ -34130,13 +34561,15 @@ adopt_technology_group_from_target = {
                               (statement
                                 (assignment
                                   (identifier)
-                                  (variable
+                                  (variable_embedded_identifier
+                                    (variable
+                                      (identifier))
                                     (identifier))))
                               (statement
-                                (assignment
-                                  (identifier)
-                                  (simple_value
-                                    (string))))
+                                (condition_statement))
+                              (statement
+                                (simple_value
+                                  (string)))
                               (statement
                                 (assignment
                                   (identifier)
@@ -34159,13 +34592,15 @@ adopt_technology_group_from_target = {
                               (statement
                                 (assignment
                                   (identifier)
-                                  (variable
+                                  (variable_embedded_identifier
+                                    (variable
+                                      (identifier))
                                     (identifier))))
                               (statement
-                                (assignment
-                                  (identifier)
-                                  (simple_value
-                                    (string))))
+                                (condition_statement))
+                              (statement
+                                (simple_value
+                                  (string)))
                               (statement
                                 (assignment
                                   (identifier)
@@ -34188,13 +34623,15 @@ adopt_technology_group_from_target = {
                               (statement
                                 (assignment
                                   (identifier)
-                                  (variable
+                                  (variable_embedded_identifier
+                                    (variable
+                                      (identifier))
                                     (identifier))))
                               (statement
-                                (assignment
-                                  (identifier)
-                                  (simple_value
-                                    (string))))
+                                (condition_statement))
+                              (statement
+                                (simple_value
+                                  (string)))
                               (statement
                                 (assignment
                                   (identifier)
@@ -34217,13 +34654,15 @@ adopt_technology_group_from_target = {
                               (statement
                                 (assignment
                                   (identifier)
-                                  (variable
+                                  (variable_embedded_identifier
+                                    (variable
+                                      (identifier))
                                     (identifier))))
                               (statement
-                                (assignment
-                                  (identifier)
-                                  (simple_value
-                                    (string))))
+                                (condition_statement))
+                              (statement
+                                (simple_value
+                                  (string)))
                               (statement
                                 (assignment
                                   (identifier)
@@ -34246,13 +34685,15 @@ adopt_technology_group_from_target = {
                               (statement
                                 (assignment
                                   (identifier)
-                                  (variable
+                                  (variable_embedded_identifier
+                                    (variable
+                                      (identifier))
                                     (identifier))))
                               (statement
-                                (assignment
-                                  (identifier)
-                                  (simple_value
-                                    (string))))
+                                (condition_statement))
+                              (statement
+                                (simple_value
+                                  (string)))
                               (statement
                                 (assignment
                                   (identifier)
@@ -34297,13 +34738,15 @@ adopt_technology_group_from_target = {
                               (statement
                                 (assignment
                                   (identifier)
-                                  (variable
+                                  (variable_embedded_identifier
+                                    (variable
+                                      (identifier))
                                     (identifier))))
                               (statement
-                                (assignment
-                                  (identifier)
-                                  (simple_value
-                                    (string))))
+                                (condition_statement))
+                              (statement
+                                (simple_value
+                                  (string)))
                               (statement
                                 (assignment
                                   (identifier)
@@ -34326,13 +34769,15 @@ adopt_technology_group_from_target = {
                               (statement
                                 (assignment
                                   (identifier)
-                                  (variable
+                                  (variable_embedded_identifier
+                                    (variable
+                                      (identifier))
                                     (identifier))))
                               (statement
-                                (assignment
-                                  (identifier)
-                                  (simple_value
-                                    (string))))
+                                (condition_statement))
+                              (statement
+                                (simple_value
+                                  (string)))
                               (statement
                                 (assignment
                                   (identifier)
@@ -34355,13 +34800,15 @@ adopt_technology_group_from_target = {
                               (statement
                                 (assignment
                                   (identifier)
-                                  (variable
+                                  (variable_embedded_identifier
+                                    (variable
+                                      (identifier))
                                     (identifier))))
                               (statement
-                                (assignment
-                                  (identifier)
-                                  (simple_value
-                                    (string))))
+                                (condition_statement))
+                              (statement
+                                (simple_value
+                                  (string)))
                               (statement
                                 (assignment
                                   (identifier)
@@ -34384,13 +34831,15 @@ adopt_technology_group_from_target = {
                               (statement
                                 (assignment
                                   (identifier)
-                                  (variable
+                                  (variable_embedded_identifier
+                                    (variable
+                                      (identifier))
                                     (identifier))))
                               (statement
-                                (assignment
-                                  (identifier)
-                                  (simple_value
-                                    (string))))
+                                (condition_statement))
+                              (statement
+                                (simple_value
+                                  (string)))
                               (statement
                                 (assignment
                                   (identifier)
@@ -34413,13 +34862,15 @@ adopt_technology_group_from_target = {
                               (statement
                                 (assignment
                                   (identifier)
-                                  (variable
+                                  (variable_embedded_identifier
+                                    (variable
+                                      (identifier))
                                     (identifier))))
                               (statement
-                                (assignment
-                                  (identifier)
-                                  (simple_value
-                                    (string))))
+                                (condition_statement))
+                              (statement
+                                (simple_value
+                                  (string)))
                               (statement
                                 (assignment
                                   (identifier)
@@ -34442,13 +34893,15 @@ adopt_technology_group_from_target = {
                               (statement
                                 (assignment
                                   (identifier)
-                                  (variable
+                                  (variable_embedded_identifier
+                                    (variable
+                                      (identifier))
                                     (identifier))))
                               (statement
-                                (assignment
-                                  (identifier)
-                                  (simple_value
-                                    (string))))
+                                (condition_statement))
+                              (statement
+                                (simple_value
+                                  (string)))
                               (statement
                                 (assignment
                                   (identifier)
@@ -34471,13 +34924,15 @@ adopt_technology_group_from_target = {
                               (statement
                                 (assignment
                                   (identifier)
-                                  (variable
+                                  (variable_embedded_identifier
+                                    (variable
+                                      (identifier))
                                     (identifier))))
                               (statement
-                                (assignment
-                                  (identifier)
-                                  (simple_value
-                                    (string))))
+                                (condition_statement))
+                              (statement
+                                (simple_value
+                                  (string)))
                               (statement
                                 (assignment
                                   (identifier)
@@ -34500,13 +34955,15 @@ adopt_technology_group_from_target = {
                               (statement
                                 (assignment
                                   (identifier)
-                                  (variable
+                                  (variable_embedded_identifier
+                                    (variable
+                                      (identifier))
                                     (identifier))))
                               (statement
-                                (assignment
-                                  (identifier)
-                                  (simple_value
-                                    (string))))
+                                (condition_statement))
+                              (statement
+                                (simple_value
+                                  (string)))
                               (statement
                                 (assignment
                                   (identifier)
@@ -34529,13 +34986,15 @@ adopt_technology_group_from_target = {
                               (statement
                                 (assignment
                                   (identifier)
-                                  (variable
+                                  (variable_embedded_identifier
+                                    (variable
+                                      (identifier))
                                     (identifier))))
                               (statement
-                                (assignment
-                                  (identifier)
-                                  (simple_value
-                                    (string))))
+                                (condition_statement))
+                              (statement
+                                (simple_value
+                                  (string)))
                               (statement
                                 (assignment
                                   (identifier)
@@ -34558,13 +35017,15 @@ adopt_technology_group_from_target = {
                               (statement
                                 (assignment
                                   (identifier)
-                                  (variable
+                                  (variable_embedded_identifier
+                                    (variable
+                                      (identifier))
                                     (identifier))))
                               (statement
-                                (assignment
-                                  (identifier)
-                                  (simple_value
-                                    (string))))
+                                (condition_statement))
+                              (statement
+                                (simple_value
+                                  (string)))
                               (statement
                                 (assignment
                                   (identifier)
@@ -34694,8 +35155,12 @@ adopt_technology_group_from_target = {
   (comment)
   (comment)
   (statement
-    (assignment
-      (identifier)
+    (simple_value
+      (identifier)))
+  (statement
+    (condition_statement))
+  (statement
+    (condition_statement
       (map
         (statement
           (assignment
@@ -34808,19 +35273,25 @@ adopt_technology_group_from_target = {
             (statement
               (assignment
                 (identifier)
-                (variable
+                (variable_embedded_identifier
+                  (variable
+                    (identifier))
                   (identifier))))
             (statement
-              (assignment
-                (identifier)
-                (simple_value
-                  (string)))))))))
+              (condition_statement))
+            (statement
+              (simple_value
+                (string))))))))
   (comment)
   (comment)
   (comment)
   (statement
-    (assignment
-      (identifier)
+    (simple_value
+      (identifier)))
+  (statement
+    (condition_statement))
+  (statement
+    (condition_statement
       (map
         (statement
           (assignment
@@ -34881,8 +35352,12 @@ adopt_technology_group_from_target = {
   (comment)
   (comment)
   (statement
-    (assignment
-      (identifier)
+    (simple_value
+      (identifier)))
+  (statement
+    (condition_statement))
+  (statement
+    (condition_statement
       (map
         (statement
           (assignment
@@ -35009,8 +35484,12 @@ adopt_technology_group_from_target = {
   (comment)
   (comment)
   (statement
-    (assignment
-      (identifier)
+    (simple_value
+      (identifier)))
+  (statement
+    (condition_statement))
+  (statement
+    (condition_statement
       (map
         (statement
           (assignment
@@ -35147,8 +35626,12 @@ adopt_technology_group_from_target = {
   (comment)
   (comment)
   (statement
-    (assignment
-      (identifier)
+    (simple_value
+      (identifier)))
+  (statement
+    (condition_statement))
+  (statement
+    (condition_statement
       (map
         (statement
           (assignment
@@ -35849,8 +36332,12 @@ adopt_technology_group_from_target = {
   (comment)
   (comment)
   (statement
-    (assignment
-      (identifier)
+    (simple_value
+      (identifier)))
+  (statement
+    (condition_statement))
+  (statement
+    (condition_statement
       (map
         (statement
           (assignment
@@ -36842,13 +37329,15 @@ adopt_technology_group_from_target = {
                               (statement
                                 (assignment
                                   (identifier)
-                                  (variable
+                                  (variable_embedded_identifier
+                                    (variable
+                                      (identifier))
                                     (identifier))))
                               (statement
-                                (assignment
-                                  (identifier)
-                                  (simple_value
-                                    (string))))
+                                (condition_statement))
+                              (statement
+                                (simple_value
+                                  (string)))
                               (statement
                                 (assignment
                                   (identifier)
@@ -36893,13 +37382,15 @@ adopt_technology_group_from_target = {
                               (statement
                                 (assignment
                                   (identifier)
-                                  (variable
+                                  (variable_embedded_identifier
+                                    (variable
+                                      (identifier))
                                     (identifier))))
                               (statement
-                                (assignment
-                                  (identifier)
-                                  (simple_value
-                                    (string))))
+                                (condition_statement))
+                              (statement
+                                (simple_value
+                                  (string)))
                               (statement
                                 (assignment
                                   (identifier)
@@ -36922,13 +37413,15 @@ adopt_technology_group_from_target = {
                               (statement
                                 (assignment
                                   (identifier)
-                                  (variable
+                                  (variable_embedded_identifier
+                                    (variable
+                                      (identifier))
                                     (identifier))))
                               (statement
-                                (assignment
-                                  (identifier)
-                                  (simple_value
-                                    (string))))
+                                (condition_statement))
+                              (statement
+                                (simple_value
+                                  (string)))
                               (statement
                                 (assignment
                                   (identifier)
@@ -36973,13 +37466,15 @@ adopt_technology_group_from_target = {
                               (statement
                                 (assignment
                                   (identifier)
-                                  (variable
+                                  (variable_embedded_identifier
+                                    (variable
+                                      (identifier))
                                     (identifier))))
                               (statement
-                                (assignment
-                                  (identifier)
-                                  (simple_value
-                                    (string))))
+                                (condition_statement))
+                              (statement
+                                (simple_value
+                                  (string)))
                               (statement
                                 (assignment
                                   (identifier)
@@ -37002,13 +37497,15 @@ adopt_technology_group_from_target = {
                               (statement
                                 (assignment
                                   (identifier)
-                                  (variable
+                                  (variable_embedded_identifier
+                                    (variable
+                                      (identifier))
                                     (identifier))))
                               (statement
-                                (assignment
-                                  (identifier)
-                                  (simple_value
-                                    (string))))
+                                (condition_statement))
+                              (statement
+                                (simple_value
+                                  (string)))
                               (statement
                                 (assignment
                                   (identifier)
@@ -37031,13 +37528,15 @@ adopt_technology_group_from_target = {
                               (statement
                                 (assignment
                                   (identifier)
-                                  (variable
+                                  (variable_embedded_identifier
+                                    (variable
+                                      (identifier))
                                     (identifier))))
                               (statement
-                                (assignment
-                                  (identifier)
-                                  (simple_value
-                                    (string))))
+                                (condition_statement))
+                              (statement
+                                (simple_value
+                                  (string)))
                               (statement
                                 (assignment
                                   (identifier)
@@ -37082,13 +37581,15 @@ adopt_technology_group_from_target = {
                               (statement
                                 (assignment
                                   (identifier)
-                                  (variable
+                                  (variable_embedded_identifier
+                                    (variable
+                                      (identifier))
                                     (identifier))))
                               (statement
-                                (assignment
-                                  (identifier)
-                                  (simple_value
-                                    (string))))
+                                (condition_statement))
+                              (statement
+                                (simple_value
+                                  (string)))
                               (statement
                                 (assignment
                                   (identifier)
@@ -37111,13 +37612,15 @@ adopt_technology_group_from_target = {
                               (statement
                                 (assignment
                                   (identifier)
-                                  (variable
+                                  (variable_embedded_identifier
+                                    (variable
+                                      (identifier))
                                     (identifier))))
                               (statement
-                                (assignment
-                                  (identifier)
-                                  (simple_value
-                                    (string))))
+                                (condition_statement))
+                              (statement
+                                (simple_value
+                                  (string)))
                               (statement
                                 (assignment
                                   (identifier)
@@ -37140,13 +37643,15 @@ adopt_technology_group_from_target = {
                               (statement
                                 (assignment
                                   (identifier)
-                                  (variable
+                                  (variable_embedded_identifier
+                                    (variable
+                                      (identifier))
                                     (identifier))))
                               (statement
-                                (assignment
-                                  (identifier)
-                                  (simple_value
-                                    (string))))
+                                (condition_statement))
+                              (statement
+                                (simple_value
+                                  (string)))
                               (statement
                                 (assignment
                                   (identifier)
@@ -37169,13 +37674,15 @@ adopt_technology_group_from_target = {
                               (statement
                                 (assignment
                                   (identifier)
-                                  (variable
+                                  (variable_embedded_identifier
+                                    (variable
+                                      (identifier))
                                     (identifier))))
                               (statement
-                                (assignment
-                                  (identifier)
-                                  (simple_value
-                                    (string))))
+                                (condition_statement))
+                              (statement
+                                (simple_value
+                                  (string)))
                               (statement
                                 (assignment
                                   (identifier)
@@ -37220,13 +37727,15 @@ adopt_technology_group_from_target = {
                               (statement
                                 (assignment
                                   (identifier)
-                                  (variable
+                                  (variable_embedded_identifier
+                                    (variable
+                                      (identifier))
                                     (identifier))))
                               (statement
-                                (assignment
-                                  (identifier)
-                                  (simple_value
-                                    (string))))
+                                (condition_statement))
+                              (statement
+                                (simple_value
+                                  (string)))
                               (statement
                                 (assignment
                                   (identifier)
@@ -37249,13 +37758,15 @@ adopt_technology_group_from_target = {
                               (statement
                                 (assignment
                                   (identifier)
-                                  (variable
+                                  (variable_embedded_identifier
+                                    (variable
+                                      (identifier))
                                     (identifier))))
                               (statement
-                                (assignment
-                                  (identifier)
-                                  (simple_value
-                                    (string))))
+                                (condition_statement))
+                              (statement
+                                (simple_value
+                                  (string)))
                               (statement
                                 (assignment
                                   (identifier)
@@ -37278,13 +37789,15 @@ adopt_technology_group_from_target = {
                               (statement
                                 (assignment
                                   (identifier)
-                                  (variable
+                                  (variable_embedded_identifier
+                                    (variable
+                                      (identifier))
                                     (identifier))))
                               (statement
-                                (assignment
-                                  (identifier)
-                                  (simple_value
-                                    (string))))
+                                (condition_statement))
+                              (statement
+                                (simple_value
+                                  (string)))
                               (statement
                                 (assignment
                                   (identifier)
@@ -37307,13 +37820,15 @@ adopt_technology_group_from_target = {
                               (statement
                                 (assignment
                                   (identifier)
-                                  (variable
+                                  (variable_embedded_identifier
+                                    (variable
+                                      (identifier))
                                     (identifier))))
                               (statement
-                                (assignment
-                                  (identifier)
-                                  (simple_value
-                                    (string))))
+                                (condition_statement))
+                              (statement
+                                (simple_value
+                                  (string)))
                               (statement
                                 (assignment
                                   (identifier)
@@ -37336,13 +37851,15 @@ adopt_technology_group_from_target = {
                               (statement
                                 (assignment
                                   (identifier)
-                                  (variable
+                                  (variable_embedded_identifier
+                                    (variable
+                                      (identifier))
                                     (identifier))))
                               (statement
-                                (assignment
-                                  (identifier)
-                                  (simple_value
-                                    (string))))
+                                (condition_statement))
+                              (statement
+                                (simple_value
+                                  (string)))
                               (statement
                                 (assignment
                                   (identifier)
@@ -37387,13 +37904,15 @@ adopt_technology_group_from_target = {
                               (statement
                                 (assignment
                                   (identifier)
-                                  (variable
+                                  (variable_embedded_identifier
+                                    (variable
+                                      (identifier))
                                     (identifier))))
                               (statement
-                                (assignment
-                                  (identifier)
-                                  (simple_value
-                                    (string))))
+                                (condition_statement))
+                              (statement
+                                (simple_value
+                                  (string)))
                               (statement
                                 (assignment
                                   (identifier)
@@ -37416,13 +37935,15 @@ adopt_technology_group_from_target = {
                               (statement
                                 (assignment
                                   (identifier)
-                                  (variable
+                                  (variable_embedded_identifier
+                                    (variable
+                                      (identifier))
                                     (identifier))))
                               (statement
-                                (assignment
-                                  (identifier)
-                                  (simple_value
-                                    (string))))
+                                (condition_statement))
+                              (statement
+                                (simple_value
+                                  (string)))
                               (statement
                                 (assignment
                                   (identifier)
@@ -37445,13 +37966,15 @@ adopt_technology_group_from_target = {
                               (statement
                                 (assignment
                                   (identifier)
-                                  (variable
+                                  (variable_embedded_identifier
+                                    (variable
+                                      (identifier))
                                     (identifier))))
                               (statement
-                                (assignment
-                                  (identifier)
-                                  (simple_value
-                                    (string))))
+                                (condition_statement))
+                              (statement
+                                (simple_value
+                                  (string)))
                               (statement
                                 (assignment
                                   (identifier)
@@ -37474,13 +37997,15 @@ adopt_technology_group_from_target = {
                               (statement
                                 (assignment
                                   (identifier)
-                                  (variable
+                                  (variable_embedded_identifier
+                                    (variable
+                                      (identifier))
                                     (identifier))))
                               (statement
-                                (assignment
-                                  (identifier)
-                                  (simple_value
-                                    (string))))
+                                (condition_statement))
+                              (statement
+                                (simple_value
+                                  (string)))
                               (statement
                                 (assignment
                                   (identifier)
@@ -37503,13 +38028,15 @@ adopt_technology_group_from_target = {
                               (statement
                                 (assignment
                                   (identifier)
-                                  (variable
+                                  (variable_embedded_identifier
+                                    (variable
+                                      (identifier))
                                     (identifier))))
                               (statement
-                                (assignment
-                                  (identifier)
-                                  (simple_value
-                                    (string))))
+                                (condition_statement))
+                              (statement
+                                (simple_value
+                                  (string)))
                               (statement
                                 (assignment
                                   (identifier)
@@ -37532,13 +38059,15 @@ adopt_technology_group_from_target = {
                               (statement
                                 (assignment
                                   (identifier)
-                                  (variable
+                                  (variable_embedded_identifier
+                                    (variable
+                                      (identifier))
                                     (identifier))))
                               (statement
-                                (assignment
-                                  (identifier)
-                                  (simple_value
-                                    (string))))
+                                (condition_statement))
+                              (statement
+                                (simple_value
+                                  (string)))
                               (statement
                                 (assignment
                                   (identifier)
@@ -37561,13 +38090,15 @@ adopt_technology_group_from_target = {
                               (statement
                                 (assignment
                                   (identifier)
-                                  (variable
+                                  (variable_embedded_identifier
+                                    (variable
+                                      (identifier))
                                     (identifier))))
                               (statement
-                                (assignment
-                                  (identifier)
-                                  (simple_value
-                                    (string))))
+                                (condition_statement))
+                              (statement
+                                (simple_value
+                                  (string)))
                               (statement
                                 (assignment
                                   (identifier)
@@ -37590,13 +38121,15 @@ adopt_technology_group_from_target = {
                               (statement
                                 (assignment
                                   (identifier)
-                                  (variable
+                                  (variable_embedded_identifier
+                                    (variable
+                                      (identifier))
                                     (identifier))))
                               (statement
-                                (assignment
-                                  (identifier)
-                                  (simple_value
-                                    (string))))
+                                (condition_statement))
+                              (statement
+                                (simple_value
+                                  (string)))
                               (statement
                                 (assignment
                                   (identifier)
@@ -37619,13 +38152,15 @@ adopt_technology_group_from_target = {
                               (statement
                                 (assignment
                                   (identifier)
-                                  (variable
+                                  (variable_embedded_identifier
+                                    (variable
+                                      (identifier))
                                     (identifier))))
                               (statement
-                                (assignment
-                                  (identifier)
-                                  (simple_value
-                                    (string))))
+                                (condition_statement))
+                              (statement
+                                (simple_value
+                                  (string)))
                               (statement
                                 (assignment
                                   (identifier)
@@ -37648,13 +38183,15 @@ adopt_technology_group_from_target = {
                               (statement
                                 (assignment
                                   (identifier)
-                                  (variable
+                                  (variable_embedded_identifier
+                                    (variable
+                                      (identifier))
                                     (identifier))))
                               (statement
-                                (assignment
-                                  (identifier)
-                                  (simple_value
-                                    (string))))
+                                (condition_statement))
+                              (statement
+                                (simple_value
+                                  (string)))
                               (statement
                                 (assignment
                                   (identifier)
@@ -37979,13 +38516,15 @@ adopt_technology_group_from_target = {
                   (statement
                     (assignment
                       (identifier)
-                      (variable
+                      (variable_embedded_identifier
+                        (variable
+                          (identifier))
                         (identifier))))
                   (statement
-                    (assignment
-                      (identifier)
-                      (simple_value
-                        (identifier)))))))))
+                    (condition_statement))
+                  (statement
+                    (simple_value
+                      (identifier))))))))
         (statement
           (macro_map
             (identifier)
@@ -37996,13 +38535,15 @@ adopt_technology_group_from_target = {
                   (statement
                     (assignment
                       (identifier)
-                      (variable
+                      (variable_embedded_identifier
+                        (variable
+                          (identifier))
                         (identifier))))
                   (statement
-                    (assignment
-                      (identifier)
-                      (simple_value
-                        (identifier)))))))))
+                    (condition_statement))
+                  (statement
+                    (simple_value
+                      (identifier))))))))
         (statement
           (macro_map
             (identifier)
@@ -38013,13 +38554,15 @@ adopt_technology_group_from_target = {
                   (statement
                     (assignment
                       (identifier)
-                      (variable
+                      (variable_embedded_identifier
+                        (variable
+                          (identifier))
                         (identifier))))
                   (statement
-                    (assignment
-                      (identifier)
-                      (simple_value
-                        (identifier)))))))))
+                    (condition_statement))
+                  (statement
+                    (simple_value
+                      (identifier))))))))
         (statement
           (macro_map
             (identifier)
@@ -38030,13 +38573,15 @@ adopt_technology_group_from_target = {
                   (statement
                     (assignment
                       (identifier)
-                      (variable
+                      (variable_embedded_identifier
+                        (variable
+                          (identifier))
                         (identifier))))
                   (statement
-                    (assignment
-                      (identifier)
-                      (simple_value
-                        (identifier))))))))))))
+                    (condition_statement))
+                  (statement
+                    (simple_value
+                      (identifier)))))))))))
   (statement
     (assignment
       (identifier)
@@ -38213,8 +38758,12 @@ adopt_technology_group_from_target = {
                   (variable
                     (identifier))))))))))
   (statement
-    (assignment
-      (identifier)
+    (simple_value
+      (identifier)))
+  (statement
+    (condition_statement))
+  (statement
+    (condition_statement
       (map
         (statement
           (condition_statement))

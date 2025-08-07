@@ -229,6 +229,10 @@
           "named": true
         },
         {
+          "type": "simple_value",
+          "named": true
+        },
+        {
           "type": "variable",
           "named": true
         },
