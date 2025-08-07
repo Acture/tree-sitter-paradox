@@ -264,29 +264,43 @@
       }
     },
     "boolean": {
-      "type": "CHOICE",
-      "members": [
-        {
-          "type": "STRING",
-          "value": "yes"
-        },
-        {
-          "type": "STRING",
-          "value": "no"
-        },
-        {
-          "type": "STRING",
-          "value": "true"
-        },
-        {
-          "type": "STRING",
-          "value": "false"
+      "type": "TOKEN",
+      "content": {
+        "type": "PREC",
+        "value": 1,
+        "content": {
+          "type": "CHOICE",
+          "members": [
+            {
+              "type": "STRING",
+              "value": "yes"
+            },
+            {
+              "type": "STRING",
+              "value": "no"
+            },
+            {
+              "type": "STRING",
+              "value": "true"
+            },
+            {
+              "type": "STRING",
+              "value": "false"
+            }
+          ]
         }
-      ]
+      }
     },
     "identifier": {
-      "type": "PATTERN",
-      "value": "[A-Za-z0-9_:.@!$%<>-]+"
+      "type": "TOKEN",
+      "content": {
+        "type": "PREC",
+        "value": 1,
+        "content": {
+          "type": "PATTERN",
+          "value": "[^\\s\"={}#]+"
+        }
+      }
     },
     "comment": {
       "type": "TOKEN",

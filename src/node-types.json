@@ -53,11 +53,6 @@
     }
   },
   {
-    "type": "boolean",
-    "named": true,
-    "fields": {}
-  },
-  {
     "type": "condition_statement",
     "named": true,
     "fields": {},
@@ -186,13 +181,13 @@
     "named": false
   },
   {
+    "type": "boolean",
+    "named": true
+  },
+  {
     "type": "comment",
     "named": true,
     "extra": true
-  },
-  {
-    "type": "false",
-    "named": false
   },
   {
     "type": "identifier",
@@ -204,10 +199,6 @@
   },
   {
     "type": "limit",
-    "named": false
-  },
-  {
-    "type": "no",
     "named": false
   },
   {
@@ -224,14 +215,6 @@
   },
   {
     "type": "trigger",
-    "named": false
-  },
-  {
-    "type": "true",
-    "named": false
-  },
-  {
-    "type": "yes",
     "named": false
   },
   {

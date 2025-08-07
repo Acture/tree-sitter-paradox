@@ -1908,7 +1908,7 @@ treason_act = {
           (assignment
             (identifier)
             (simple_value
-              (number))))
+              (identifier))))
         (comment)
         (statement
           (assignment
@@ -1922,12 +1922,12 @@ treason_act = {
                       (assignment
                         (identifier)
                         (simple_value
-                          (number))))
+                          (identifier))))
                     (statement
                       (assignment
                         (identifier)
                         (simple_value
-                          (number))))))))))
+                          (identifier))))))))))
         (statement
           (assignment
             (identifier)
@@ -1979,7 +1979,7 @@ treason_act = {
                 (assignment
                   (identifier)
                   (simple_value
-                    (number)))))))
+                    (identifier)))))))
         (statement
           (assignment
             (identifier)
@@ -1988,7 +1988,7 @@ treason_act = {
                 (assignment
                   (identifier)
                   (simple_value
-                    (number))))
+                    (identifier))))
               (statement
                 (assignment
                   (identifier)
@@ -1997,12 +1997,12 @@ treason_act = {
                       (assignment
                         (identifier)
                         (simple_value
-                          (number))))
+                          (identifier))))
                     (statement
                       (assignment
                         (identifier)
                         (simple_value
-                          (number)))))))
+                          (identifier)))))))
               (statement
                 (assignment
                   (identifier)
@@ -2011,12 +2011,12 @@ treason_act = {
                       (assignment
                         (identifier)
                         (simple_value
-                          (number))))
+                          (identifier))))
                     (statement
                       (assignment
                         (identifier)
                         (simple_value
-                          (number)))))))
+                          (identifier)))))))
               (statement
                 (assignment
                   (identifier)
@@ -2025,12 +2025,12 @@ treason_act = {
                       (assignment
                         (identifier)
                         (simple_value
-                          (number))))
+                          (identifier))))
                     (statement
                       (assignment
                         (identifier)
                         (simple_value
-                          (number))))))))))
+                          (identifier))))))))))
         (statement
           (assignment
             (identifier)
@@ -2039,7 +2039,7 @@ treason_act = {
                 (assignment
                   (identifier)
                   (simple_value
-                    (number))))
+                    (identifier))))
               (statement
                 (assignment
                   (identifier)
@@ -2048,12 +2048,12 @@ treason_act = {
                       (assignment
                         (identifier)
                         (simple_value
-                          (number))))
+                          (identifier))))
                     (statement
                       (assignment
                         (identifier)
                         (simple_value
-                          (number)))))))
+                          (identifier)))))))
               (statement
                 (assignment
                   (identifier)
@@ -2062,15 +2062,16 @@ treason_act = {
                       (assignment
                         (identifier)
                         (simple_value
-                          (number))))
+                          (identifier))))
                     (statement
-                      (logical_statement
+                      (assignment
+                        (identifier)
                         (map
                           (statement
                             (assignment
                               (identifier)
                               (simple_value
-                                (number))))))))))))))))
+                                (identifier))))))))))))))))
   (statement
     (assignment
       (identifier)
@@ -2079,7 +2080,7 @@ treason_act = {
           (assignment
             (identifier)
             (simple_value
-              (number))))
+              (identifier))))
         (statement
           (assignment
             (identifier)
@@ -2135,7 +2136,7 @@ treason_act = {
                 (assignment
                   (identifier)
                   (simple_value
-                    (number)))))))
+                    (identifier)))))))
         (statement
           (assignment
             (identifier)
@@ -2144,7 +2145,7 @@ treason_act = {
                 (assignment
                   (identifier)
                   (simple_value
-                    (number)))))))
+                    (identifier)))))))
         (statement
           (assignment
             (identifier)
@@ -2153,7 +2154,7 @@ treason_act = {
                 (assignment
                   (identifier)
                   (simple_value
-                    (number))))))))))
+                    (identifier))))))))))
   (statement
     (assignment
       (identifier)
@@ -2162,7 +2163,7 @@ treason_act = {
           (assignment
             (identifier)
             (simple_value
-              (number))))
+              (identifier))))
         (statement
           (assignment
             (identifier)
@@ -2171,7 +2172,7 @@ treason_act = {
                 (assignment
                   (identifier)
                   (simple_value
-                    (number)))))))
+                    (identifier)))))))
         (statement
           (assignment
             (identifier)
@@ -2190,11 +2191,8 @@ treason_act = {
                   (identifier)
                   (map
                     (statement
-                      (condition_statement))
-                    (statement
-                      (condition_statement))
-                    (statement
-                      (condition_statement
+                      (assignment
+                        (identifier)
                         (map
                           (statement
                             (assignment
@@ -2226,11 +2224,8 @@ treason_act = {
                         (identifier)
                         (map
                           (statement
-                            (condition_statement))
-                          (statement
-                            (condition_statement))
-                          (statement
-                            (condition_statement
+                            (assignment
+                              (identifier)
                               (map
                                 (statement
                                   (assignment
@@ -2241,28 +2236,23 @@ treason_act = {
                             (assignment
                               (identifier)
                               (simple_value
-                                (number))))
+                                (identifier))))
                           (statement
                             (assignment
                               (identifier)
                               (simple_value
                                 (identifier))))))))))
               (statement
-                (condition_statement))
-              (statement
-                (condition_statement))
-              (statement
-                (condition_statement
+                (assignment
+                  (identifier)
                   (map
                     (statement
-                      (condition_statement))
-                    (statement
-                      (condition_statement))
-                    (statement
-                      (condition_statement
+                      (assignment
+                        (identifier)
                         (map
                           (statement
-                            (logical_statement
+                            (assignment
+                              (identifier)
                               (map
                                 (statement
                                   (assignment
@@ -2283,18 +2273,12 @@ treason_act = {
                               (simple_value
                                 (identifier))))))))))
               (statement
-                (condition_statement))
-              (statement
-                (condition_statement))
-              (statement
-                (condition_statement
+                (assignment
+                  (identifier)
                   (map
                     (statement
-                      (condition_statement))
-                    (statement
-                      (condition_statement))
-                    (statement
-                      (condition_statement
+                      (assignment
+                        (identifier)
                         (map
                           (statement
                             (assignment
@@ -2314,11 +2298,8 @@ treason_act = {
                               (identifier)
                               (map
                                 (statement
-                                  (condition_statement))
-                                (statement
-                                  (condition_statement))
-                                (statement
-                                  (condition_statement
+                                  (assignment
+                                    (identifier)
                                     (map
                                       (statement
                                         (assignment
@@ -2329,7 +2310,7 @@ treason_act = {
                                   (assignment
                                     (identifier)
                                     (simple_value
-                                      (number))))))))))))))))
+                                      (identifier))))))))))))))))
         (statement
           (assignment
             (identifier)
@@ -2338,7 +2319,7 @@ treason_act = {
                 (assignment
                   (identifier)
                   (simple_value
-                    (number)))))))
+                    (identifier)))))))
         (statement
           (assignment
             (identifier)
@@ -2347,7 +2328,7 @@ treason_act = {
                 (assignment
                   (identifier)
                   (simple_value
-                    (number))))))))))
+                    (identifier))))))))))
   (statement
     (assignment
       (identifier)
@@ -2356,7 +2337,7 @@ treason_act = {
           (assignment
             (identifier)
             (simple_value
-              (number))))
+              (identifier))))
         (statement
           (assignment
             (identifier)
@@ -2412,7 +2393,7 @@ treason_act = {
                 (assignment
                   (identifier)
                   (simple_value
-                    (number)))))))
+                    (identifier)))))))
         (statement
           (assignment
             (identifier)
@@ -2421,7 +2402,7 @@ treason_act = {
                 (assignment
                   (identifier)
                   (simple_value
-                    (number))))
+                    (identifier))))
               (statement
                 (assignment
                   (identifier)
@@ -2430,7 +2411,7 @@ treason_act = {
                       (assignment
                         (identifier)
                         (simple_value
-                          (number))))
+                          (identifier))))
                     (statement
                       (assignment
                         (identifier)
@@ -2439,7 +2420,7 @@ treason_act = {
                             (assignment
                               (identifier)
                               (simple_value
-                                (number))))))))))
+                                (identifier))))))))))
               (statement
                 (assignment
                   (identifier)
@@ -2448,7 +2429,7 @@ treason_act = {
                       (assignment
                         (identifier)
                         (simple_value
-                          (number))))
+                          (identifier))))
                     (statement
                       (assignment
                         (identifier)
@@ -2457,7 +2438,7 @@ treason_act = {
                             (assignment
                               (identifier)
                               (simple_value
-                                (number))))))))))
+                                (identifier))))))))))
               (statement
                 (assignment
                   (identifier)
@@ -2466,7 +2447,7 @@ treason_act = {
                       (assignment
                         (identifier)
                         (simple_value
-                          (number))))
+                          (identifier))))
                     (statement
                       (assignment
                         (identifier)
@@ -2475,7 +2456,7 @@ treason_act = {
                             (assignment
                               (identifier)
                               (simple_value
-                                (number)))))))))))))
+                                (identifier)))))))))))))
         (statement
           (assignment
             (identifier)
@@ -2484,7 +2465,7 @@ treason_act = {
                 (assignment
                   (identifier)
                   (simple_value
-                    (number))))))))))
+                    (identifier))))))))))
   (statement
     (assignment
       (identifier)
@@ -2493,7 +2474,7 @@ treason_act = {
           (assignment
             (identifier)
             (simple_value
-              (number))))
+              (identifier))))
         (statement
           (assignment
             (identifier)
@@ -2549,7 +2530,7 @@ treason_act = {
                 (assignment
                   (identifier)
                   (simple_value
-                    (number)))))))
+                    (identifier)))))))
         (statement
           (assignment
             (identifier)
@@ -2558,7 +2539,7 @@ treason_act = {
                 (assignment
                   (identifier)
                   (simple_value
-                    (number))))
+                    (identifier))))
               (statement
                 (assignment
                   (identifier)
@@ -2567,7 +2548,7 @@ treason_act = {
                       (assignment
                         (identifier)
                         (simple_value
-                          (number))))
+                          (identifier))))
                     (statement
                       (assignment
                         (identifier)
@@ -2581,7 +2562,7 @@ treason_act = {
                 (assignment
                   (identifier)
                   (simple_value
-                    (number))))))))))
+                    (identifier))))))))))
   (statement
     (assignment
       (identifier)
@@ -2590,7 +2571,7 @@ treason_act = {
           (assignment
             (identifier)
             (simple_value
-              (number))))
+              (identifier))))
         (statement
           (assignment
             (identifier)
@@ -2651,7 +2632,7 @@ treason_act = {
                 (assignment
                   (identifier)
                   (simple_value
-                    (number)))))))
+                    (identifier)))))))
         (statement
           (assignment
             (identifier)
@@ -2660,7 +2641,7 @@ treason_act = {
                 (assignment
                   (identifier)
                   (simple_value
-                    (number))))
+                    (identifier))))
               (statement
                 (assignment
                   (identifier)
@@ -2669,15 +2650,16 @@ treason_act = {
                       (assignment
                         (identifier)
                         (simple_value
-                          (number))))
+                          (identifier))))
                     (statement
-                      (logical_statement
+                      (assignment
+                        (identifier)
                         (map
                           (statement
                             (assignment
                               (identifier)
                               (simple_value
-                                (number))))))))))
+                                (identifier))))))))))
               (statement
                 (assignment
                   (identifier)
@@ -2686,15 +2668,16 @@ treason_act = {
                       (assignment
                         (identifier)
                         (simple_value
-                          (number))))
+                          (identifier))))
                     (statement
-                      (logical_statement
+                      (assignment
+                        (identifier)
                         (map
                           (statement
                             (assignment
                               (identifier)
                               (simple_value
-                                (number))))))))))
+                                (identifier))))))))))
               (statement
                 (assignment
                   (identifier)
@@ -2703,15 +2686,16 @@ treason_act = {
                       (assignment
                         (identifier)
                         (simple_value
-                          (number))))
+                          (identifier))))
                     (statement
-                      (logical_statement
+                      (assignment
+                        (identifier)
                         (map
                           (statement
                             (assignment
                               (identifier)
                               (simple_value
-                                (number)))))))))))))
+                                (identifier)))))))))))))
         (statement
           (assignment
             (identifier)
@@ -2720,7 +2704,7 @@ treason_act = {
                 (assignment
                   (identifier)
                   (simple_value
-                    (number))))
+                    (identifier))))
               (statement
                 (assignment
                   (identifier)
@@ -2729,15 +2713,16 @@ treason_act = {
                       (assignment
                         (identifier)
                         (simple_value
-                          (number))))
+                          (identifier))))
                     (statement
-                      (logical_statement
+                      (assignment
+                        (identifier)
                         (map
                           (statement
                             (assignment
                               (identifier)
                               (simple_value
-                                (number))))))))))))))))
+                                (identifier))))))))))))))))
   (statement
     (assignment
       (identifier)
@@ -2746,7 +2731,7 @@ treason_act = {
           (assignment
             (identifier)
             (simple_value
-              (number))))
+              (identifier))))
         (statement
           (assignment
             (identifier)
@@ -2769,7 +2754,7 @@ treason_act = {
                       (assignment
                         (identifier)
                         (simple_value
-                          (number)))))))
+                          (identifier)))))))
               (statement
                 (assignment
                   (identifier)
@@ -2783,13 +2768,14 @@ treason_act = {
                       (assignment
                         (identifier)
                         (simple_value
-                          (number)))))))
+                          (identifier)))))))
               (statement
                 (assignment
                   (identifier)
                   (map
                     (statement
-                      (logical_statement
+                      (assignment
+                        (identifier)
                         (map
                           (statement
                             (assignment
@@ -2797,7 +2783,8 @@ treason_act = {
                               (simple_value
                                 (identifier))))
                           (statement
-                            (logical_statement
+                            (assignment
+                              (identifier)
                               (map
                                 (statement
                                   (assignment
@@ -2808,27 +2795,22 @@ treason_act = {
                                   (assignment
                                     (identifier)
                                     (simple_value
-                                      (number))))))))))))))))
+                                      (identifier))))))))))))))))
         (statement
           (assignment
             (identifier)
             (map
               (statement
-                (condition_statement))
-              (statement
-                (condition_statement))
-              (statement
-                (condition_statement
+                (assignment
+                  (identifier)
                   (map
                     (statement
-                      (condition_statement))
-                    (statement
-                      (condition_statement))
-                    (statement
-                      (condition_statement
+                      (assignment
+                        (identifier)
                         (map
                           (statement
-                            (logical_statement
+                            (assignment
+                              (identifier)
                               (map
                                 (statement
                                   (assignment
@@ -2844,11 +2826,8 @@ treason_act = {
                         (identifier)
                         (map
                           (statement
-                            (condition_statement))
-                          (statement
-                            (condition_statement))
-                          (statement
-                            (condition_statement
+                            (assignment
+                              (identifier)
                               (map
                                 (statement
                                   (assignment
@@ -2859,7 +2838,7 @@ treason_act = {
                                   (assignment
                                     (identifier)
                                     (simple_value
-                                      (number)))))))
+                                      (identifier)))))))
                           (statement
                             (assignment
                               (identifier)
@@ -2870,21 +2849,16 @@ treason_act = {
             (identifier)
             (map
               (statement
-                (condition_statement))
-              (statement
-                (condition_statement))
-              (statement
-                (condition_statement
+                (assignment
+                  (identifier)
                   (map
                     (statement
-                      (condition_statement))
-                    (statement
-                      (condition_statement))
-                    (statement
-                      (condition_statement
+                      (assignment
+                        (identifier)
                         (map
                           (statement
-                            (logical_statement
+                            (assignment
+                              (identifier)
                               (map
                                 (statement
                                   (assignment
@@ -2913,11 +2887,8 @@ treason_act = {
                               (identifier)
                               (map
                                 (statement
-                                  (condition_statement))
-                                (statement
-                                  (condition_statement))
-                                (statement
-                                  (condition_statement
+                                  (assignment
+                                    (identifier)
                                     (map
                                       (statement
                                         (assignment
@@ -2938,11 +2909,8 @@ treason_act = {
                         (identifier)
                         (map
                           (statement
-                            (condition_statement))
-                          (statement
-                            (condition_statement))
-                          (statement
-                            (condition_statement
+                            (assignment
+                              (identifier)
                               (map
                                 (statement
                                   (assignment
@@ -2967,7 +2935,7 @@ treason_act = {
                 (assignment
                   (identifier)
                   (simple_value
-                    (number)))))))
+                    (identifier)))))))
         (statement
           (assignment
             (identifier)
@@ -2976,7 +2944,7 @@ treason_act = {
                 (assignment
                   (identifier)
                   (simple_value
-                    (number)))))))
+                    (identifier)))))))
         (statement
           (assignment
             (identifier)
@@ -2985,7 +2953,7 @@ treason_act = {
                 (assignment
                   (identifier)
                   (simple_value
-                    (number))))))))))
+                    (identifier))))))))))
   (statement
     (assignment
       (identifier)
@@ -2994,7 +2962,7 @@ treason_act = {
           (assignment
             (identifier)
             (simple_value
-              (number))))
+              (identifier))))
         (statement
           (assignment
             (identifier)
@@ -3011,7 +2979,7 @@ treason_act = {
                 (assignment
                   (identifier)
                   (simple_value
-                    (number)))))))
+                    (identifier)))))))
         (statement
           (assignment
             (identifier)
@@ -3020,12 +2988,12 @@ treason_act = {
                 (assignment
                   (identifier)
                   (simple_value
-                    (number))))
+                    (identifier))))
               (statement
                 (assignment
                   (identifier)
                   (simple_value
-                    (number)))))))
+                    (identifier)))))))
         (statement
           (assignment
             (identifier)
@@ -3039,7 +3007,7 @@ treason_act = {
                 (assignment
                   (identifier)
                   (simple_value
-                    (number))))
+                    (identifier))))
               (statement
                 (assignment
                   (identifier)
@@ -3048,12 +3016,12 @@ treason_act = {
                       (assignment
                         (identifier)
                         (simple_value
-                          (number))))
+                          (identifier))))
                     (statement
                       (assignment
                         (identifier)
                         (simple_value
-                          (number))))))))))
+                          (identifier))))))))))
         (statement
           (assignment
             (identifier)
@@ -3062,7 +3030,7 @@ treason_act = {
                 (assignment
                   (identifier)
                   (simple_value
-                    (number))))))))))
+                    (identifier))))))))))
   (statement
     (assignment
       (identifier)
@@ -3071,7 +3039,7 @@ treason_act = {
           (assignment
             (identifier)
             (simple_value
-              (number))))
+              (identifier))))
         (statement
           (assignment
             (identifier)
@@ -3127,7 +3095,7 @@ treason_act = {
                 (assignment
                   (identifier)
                   (simple_value
-                    (number)))))))
+                    (identifier)))))))
         (statement
           (assignment
             (identifier)
@@ -3136,7 +3104,7 @@ treason_act = {
                 (assignment
                   (identifier)
                   (simple_value
-                    (number)))))))
+                    (identifier)))))))
         (statement
           (assignment
             (identifier)
@@ -3145,53 +3113,12 @@ treason_act = {
                 (assignment
                   (identifier)
                   (simple_value
-                    (number))))))))))
+                    (identifier))))))))))
   (statement
     (assignment
       (identifier)
       (map
         (comment)
-        (statement
-          (assignment
-            (identifier)
-            (simple_value
-              (number))))
-        (statement
-          (assignment
-            (identifier)
-            (map
-              (statement
-                (assignment
-                  (identifier)
-                  (simple_value
-                    (number)))))))
-        (statement
-          (assignment
-            (identifier)
-            (map)))
-        (statement
-          (assignment
-            (identifier)
-            (map
-              (statement
-                (assignment
-                  (identifier)
-                  (simple_value
-                    (number))))
-              (statement
-                (assignment
-                  (identifier)
-                  (simple_value
-                    (number)))))))
-        (statement
-          (assignment
-            (identifier)
-            (map
-              (statement
-                (assignment
-                  (identifier)
-                  (simple_value
-                    (number)))))))
         (statement
           (assignment
             (identifier)
@@ -3205,63 +3132,11 @@ treason_act = {
                 (assignment
                   (identifier)
                   (simple_value
-                    (number))))
-              (statement
-                (assignment
-                  (identifier)
-                  (map
-                    (statement
-                      (assignment
-                        (identifier)
-                        (simple_value
-                          (number))))
-                    (statement
-                      (assignment
-                        (identifier)
-                        (simple_value
-                          (number)))))))
-              (statement
-                (assignment
-                  (identifier)
-                  (map
-                    (statement
-                      (assignment
-                        (identifier)
-                        (simple_value
-                          (number))))
-                    (statement
-                      (assignment
-                        (identifier)
-                        (simple_value
-                          (number)))))))
-              (statement
-                (assignment
-                  (identifier)
-                  (map
-                    (statement
-                      (assignment
-                        (identifier)
-                        (simple_value
-                          (number))))
-                    (statement
-                      (assignment
-                        (identifier)
-                        (simple_value
-                          (number)))))))
-              (statement
-                (assignment
-                  (identifier)
-                  (map
-                    (statement
-                      (assignment
-                        (identifier)
-                        (simple_value
-                          (number))))
-                    (statement
-                      (assignment
-                        (identifier)
-                        (simple_value
-                          (number))))))))))
+                    (identifier)))))))
+        (statement
+          (assignment
+            (identifier)
+            (map)))
         (statement
           (assignment
             (identifier)
@@ -3270,7 +3145,35 @@ treason_act = {
                 (assignment
                   (identifier)
                   (simple_value
-                    (number))))
+                    (identifier))))
+              (statement
+                (assignment
+                  (identifier)
+                  (simple_value
+                    (identifier)))))))
+        (statement
+          (assignment
+            (identifier)
+            (map
+              (statement
+                (assignment
+                  (identifier)
+                  (simple_value
+                    (identifier)))))))
+        (statement
+          (assignment
+            (identifier)
+            (simple_value
+              (identifier))))
+        (statement
+          (assignment
+            (identifier)
+            (map
+              (statement
+                (assignment
+                  (identifier)
+                  (simple_value
+                    (identifier))))
               (statement
                 (assignment
                   (identifier)
@@ -3279,12 +3182,77 @@ treason_act = {
                       (assignment
                         (identifier)
                         (simple_value
-                          (number))))
+                          (identifier))))
                     (statement
                       (assignment
                         (identifier)
                         (simple_value
-                          (number)))))))))))))
+                          (identifier)))))))
+              (statement
+                (assignment
+                  (identifier)
+                  (map
+                    (statement
+                      (assignment
+                        (identifier)
+                        (simple_value
+                          (identifier))))
+                    (statement
+                      (assignment
+                        (identifier)
+                        (simple_value
+                          (identifier)))))))
+              (statement
+                (assignment
+                  (identifier)
+                  (map
+                    (statement
+                      (assignment
+                        (identifier)
+                        (simple_value
+                          (identifier))))
+                    (statement
+                      (assignment
+                        (identifier)
+                        (simple_value
+                          (identifier)))))))
+              (statement
+                (assignment
+                  (identifier)
+                  (map
+                    (statement
+                      (assignment
+                        (identifier)
+                        (simple_value
+                          (identifier))))
+                    (statement
+                      (assignment
+                        (identifier)
+                        (simple_value
+                          (identifier))))))))))
+        (statement
+          (assignment
+            (identifier)
+            (map
+              (statement
+                (assignment
+                  (identifier)
+                  (simple_value
+                    (identifier))))
+              (statement
+                (assignment
+                  (identifier)
+                  (map
+                    (statement
+                      (assignment
+                        (identifier)
+                        (simple_value
+                          (identifier))))
+                    (statement
+                      (assignment
+                        (identifier)
+                        (simple_value
+                          (identifier)))))))))))))
   (statement
     (assignment
       (identifier)
@@ -3293,7 +3261,7 @@ treason_act = {
           (assignment
             (identifier)
             (simple_value
-              (number))))
+              (identifier))))
         (statement
           (assignment
             (identifier)
@@ -3320,7 +3288,7 @@ treason_act = {
                       (assignment
                         (identifier)
                         (simple_value
-                          (number))))))))))
+                          (identifier))))))))))
         (statement
           (assignment
             (identifier)
@@ -3329,7 +3297,7 @@ treason_act = {
                 (assignment
                   (identifier)
                   (simple_value
-                    (number))))
+                    (identifier))))
               (statement
                 (assignment
                   (identifier)
@@ -3338,9 +3306,10 @@ treason_act = {
                       (assignment
                         (identifier)
                         (simple_value
-                          (number))))
+                          (identifier))))
                     (statement
-                      (logical_statement
+                      (assignment
+                        (identifier)
                         (map
                           (statement
                             (assignment
@@ -3355,7 +3324,7 @@ treason_act = {
                                   (assignment
                                     (identifier)
                                     (simple_value
-                                      (number))))))))))))))))
+                                      (identifier))))))))))))))))
         (statement
           (assignment
             (identifier)
@@ -3364,7 +3333,7 @@ treason_act = {
                 (assignment
                   (identifier)
                   (simple_value
-                    (number))))
+                    (identifier))))
               (statement
                 (assignment
                   (identifier)
@@ -3373,9 +3342,10 @@ treason_act = {
                       (assignment
                         (identifier)
                         (simple_value
-                          (number))))
+                          (identifier))))
                     (statement
-                      (logical_statement
+                      (assignment
+                        (identifier)
                         (map
                           (statement
                             (assignment
@@ -3390,7 +3360,7 @@ treason_act = {
                                   (assignment
                                     (identifier)
                                     (simple_value
-                                      (number)))))))))))))))))))
+                                      (identifier)))))))))))))))))))
   (statement
     (assignment
       (identifier)
@@ -3399,7 +3369,7 @@ treason_act = {
           (assignment
             (identifier)
             (simple_value
-              (number))))
+              (identifier))))
         (statement
           (assignment
             (identifier)
@@ -3426,7 +3396,7 @@ treason_act = {
                       (assignment
                         (identifier)
                         (simple_value
-                          (number))))))))))
+                          (identifier))))))))))
         (statement
           (assignment
             (identifier)
@@ -3435,7 +3405,7 @@ treason_act = {
                 (assignment
                   (identifier)
                   (simple_value
-                    (number))))
+                    (identifier))))
               (statement
                 (assignment
                   (identifier)
@@ -3444,9 +3414,10 @@ treason_act = {
                       (assignment
                         (identifier)
                         (simple_value
-                          (number))))
+                          (identifier))))
                     (statement
-                      (logical_statement
+                      (assignment
+                        (identifier)
                         (map
                           (statement
                             (assignment
@@ -3461,7 +3432,7 @@ treason_act = {
                                   (assignment
                                     (identifier)
                                     (simple_value
-                                      (number))))))))))))))))
+                                      (identifier))))))))))))))))
         (statement
           (assignment
             (identifier)
@@ -3470,7 +3441,7 @@ treason_act = {
                 (assignment
                   (identifier)
                   (simple_value
-                    (number))))
+                    (identifier))))
               (statement
                 (assignment
                   (identifier)
@@ -3479,9 +3450,10 @@ treason_act = {
                       (assignment
                         (identifier)
                         (simple_value
-                          (number))))
+                          (identifier))))
                     (statement
-                      (logical_statement
+                      (assignment
+                        (identifier)
                         (map
                           (statement
                             (assignment
@@ -3496,7 +3468,7 @@ treason_act = {
                                   (assignment
                                     (identifier)
                                     (simple_value
-                                      (number)))))))))))))))))))
+                                      (identifier)))))))))))))))))))
   (statement
     (assignment
       (identifier)
@@ -3505,7 +3477,7 @@ treason_act = {
           (assignment
             (identifier)
             (simple_value
-              (number))))
+              (identifier))))
         (statement
           (assignment
             (identifier)
@@ -3532,7 +3504,7 @@ treason_act = {
                       (assignment
                         (identifier)
                         (simple_value
-                          (number))))))))))
+                          (identifier))))))))))
         (statement
           (assignment
             (identifier)
@@ -3541,7 +3513,7 @@ treason_act = {
                 (assignment
                   (identifier)
                   (simple_value
-                    (number))))
+                    (identifier))))
               (statement
                 (assignment
                   (identifier)
@@ -3550,9 +3522,10 @@ treason_act = {
                       (assignment
                         (identifier)
                         (simple_value
-                          (number))))
+                          (identifier))))
                     (statement
-                      (logical_statement
+                      (assignment
+                        (identifier)
                         (map
                           (statement
                             (assignment
@@ -3567,7 +3540,7 @@ treason_act = {
                                   (assignment
                                     (identifier)
                                     (simple_value
-                                      (number))))))))))))))))
+                                      (identifier))))))))))))))))
         (statement
           (assignment
             (identifier)
@@ -3576,7 +3549,7 @@ treason_act = {
                 (assignment
                   (identifier)
                   (simple_value
-                    (number))))
+                    (identifier))))
               (statement
                 (assignment
                   (identifier)
@@ -3585,9 +3558,10 @@ treason_act = {
                       (assignment
                         (identifier)
                         (simple_value
-                          (number))))
+                          (identifier))))
                     (statement
-                      (logical_statement
+                      (assignment
+                        (identifier)
                         (map
                           (statement
                             (assignment
@@ -3602,7 +3576,7 @@ treason_act = {
                                   (assignment
                                     (identifier)
                                     (simple_value
-                                      (number)))))))))))))))))))
+                                      (identifier)))))))))))))))))))
   (statement
     (assignment
       (identifier)
@@ -3611,7 +3585,7 @@ treason_act = {
           (assignment
             (identifier)
             (simple_value
-              (number))))
+              (identifier))))
         (statement
           (assignment
             (identifier)
@@ -3638,7 +3612,7 @@ treason_act = {
                       (assignment
                         (identifier)
                         (simple_value
-                          (number))))))))))
+                          (identifier))))))))))
         (statement
           (assignment
             (identifier)
@@ -3647,7 +3621,7 @@ treason_act = {
                 (assignment
                   (identifier)
                   (simple_value
-                    (number))))
+                    (identifier))))
               (statement
                 (assignment
                   (identifier)
@@ -3656,9 +3630,10 @@ treason_act = {
                       (assignment
                         (identifier)
                         (simple_value
-                          (number))))
+                          (identifier))))
                     (statement
-                      (logical_statement
+                      (assignment
+                        (identifier)
                         (map
                           (statement
                             (assignment
@@ -3673,7 +3648,7 @@ treason_act = {
                                   (assignment
                                     (identifier)
                                     (simple_value
-                                      (number))))))))))))))))
+                                      (identifier))))))))))))))))
         (statement
           (assignment
             (identifier)
@@ -3682,7 +3657,7 @@ treason_act = {
                 (assignment
                   (identifier)
                   (simple_value
-                    (number))))
+                    (identifier))))
               (statement
                 (assignment
                   (identifier)
@@ -3691,9 +3666,10 @@ treason_act = {
                       (assignment
                         (identifier)
                         (simple_value
-                          (number))))
+                          (identifier))))
                     (statement
-                      (logical_statement
+                      (assignment
+                        (identifier)
                         (map
                           (statement
                             (assignment
@@ -3708,7 +3684,7 @@ treason_act = {
                                   (assignment
                                     (identifier)
                                     (simple_value
-                                      (number)))))))))))))))))))
+                                      (identifier)))))))))))))))))))
   (statement
     (assignment
       (identifier)
@@ -3717,7 +3693,7 @@ treason_act = {
           (assignment
             (identifier)
             (simple_value
-              (number))))
+              (identifier))))
         (statement
           (assignment
             (identifier)
@@ -3744,7 +3720,7 @@ treason_act = {
                       (assignment
                         (identifier)
                         (simple_value
-                          (number))))))))))
+                          (identifier))))))))))
         (statement
           (assignment
             (identifier)
@@ -3753,7 +3729,7 @@ treason_act = {
                 (assignment
                   (identifier)
                   (simple_value
-                    (number))))
+                    (identifier))))
               (statement
                 (assignment
                   (identifier)
@@ -3762,9 +3738,10 @@ treason_act = {
                       (assignment
                         (identifier)
                         (simple_value
-                          (number))))
+                          (identifier))))
                     (statement
-                      (logical_statement
+                      (assignment
+                        (identifier)
                         (map
                           (statement
                             (assignment
@@ -3779,7 +3756,7 @@ treason_act = {
                                   (assignment
                                     (identifier)
                                     (simple_value
-                                      (number))))))))))))))))
+                                      (identifier))))))))))))))))
         (statement
           (assignment
             (identifier)
@@ -3788,7 +3765,7 @@ treason_act = {
                 (assignment
                   (identifier)
                   (simple_value
-                    (number))))
+                    (identifier))))
               (statement
                 (assignment
                   (identifier)
@@ -3797,9 +3774,10 @@ treason_act = {
                       (assignment
                         (identifier)
                         (simple_value
-                          (number))))
+                          (identifier))))
                     (statement
-                      (logical_statement
+                      (assignment
+                        (identifier)
                         (map
                           (statement
                             (assignment
@@ -3814,7 +3792,7 @@ treason_act = {
                                   (assignment
                                     (identifier)
                                     (simple_value
-                                      (number)))))))))))))))))))
+                                      (identifier)))))))))))))))))))
   (statement
     (assignment
       (identifier)
@@ -3823,7 +3801,7 @@ treason_act = {
           (assignment
             (identifier)
             (simple_value
-              (number))))
+              (identifier))))
         (statement
           (assignment
             (identifier)
@@ -3850,7 +3828,7 @@ treason_act = {
                       (assignment
                         (identifier)
                         (simple_value
-                          (number))))))))))
+                          (identifier))))))))))
         (statement
           (assignment
             (identifier)
@@ -3859,7 +3837,7 @@ treason_act = {
                 (assignment
                   (identifier)
                   (simple_value
-                    (number))))
+                    (identifier))))
               (statement
                 (assignment
                   (identifier)
@@ -3868,9 +3846,10 @@ treason_act = {
                       (assignment
                         (identifier)
                         (simple_value
-                          (number))))
+                          (identifier))))
                     (statement
-                      (logical_statement
+                      (assignment
+                        (identifier)
                         (map
                           (statement
                             (assignment
@@ -3885,7 +3864,7 @@ treason_act = {
                                   (assignment
                                     (identifier)
                                     (simple_value
-                                      (number))))))))))))))))
+                                      (identifier))))))))))))))))
         (statement
           (assignment
             (identifier)
@@ -3894,7 +3873,7 @@ treason_act = {
                 (assignment
                   (identifier)
                   (simple_value
-                    (number))))
+                    (identifier))))
               (statement
                 (assignment
                   (identifier)
@@ -3903,9 +3882,10 @@ treason_act = {
                       (assignment
                         (identifier)
                         (simple_value
-                          (number))))
+                          (identifier))))
                     (statement
-                      (logical_statement
+                      (assignment
+                        (identifier)
                         (map
                           (statement
                             (assignment
@@ -3920,7 +3900,7 @@ treason_act = {
                                   (assignment
                                     (identifier)
                                     (simple_value
-                                      (number)))))))))))))))))))
+                                      (identifier)))))))))))))))))))
   (statement
     (assignment
       (identifier)
@@ -3929,7 +3909,7 @@ treason_act = {
           (assignment
             (identifier)
             (simple_value
-              (number))))
+              (identifier))))
         (statement
           (assignment
             (identifier)
@@ -3956,7 +3936,7 @@ treason_act = {
                       (assignment
                         (identifier)
                         (simple_value
-                          (number))))))))))
+                          (identifier))))))))))
         (statement
           (assignment
             (identifier)
@@ -3965,7 +3945,7 @@ treason_act = {
                 (assignment
                   (identifier)
                   (simple_value
-                    (number))))
+                    (identifier))))
               (statement
                 (assignment
                   (identifier)
@@ -3974,9 +3954,10 @@ treason_act = {
                       (assignment
                         (identifier)
                         (simple_value
-                          (number))))
+                          (identifier))))
                     (statement
-                      (logical_statement
+                      (assignment
+                        (identifier)
                         (map
                           (statement
                             (assignment
@@ -3991,7 +3972,7 @@ treason_act = {
                                   (assignment
                                     (identifier)
                                     (simple_value
-                                      (number))))))))))))))))
+                                      (identifier))))))))))))))))
         (statement
           (assignment
             (identifier)
@@ -4000,7 +3981,7 @@ treason_act = {
                 (assignment
                   (identifier)
                   (simple_value
-                    (number))))
+                    (identifier))))
               (statement
                 (assignment
                   (identifier)
@@ -4009,9 +3990,10 @@ treason_act = {
                       (assignment
                         (identifier)
                         (simple_value
-                          (number))))
+                          (identifier))))
                     (statement
-                      (logical_statement
+                      (assignment
+                        (identifier)
                         (map
                           (statement
                             (assignment
@@ -4026,7 +4008,7 @@ treason_act = {
                                   (assignment
                                     (identifier)
                                     (simple_value
-                                      (number)))))))))))))))))))
+                                      (identifier)))))))))))))))))))
   (statement
     (assignment
       (identifier)
@@ -4035,7 +4017,7 @@ treason_act = {
           (assignment
             (identifier)
             (simple_value
-              (number))))
+              (identifier))))
         (statement
           (assignment
             (identifier)
@@ -4062,7 +4044,7 @@ treason_act = {
                       (assignment
                         (identifier)
                         (simple_value
-                          (number))))))))))
+                          (identifier))))))))))
         (statement
           (assignment
             (identifier)
@@ -4071,7 +4053,7 @@ treason_act = {
                 (assignment
                   (identifier)
                   (simple_value
-                    (number))))
+                    (identifier))))
               (statement
                 (assignment
                   (identifier)
@@ -4080,9 +4062,10 @@ treason_act = {
                       (assignment
                         (identifier)
                         (simple_value
-                          (number))))
+                          (identifier))))
                     (statement
-                      (logical_statement
+                      (assignment
+                        (identifier)
                         (map
                           (statement
                             (assignment
@@ -4097,7 +4080,7 @@ treason_act = {
                                   (assignment
                                     (identifier)
                                     (simple_value
-                                      (number))))))))))))))))
+                                      (identifier))))))))))))))))
         (statement
           (assignment
             (identifier)
@@ -4106,7 +4089,7 @@ treason_act = {
                 (assignment
                   (identifier)
                   (simple_value
-                    (number))))
+                    (identifier))))
               (statement
                 (assignment
                   (identifier)
@@ -4115,9 +4098,10 @@ treason_act = {
                       (assignment
                         (identifier)
                         (simple_value
-                          (number))))
+                          (identifier))))
                     (statement
-                      (logical_statement
+                      (assignment
+                        (identifier)
                         (map
                           (statement
                             (assignment
@@ -4132,7 +4116,7 @@ treason_act = {
                                   (assignment
                                     (identifier)
                                     (simple_value
-                                      (number)))))))))))))))))))
+                                      (identifier)))))))))))))))))))
   (statement
     (assignment
       (identifier)
@@ -4141,7 +4125,7 @@ treason_act = {
           (assignment
             (identifier)
             (simple_value
-              (number))))
+              (identifier))))
         (statement
           (assignment
             (identifier)
@@ -4168,7 +4152,7 @@ treason_act = {
                       (assignment
                         (identifier)
                         (simple_value
-                          (number))))))))))
+                          (identifier))))))))))
         (statement
           (assignment
             (identifier)
@@ -4177,7 +4161,7 @@ treason_act = {
                 (assignment
                   (identifier)
                   (simple_value
-                    (number))))
+                    (identifier))))
               (statement
                 (assignment
                   (identifier)
@@ -4186,9 +4170,10 @@ treason_act = {
                       (assignment
                         (identifier)
                         (simple_value
-                          (number))))
+                          (identifier))))
                     (statement
-                      (logical_statement
+                      (assignment
+                        (identifier)
                         (map
                           (statement
                             (assignment
@@ -4203,7 +4188,7 @@ treason_act = {
                                   (assignment
                                     (identifier)
                                     (simple_value
-                                      (number))))))))))))))))
+                                      (identifier))))))))))))))))
         (statement
           (assignment
             (identifier)
@@ -4212,7 +4197,7 @@ treason_act = {
                 (assignment
                   (identifier)
                   (simple_value
-                    (number))))
+                    (identifier))))
               (statement
                 (assignment
                   (identifier)
@@ -4221,9 +4206,10 @@ treason_act = {
                       (assignment
                         (identifier)
                         (simple_value
-                          (number))))
+                          (identifier))))
                     (statement
-                      (logical_statement
+                      (assignment
+                        (identifier)
                         (map
                           (statement
                             (assignment
@@ -4238,7 +4224,7 @@ treason_act = {
                                   (assignment
                                     (identifier)
                                     (simple_value
-                                      (number)))))))))))))))))))
+                                      (identifier)))))))))))))))))))
   (statement
     (assignment
       (identifier)
@@ -4247,7 +4233,7 @@ treason_act = {
           (assignment
             (identifier)
             (simple_value
-              (number))))
+              (identifier))))
         (statement
           (assignment
             (identifier)
@@ -4274,7 +4260,7 @@ treason_act = {
                       (assignment
                         (identifier)
                         (simple_value
-                          (number))))))))))
+                          (identifier))))))))))
         (statement
           (assignment
             (identifier)
@@ -4283,7 +4269,7 @@ treason_act = {
                 (assignment
                   (identifier)
                   (simple_value
-                    (number))))
+                    (identifier))))
               (statement
                 (assignment
                   (identifier)
@@ -4292,9 +4278,10 @@ treason_act = {
                       (assignment
                         (identifier)
                         (simple_value
-                          (number))))
+                          (identifier))))
                     (statement
-                      (logical_statement
+                      (assignment
+                        (identifier)
                         (map
                           (statement
                             (assignment
@@ -4309,7 +4296,7 @@ treason_act = {
                                   (assignment
                                     (identifier)
                                     (simple_value
-                                      (number))))))))))))))))
+                                      (identifier))))))))))))))))
         (statement
           (assignment
             (identifier)
@@ -4318,7 +4305,7 @@ treason_act = {
                 (assignment
                   (identifier)
                   (simple_value
-                    (number))))
+                    (identifier))))
               (statement
                 (assignment
                   (identifier)
@@ -4327,9 +4314,10 @@ treason_act = {
                       (assignment
                         (identifier)
                         (simple_value
-                          (number))))
+                          (identifier))))
                     (statement
-                      (logical_statement
+                      (assignment
+                        (identifier)
                         (map
                           (statement
                             (assignment
@@ -4344,7 +4332,7 @@ treason_act = {
                                   (assignment
                                     (identifier)
                                     (simple_value
-                                      (number)))))))))))))))))))
+                                      (identifier)))))))))))))))))))
   (statement
     (assignment
       (identifier)
@@ -4353,7 +4341,7 @@ treason_act = {
           (assignment
             (identifier)
             (simple_value
-              (number))))
+              (identifier))))
         (statement
           (assignment
             (identifier)
@@ -4380,7 +4368,7 @@ treason_act = {
                       (assignment
                         (identifier)
                         (simple_value
-                          (number))))))))))
+                          (identifier))))))))))
         (statement
           (assignment
             (identifier)
@@ -4389,7 +4377,7 @@ treason_act = {
                 (assignment
                   (identifier)
                   (simple_value
-                    (number))))
+                    (identifier))))
               (statement
                 (assignment
                   (identifier)
@@ -4398,9 +4386,10 @@ treason_act = {
                       (assignment
                         (identifier)
                         (simple_value
-                          (number))))
+                          (identifier))))
                     (statement
-                      (logical_statement
+                      (assignment
+                        (identifier)
                         (map
                           (statement
                             (assignment
@@ -4415,7 +4404,7 @@ treason_act = {
                                   (assignment
                                     (identifier)
                                     (simple_value
-                                      (number))))))))))))))))
+                                      (identifier))))))))))))))))
         (statement
           (assignment
             (identifier)
@@ -4424,7 +4413,7 @@ treason_act = {
                 (assignment
                   (identifier)
                   (simple_value
-                    (number))))
+                    (identifier))))
               (statement
                 (assignment
                   (identifier)
@@ -4433,9 +4422,10 @@ treason_act = {
                       (assignment
                         (identifier)
                         (simple_value
-                          (number))))
+                          (identifier))))
                     (statement
-                      (logical_statement
+                      (assignment
+                        (identifier)
                         (map
                           (statement
                             (assignment
@@ -4450,7 +4440,7 @@ treason_act = {
                                   (assignment
                                     (identifier)
                                     (simple_value
-                                      (number)))))))))))))))))))
+                                      (identifier)))))))))))))))))))
   (statement
     (assignment
       (identifier)
@@ -4459,7 +4449,7 @@ treason_act = {
           (assignment
             (identifier)
             (simple_value
-              (number))))
+              (identifier))))
         (statement
           (assignment
             (identifier)
@@ -4474,7 +4464,8 @@ treason_act = {
                         (simple_value
                           (boolean)))))))
               (statement
-                (logical_statement
+                (assignment
+                  (identifier)
                   (map
                     (statement
                       (assignment
@@ -4499,11 +4490,8 @@ treason_act = {
                   (identifier)
                   (map
                     (statement
-                      (condition_statement))
-                    (statement
-                      (condition_statement))
-                    (statement
-                      (condition_statement
+                      (assignment
+                        (identifier)
                         (map
                           (statement
                             (assignment
@@ -4520,21 +4508,16 @@ treason_act = {
             (identifier)
             (map
               (statement
-                (condition_statement))
-              (statement
-                (condition_statement))
-              (statement
-                (condition_statement
+                (assignment
+                  (identifier)
                   (map
                     (statement
-                      (condition_statement))
-                    (statement
-                      (condition_statement))
-                    (statement
-                      (condition_statement
+                      (assignment
+                        (identifier)
                         (map
                           (statement
-                            (logical_statement
+                            (assignment
+                              (identifier)
                               (map
                                 (statement
                                   (assignment
@@ -4551,18 +4534,12 @@ treason_act = {
                         (simple_value
                           (identifier)))))))
               (statement
-                (condition_statement))
-              (statement
-                (condition_statement))
-              (statement
-                (condition_statement
+                (assignment
+                  (identifier)
                   (map
                     (statement
-                      (condition_statement))
-                    (statement
-                      (condition_statement))
-                    (statement
-                      (condition_statement
+                      (assignment
+                        (identifier)
                         (map
                           (statement
                             (assignment
@@ -4578,11 +4555,8 @@ treason_act = {
                         (identifier)
                         (map
                           (statement
-                            (condition_statement))
-                          (statement
-                            (condition_statement))
-                          (statement
-                            (condition_statement
+                            (assignment
+                              (identifier)
                               (map
                                 (statement
                                   (assignment
@@ -4611,7 +4585,7 @@ treason_act = {
                                         (assignment
                                           (identifier)
                                           (simple_value
-                                            (number)))))))
+                                            (identifier)))))))
                                 (statement
                                   (assignment
                                     (identifier)
@@ -4625,7 +4599,7 @@ treason_act = {
                                         (assignment
                                           (identifier)
                                           (simple_value
-                                            (number)))))))))))))))))))
+                                            (identifier)))))))))))))))))))
         (statement
           (assignment
             (identifier)
@@ -4634,7 +4608,7 @@ treason_act = {
                 (assignment
                   (identifier)
                   (simple_value
-                    (number))))
+                    (identifier))))
               (statement
                 (assignment
                   (identifier)
@@ -4643,15 +4617,16 @@ treason_act = {
                       (assignment
                         (identifier)
                         (simple_value
-                          (number))))
+                          (identifier))))
                     (statement
-                      (logical_statement
+                      (assignment
+                        (identifier)
                         (map
                           (statement
                             (assignment
                               (identifier)
                               (simple_value
-                                (number))))))))))
+                                (identifier))))))))))
               (statement
                 (assignment
                   (identifier)
@@ -4660,7 +4635,7 @@ treason_act = {
                       (assignment
                         (identifier)
                         (simple_value
-                          (number))))
+                          (identifier))))
                     (statement
                       (assignment
                         (identifier)
@@ -4669,7 +4644,7 @@ treason_act = {
                             (assignment
                               (identifier)
                               (simple_value
-                                (number))))
+                                (identifier))))
                           (statement
                             (assignment
                               (identifier)
@@ -4683,7 +4658,7 @@ treason_act = {
                       (assignment
                         (identifier)
                         (simple_value
-                          (number))))
+                          (identifier))))
                     (statement
                       (assignment
                         (identifier)
@@ -4692,7 +4667,7 @@ treason_act = {
                             (assignment
                               (identifier)
                               (simple_value
-                                (number))))
+                                (identifier))))
                           (statement
                             (assignment
                               (identifier)
@@ -4706,12 +4681,12 @@ treason_act = {
                 (assignment
                   (identifier)
                   (simple_value
-                    (number))))
+                    (identifier))))
               (statement
                 (assignment
                   (identifier)
                   (simple_value
-                    (number)))))))
+                    (identifier)))))))
         (statement
           (assignment
             (identifier)
@@ -4720,7 +4695,7 @@ treason_act = {
                 (assignment
                   (identifier)
                   (simple_value
-                    (number))))
+                    (identifier))))
               (statement
                 (assignment
                   (identifier)
@@ -4729,7 +4704,7 @@ treason_act = {
                       (assignment
                         (identifier)
                         (simple_value
-                          (number))))
+                          (identifier))))
                     (statement
                       (assignment
                         (identifier)
@@ -4738,7 +4713,7 @@ treason_act = {
                             (assignment
                               (identifier)
                               (simple_value
-                                (number))))
+                                (identifier))))
                           (statement
                             (assignment
                               (identifier)
@@ -4752,39 +4727,42 @@ treason_act = {
           (assignment
             (identifier)
             (simple_value
-              (number))))
+              (identifier))))
         (statement
           (assignment
             (identifier)
             (map
               (statement
-                (logical_statement
+                (assignment
+                  (identifier)
                   (map
                     (statement
                       (assignment
                         (identifier)
                         (simple_value
-                          (number))))
+                          (identifier))))
                     (statement
                       (assignment
                         (identifier)
                         (simple_value
-                          (number))))
+                          (identifier))))
                     (statement
-                      (logical_statement
+                      (assignment
+                        (identifier)
                         (map
                           (statement
                             (assignment
                               (identifier)
                               (simple_value
-                                (number))))
+                                (identifier))))
                           (statement
                             (assignment
                               (identifier)
                               (simple_value
-                                (number))))))))))
+                                (identifier))))))))))
               (statement
-                (logical_statement
+                (assignment
+                  (identifier)
                   (map
                     (statement
                       (assignment
@@ -4821,12 +4799,12 @@ treason_act = {
                 (assignment
                   (identifier)
                   (simple_value
-                    (number))))
+                    (identifier))))
               (statement
                 (assignment
                   (identifier)
                   (simple_value
-                    (number)))))))
+                    (identifier)))))))
         (statement
           (assignment
             (identifier)
@@ -4835,7 +4813,7 @@ treason_act = {
                 (assignment
                   (identifier)
                   (simple_value
-                    (number))))
+                    (identifier))))
               (statement
                 (assignment
                   (identifier)
@@ -4844,12 +4822,12 @@ treason_act = {
                       (assignment
                         (identifier)
                         (simple_value
-                          (number))))
+                          (identifier))))
                     (statement
                       (assignment
                         (identifier)
                         (simple_value
-                          (number)))))))
+                          (identifier)))))))
               (statement
                 (assignment
                   (identifier)
@@ -4858,12 +4836,12 @@ treason_act = {
                       (assignment
                         (identifier)
                         (simple_value
-                          (number))))
+                          (identifier))))
                     (statement
                       (assignment
                         (identifier)
                         (simple_value
-                          (number)))))))
+                          (identifier)))))))
               (statement
                 (assignment
                   (identifier)
@@ -4872,12 +4850,12 @@ treason_act = {
                       (assignment
                         (identifier)
                         (simple_value
-                          (number))))
+                          (identifier))))
                     (statement
                       (assignment
                         (identifier)
                         (simple_value
-                          (number))))))))))
+                          (identifier))))))))))
         (statement
           (assignment
             (identifier)
@@ -4886,7 +4864,7 @@ treason_act = {
                 (assignment
                   (identifier)
                   (simple_value
-                    (number))))
+                    (identifier))))
               (statement
                 (assignment
                   (identifier)
@@ -4895,12 +4873,12 @@ treason_act = {
                       (assignment
                         (identifier)
                         (simple_value
-                          (number))))
+                          (identifier))))
                     (statement
                       (assignment
                         (identifier)
                         (simple_value
-                          (number)))))))
+                          (identifier)))))))
               (statement
                 (assignment
                   (identifier)
@@ -4909,12 +4887,12 @@ treason_act = {
                       (assignment
                         (identifier)
                         (simple_value
-                          (number))))
+                          (identifier))))
                     (statement
                       (assignment
                         (identifier)
                         (simple_value
-                          (number)))))))))))))
+                          (identifier)))))))))))))
   (statement
     (assignment
       (identifier)
@@ -4923,19 +4901,20 @@ treason_act = {
           (assignment
             (identifier)
             (simple_value
-              (number))))
+              (identifier))))
         (statement
           (assignment
             (identifier)
             (map
               (statement
-                (logical_statement
+                (assignment
+                  (identifier)
                   (map
                     (statement
                       (assignment
                         (identifier)
                         (simple_value
-                          (number))))))))))
+                          (identifier))))))))))
         (statement
           (assignment
             (identifier)
@@ -4962,7 +4941,7 @@ treason_act = {
                             (assignment
                               (identifier)
                               (simple_value
-                                (number)))))))))))))
+                                (identifier)))))))))))))
         (statement
           (assignment
             (identifier)
@@ -4971,7 +4950,7 @@ treason_act = {
                 (assignment
                   (identifier)
                   (simple_value
-                    (number))))
+                    (identifier))))
               (statement
                 (assignment
                   (identifier)
@@ -4980,12 +4959,12 @@ treason_act = {
                       (assignment
                         (identifier)
                         (simple_value
-                          (number))))
+                          (identifier))))
                     (statement
                       (assignment
                         (identifier)
                         (simple_value
-                          (number)))))))
+                          (identifier)))))))
               (statement
                 (assignment
                   (identifier)
@@ -4994,15 +4973,16 @@ treason_act = {
                       (assignment
                         (identifier)
                         (simple_value
-                          (number))))
+                          (identifier))))
                     (statement
-                      (logical_statement
+                      (assignment
+                        (identifier)
                         (map
                           (statement
                             (assignment
                               (identifier)
                               (simple_value
-                                (number))))))))))
+                                (identifier))))))))))
               (statement
                 (assignment
                   (identifier)
@@ -5011,15 +4991,16 @@ treason_act = {
                       (assignment
                         (identifier)
                         (simple_value
-                          (number))))
+                          (identifier))))
                     (statement
-                      (logical_statement
+                      (assignment
+                        (identifier)
                         (map
                           (statement
                             (assignment
                               (identifier)
                               (simple_value
-                                (number))))))))))
+                                (identifier))))))))))
               (statement
                 (assignment
                   (identifier)
@@ -5028,15 +5009,16 @@ treason_act = {
                       (assignment
                         (identifier)
                         (simple_value
-                          (number))))
+                          (identifier))))
                     (statement
-                      (logical_statement
+                      (assignment
+                        (identifier)
                         (map
                           (statement
                             (assignment
                               (identifier)
                               (simple_value
-                                (number))))))))))
+                                (identifier))))))))))
               (statement
                 (assignment
                   (identifier)
@@ -5045,15 +5027,16 @@ treason_act = {
                       (assignment
                         (identifier)
                         (simple_value
-                          (number))))
+                          (identifier))))
                     (statement
-                      (logical_statement
+                      (assignment
+                        (identifier)
                         (map
                           (statement
                             (assignment
                               (identifier)
                               (simple_value
-                                (number)))))))))))))
+                                (identifier)))))))))))))
         (statement
           (assignment
             (identifier)
@@ -5062,7 +5045,7 @@ treason_act = {
                 (assignment
                   (identifier)
                   (simple_value
-                    (number))))
+                    (identifier))))
               (statement
                 (assignment
                   (identifier)
@@ -5071,15 +5054,16 @@ treason_act = {
                       (assignment
                         (identifier)
                         (simple_value
-                          (number))))
+                          (identifier))))
                     (statement
-                      (logical_statement
+                      (assignment
+                        (identifier)
                         (map
                           (statement
                             (assignment
                               (identifier)
                               (simple_value
-                                (number))))))))))
+                                (identifier))))))))))
               (statement
                 (assignment
                   (identifier)
@@ -5088,15 +5072,16 @@ treason_act = {
                       (assignment
                         (identifier)
                         (simple_value
-                          (number))))
+                          (identifier))))
                     (statement
-                      (logical_statement
+                      (assignment
+                        (identifier)
                         (map
                           (statement
                             (assignment
                               (identifier)
                               (simple_value
-                                (number))))))))))
+                                (identifier))))))))))
               (statement
                 (assignment
                   (identifier)
@@ -5105,15 +5090,16 @@ treason_act = {
                       (assignment
                         (identifier)
                         (simple_value
-                          (number))))
+                          (identifier))))
                     (statement
-                      (logical_statement
+                      (assignment
+                        (identifier)
                         (map
                           (statement
                             (assignment
                               (identifier)
                               (simple_value
-                                (number))))))))))))))))
+                                (identifier))))))))))))))))
   (statement
     (assignment
       (identifier)
@@ -5122,7 +5108,7 @@ treason_act = {
           (assignment
             (identifier)
             (simple_value
-              (number))))
+              (identifier))))
         (statement
           (assignment
             (identifier)
@@ -5178,7 +5164,7 @@ treason_act = {
                 (assignment
                   (identifier)
                   (simple_value
-                    (number)))))))
+                    (identifier)))))))
         (statement
           (assignment
             (identifier)
@@ -5187,7 +5173,7 @@ treason_act = {
                 (assignment
                   (identifier)
                   (simple_value
-                    (number))))
+                    (identifier))))
               (statement
                 (assignment
                   (identifier)
@@ -5196,12 +5182,12 @@ treason_act = {
                       (assignment
                         (identifier)
                         (simple_value
-                          (number))))
+                          (identifier))))
                     (statement
                       (assignment
                         (identifier)
                         (simple_value
-                          (number)))))))
+                          (identifier)))))))
               (statement
                 (assignment
                   (identifier)
@@ -5210,12 +5196,12 @@ treason_act = {
                       (assignment
                         (identifier)
                         (simple_value
-                          (number))))
+                          (identifier))))
                     (statement
                       (assignment
                         (identifier)
                         (simple_value
-                          (number))))))))))
+                          (identifier))))))))))
         (statement
           (assignment
             (identifier)
@@ -5224,7 +5210,7 @@ treason_act = {
                 (assignment
                   (identifier)
                   (simple_value
-                    (number))))
+                    (identifier))))
               (statement
                 (assignment
                   (identifier)
@@ -5233,12 +5219,12 @@ treason_act = {
                       (assignment
                         (identifier)
                         (simple_value
-                          (number))))
+                          (identifier))))
                     (statement
                       (assignment
                         (identifier)
                         (simple_value
-                          (number)))))))))))))
+                          (identifier)))))))))))))
   (statement
     (assignment
       (identifier)
@@ -5247,7 +5233,7 @@ treason_act = {
           (assignment
             (identifier)
             (simple_value
-              (number))))
+              (identifier))))
         (statement
           (assignment
             (identifier)
@@ -5303,7 +5289,7 @@ treason_act = {
                 (assignment
                   (identifier)
                   (simple_value
-                    (number)))))))
+                    (identifier)))))))
         (statement
           (assignment
             (identifier)
@@ -5312,7 +5298,7 @@ treason_act = {
                 (assignment
                   (identifier)
                   (simple_value
-                    (number))))
+                    (identifier))))
               (statement
                 (assignment
                   (identifier)
@@ -5321,12 +5307,12 @@ treason_act = {
                       (assignment
                         (identifier)
                         (simple_value
-                          (number))))
+                          (identifier))))
                     (statement
                       (assignment
                         (identifier)
                         (simple_value
-                          (number)))))))
+                          (identifier)))))))
               (statement
                 (assignment
                   (identifier)
@@ -5335,12 +5321,12 @@ treason_act = {
                       (assignment
                         (identifier)
                         (simple_value
-                          (number))))
+                          (identifier))))
                     (statement
                       (assignment
                         (identifier)
                         (simple_value
-                          (number))))))))))
+                          (identifier))))))))))
         (statement
           (assignment
             (identifier)
@@ -5349,7 +5335,7 @@ treason_act = {
                 (assignment
                   (identifier)
                   (simple_value
-                    (number))))
+                    (identifier))))
               (statement
                 (assignment
                   (identifier)
@@ -5358,12 +5344,12 @@ treason_act = {
                       (assignment
                         (identifier)
                         (simple_value
-                          (number))))
+                          (identifier))))
                     (statement
                       (assignment
                         (identifier)
                         (simple_value
-                          (number)))))))))))))
+                          (identifier)))))))))))))
   (statement
     (assignment
       (identifier)
@@ -5372,7 +5358,7 @@ treason_act = {
           (assignment
             (identifier)
             (simple_value
-              (number))))
+              (identifier))))
         (statement
           (assignment
             (identifier)
@@ -5408,7 +5394,8 @@ treason_act = {
                         (simple_value
                           (boolean)))))))
               (statement
-                (logical_statement
+                (assignment
+                  (identifier)
                   (map
                     (statement
                       (assignment
@@ -5433,11 +5420,8 @@ treason_act = {
                   (identifier)
                   (map
                     (statement
-                      (condition_statement))
-                    (statement
-                      (condition_statement))
-                    (statement
-                      (condition_statement
+                      (assignment
+                        (identifier)
                         (map
                           (statement
                             (assignment
@@ -5477,11 +5461,8 @@ treason_act = {
                         (identifier)
                         (map
                           (statement
-                            (condition_statement))
-                          (statement
-                            (condition_statement))
-                          (statement
-                            (condition_statement
+                            (assignment
+                              (identifier)
                               (map
                                 (statement
                                   (assignment
@@ -5499,21 +5480,16 @@ treason_act = {
                               (simple_value
                                 (identifier))))))))))
               (statement
-                (condition_statement))
-              (statement
-                (condition_statement))
-              (statement
-                (condition_statement
+                (assignment
+                  (identifier)
                   (map
                     (statement
-                      (condition_statement))
-                    (statement
-                      (condition_statement))
-                    (statement
-                      (condition_statement
+                      (assignment
+                        (identifier)
                         (map
                           (statement
-                            (logical_statement
+                            (assignment
+                              (identifier)
                               (map
                                 (statement
                                   (assignment
@@ -5534,18 +5510,12 @@ treason_act = {
                               (simple_value
                                 (identifier))))))))))
               (statement
-                (condition_statement))
-              (statement
-                (condition_statement))
-              (statement
-                (condition_statement
+                (assignment
+                  (identifier)
                   (map
                     (statement
-                      (condition_statement))
-                    (statement
-                      (condition_statement))
-                    (statement
-                      (condition_statement
+                      (assignment
+                        (identifier)
                         (map
                           (statement
                             (assignment
@@ -5565,11 +5535,8 @@ treason_act = {
                               (identifier)
                               (map
                                 (statement
-                                  (condition_statement))
-                                (statement
-                                  (condition_statement))
-                                (statement
-                                  (condition_statement
+                                  (assignment
+                                    (identifier)
                                     (map
                                       (statement
                                         (assignment
@@ -5589,7 +5556,7 @@ treason_act = {
                 (assignment
                   (identifier)
                   (simple_value
-                    (number)))))))
+                    (identifier)))))))
         (statement
           (assignment
             (identifier)
@@ -5598,7 +5565,7 @@ treason_act = {
                 (assignment
                   (identifier)
                   (simple_value
-                    (number))))
+                    (identifier))))
               (statement
                 (assignment
                   (identifier)
@@ -5607,7 +5574,7 @@ treason_act = {
                       (assignment
                         (identifier)
                         (simple_value
-                          (number))))
+                          (identifier))))
                     (statement
                       (assignment
                         (identifier)
@@ -5616,7 +5583,7 @@ treason_act = {
                             (assignment
                               (identifier)
                               (simple_value
-                                (number))))
+                                (identifier))))
                           (statement
                             (assignment
                               (identifier)
@@ -5635,7 +5602,7 @@ treason_act = {
                       (assignment
                         (identifier)
                         (simple_value
-                          (number))))
+                          (identifier))))
                     (statement
                       (assignment
                         (identifier)
@@ -5644,7 +5611,7 @@ treason_act = {
                             (assignment
                               (identifier)
                               (simple_value
-                                (number))))
+                                (identifier))))
                           (statement
                             (assignment
                               (identifier)
@@ -5663,7 +5630,7 @@ treason_act = {
                 (assignment
                   (identifier)
                   (simple_value
-                    (number))))
+                    (identifier))))
               (statement
                 (assignment
                   (identifier)
@@ -5672,7 +5639,7 @@ treason_act = {
                       (assignment
                         (identifier)
                         (simple_value
-                          (number))))
+                          (identifier))))
                     (statement
                       (assignment
                         (identifier)
@@ -5681,7 +5648,7 @@ treason_act = {
                             (assignment
                               (identifier)
                               (simple_value
-                                (number))))
+                                (identifier))))
                           (statement
                             (assignment
                               (identifier)
@@ -5700,7 +5667,7 @@ treason_act = {
           (assignment
             (identifier)
             (simple_value
-              (number))))
+              (identifier))))
         (statement
           (assignment
             (identifier)
@@ -5709,7 +5676,7 @@ treason_act = {
                 (assignment
                   (identifier)
                   (simple_value
-                    (number)))))))
+                    (identifier)))))))
         (statement
           (assignment
             (identifier)
@@ -5761,7 +5728,7 @@ treason_act = {
                 (assignment
                   (identifier)
                   (simple_value
-                    (number)))))))
+                    (identifier)))))))
         (statement
           (assignment
             (identifier)
@@ -5770,7 +5737,7 @@ treason_act = {
                 (assignment
                   (identifier)
                   (simple_value
-                    (number))))
+                    (identifier))))
               (statement
                 (assignment
                   (identifier)
@@ -5779,12 +5746,12 @@ treason_act = {
                       (assignment
                         (identifier)
                         (simple_value
-                          (number))))
+                          (identifier))))
                     (statement
                       (assignment
                         (identifier)
                         (simple_value
-                          (number)))))))
+                          (identifier)))))))
               (statement
                 (assignment
                   (identifier)
@@ -5793,12 +5760,12 @@ treason_act = {
                       (assignment
                         (identifier)
                         (simple_value
-                          (number))))
+                          (identifier))))
                     (statement
                       (assignment
                         (identifier)
                         (simple_value
-                          (number)))))))
+                          (identifier)))))))
               (statement
                 (assignment
                   (identifier)
@@ -5807,12 +5774,12 @@ treason_act = {
                       (assignment
                         (identifier)
                         (simple_value
-                          (number))))
+                          (identifier))))
                     (statement
                       (assignment
                         (identifier)
                         (simple_value
-                          (number))))))))))
+                          (identifier))))))))))
         (statement
           (assignment
             (identifier)
@@ -5821,7 +5788,7 @@ treason_act = {
                 (assignment
                   (identifier)
                   (simple_value
-                    (number))))
+                    (identifier))))
               (statement
                 (assignment
                   (identifier)
@@ -5830,12 +5797,12 @@ treason_act = {
                       (assignment
                         (identifier)
                         (simple_value
-                          (number))))
+                          (identifier))))
                     (statement
                       (assignment
                         (identifier)
                         (simple_value
-                          (number)))))))))))))
+                          (identifier)))))))))))))
   (statement
     (assignment
       (identifier)
@@ -5844,7 +5811,7 @@ treason_act = {
           (assignment
             (identifier)
             (simple_value
-              (number))))
+              (identifier))))
         (statement
           (assignment
             (identifier)
@@ -5853,7 +5820,7 @@ treason_act = {
                 (assignment
                   (identifier)
                   (simple_value
-                    (number)))))))
+                    (identifier)))))))
         (statement
           (assignment
             (identifier)
@@ -5872,11 +5839,8 @@ treason_act = {
                   (identifier)
                   (map
                     (statement
-                      (condition_statement))
-                    (statement
-                      (condition_statement))
-                    (statement
-                      (condition_statement
+                      (assignment
+                        (identifier)
                         (map
                           (statement
                             (assignment
@@ -5901,11 +5865,8 @@ treason_act = {
                         (identifier)
                         (map
                           (statement
-                            (condition_statement))
-                          (statement
-                            (condition_statement))
-                          (statement
-                            (condition_statement
+                            (assignment
+                              (identifier)
                               (map
                                 (statement
                                   (assignment
@@ -5916,28 +5877,23 @@ treason_act = {
                             (assignment
                               (identifier)
                               (simple_value
-                                (number))))
+                                (identifier))))
                           (statement
                             (assignment
                               (identifier)
                               (simple_value
                                 (identifier))))))))))
               (statement
-                (condition_statement))
-              (statement
-                (condition_statement))
-              (statement
-                (condition_statement
+                (assignment
+                  (identifier)
                   (map
                     (statement
-                      (condition_statement))
-                    (statement
-                      (condition_statement))
-                    (statement
-                      (condition_statement
+                      (assignment
+                        (identifier)
                         (map
                           (statement
-                            (logical_statement
+                            (assignment
+                              (identifier)
                               (map
                                 (statement
                                   (assignment
@@ -5958,18 +5914,12 @@ treason_act = {
                               (simple_value
                                 (identifier))))))))))
               (statement
-                (condition_statement))
-              (statement
-                (condition_statement))
-              (statement
-                (condition_statement
+                (assignment
+                  (identifier)
                   (map
                     (statement
-                      (condition_statement))
-                    (statement
-                      (condition_statement))
-                    (statement
-                      (condition_statement
+                      (assignment
+                        (identifier)
                         (map
                           (statement
                             (assignment
@@ -5989,11 +5939,8 @@ treason_act = {
                               (identifier)
                               (map
                                 (statement
-                                  (condition_statement))
-                                (statement
-                                  (condition_statement))
-                                (statement
-                                  (condition_statement
+                                  (assignment
+                                    (identifier)
                                     (map
                                       (statement
                                         (assignment
@@ -6004,7 +5951,7 @@ treason_act = {
                                   (assignment
                                     (identifier)
                                     (simple_value
-                                      (number))))))))))))))))
+                                      (identifier))))))))))))))))
         (statement
           (assignment
             (identifier)
@@ -6013,7 +5960,7 @@ treason_act = {
                 (assignment
                   (identifier)
                   (simple_value
-                    (number)))))))
+                    (identifier)))))))
         (statement
           (assignment
             (identifier)
@@ -6022,7 +5969,7 @@ treason_act = {
                 (assignment
                   (identifier)
                   (simple_value
-                    (number))))))))))
+                    (identifier))))))))))
   (statement
     (assignment
       (identifier)
@@ -6031,7 +5978,7 @@ treason_act = {
           (assignment
             (identifier)
             (simple_value
-              (number))))
+              (identifier))))
         (statement
           (assignment
             (identifier)
@@ -6040,7 +5987,7 @@ treason_act = {
                 (assignment
                   (identifier)
                   (simple_value
-                    (number)))))))
+                    (identifier)))))))
         (statement
           (assignment
             (identifier)
@@ -6059,11 +6006,8 @@ treason_act = {
                   (identifier)
                   (map
                     (statement
-                      (condition_statement))
-                    (statement
-                      (condition_statement))
-                    (statement
-                      (condition_statement
+                      (assignment
+                        (identifier)
                         (map
                           (statement
                             (assignment
@@ -6088,11 +6032,8 @@ treason_act = {
                         (identifier)
                         (map
                           (statement
-                            (condition_statement))
-                          (statement
-                            (condition_statement))
-                          (statement
-                            (condition_statement
+                            (assignment
+                              (identifier)
                               (map
                                 (statement
                                   (assignment
@@ -6103,28 +6044,23 @@ treason_act = {
                             (assignment
                               (identifier)
                               (simple_value
-                                (number))))
+                                (identifier))))
                           (statement
                             (assignment
                               (identifier)
                               (simple_value
                                 (identifier))))))))))
               (statement
-                (condition_statement))
-              (statement
-                (condition_statement))
-              (statement
-                (condition_statement
+                (assignment
+                  (identifier)
                   (map
                     (statement
-                      (condition_statement))
-                    (statement
-                      (condition_statement))
-                    (statement
-                      (condition_statement
+                      (assignment
+                        (identifier)
                         (map
                           (statement
-                            (logical_statement
+                            (assignment
+                              (identifier)
                               (map
                                 (statement
                                   (assignment
@@ -6145,18 +6081,12 @@ treason_act = {
                               (simple_value
                                 (identifier))))))))))
               (statement
-                (condition_statement))
-              (statement
-                (condition_statement))
-              (statement
-                (condition_statement
+                (assignment
+                  (identifier)
                   (map
                     (statement
-                      (condition_statement))
-                    (statement
-                      (condition_statement))
-                    (statement
-                      (condition_statement
+                      (assignment
+                        (identifier)
                         (map
                           (statement
                             (assignment
@@ -6176,11 +6106,8 @@ treason_act = {
                               (identifier)
                               (map
                                 (statement
-                                  (condition_statement))
-                                (statement
-                                  (condition_statement))
-                                (statement
-                                  (condition_statement
+                                  (assignment
+                                    (identifier)
                                     (map
                                       (statement
                                         (assignment
@@ -6191,7 +6118,7 @@ treason_act = {
                                   (assignment
                                     (identifier)
                                     (simple_value
-                                      (number))))))))))))))))
+                                      (identifier))))))))))))))))
         (statement
           (assignment
             (identifier)
@@ -6200,7 +6127,7 @@ treason_act = {
                 (assignment
                   (identifier)
                   (simple_value
-                    (number)))))))
+                    (identifier)))))))
         (statement
           (assignment
             (identifier)
@@ -6209,7 +6136,7 @@ treason_act = {
                 (assignment
                   (identifier)
                   (simple_value
-                    (number))))))))))
+                    (identifier))))))))))
   (statement
     (assignment
       (identifier)
@@ -6219,7 +6146,7 @@ treason_act = {
           (assignment
             (identifier)
             (simple_value
-              (number))))
+              (identifier))))
         (statement
           (assignment
             (identifier)
@@ -6234,7 +6161,8 @@ treason_act = {
                         (simple_value
                           (boolean)))))))
               (statement
-                (logical_statement
+                (assignment
+                  (identifier)
                   (map
                     (statement
                       (assignment
@@ -6249,7 +6177,7 @@ treason_act = {
                 (assignment
                   (identifier)
                   (simple_value
-                    (number)))))))
+                    (identifier)))))))
         (statement
           (assignment
             (identifier)
@@ -6258,7 +6186,7 @@ treason_act = {
                 (assignment
                   (identifier)
                   (simple_value
-                    (number))))
+                    (identifier))))
               (statement
                 (assignment
                   (identifier)
@@ -6267,7 +6195,7 @@ treason_act = {
                       (assignment
                         (identifier)
                         (simple_value
-                          (number))))
+                          (identifier))))
                     (statement
                       (assignment
                         (identifier)
@@ -6276,7 +6204,7 @@ treason_act = {
                             (assignment
                               (identifier)
                               (simple_value
-                                (number))))
+                                (identifier))))
                           (statement
                             (assignment
                               (identifier)
@@ -6295,7 +6223,7 @@ treason_act = {
                       (assignment
                         (identifier)
                         (simple_value
-                          (number))))
+                          (identifier))))
                     (statement
                       (assignment
                         (identifier)
@@ -6304,7 +6232,7 @@ treason_act = {
                             (assignment
                               (identifier)
                               (simple_value
-                                (number))))
+                                (identifier))))
                           (statement
                             (assignment
                               (identifier)
@@ -6323,7 +6251,7 @@ treason_act = {
                 (assignment
                   (identifier)
                   (simple_value
-                    (number))))
+                    (identifier))))
               (statement
                 (assignment
                   (identifier)
@@ -6332,7 +6260,7 @@ treason_act = {
                       (assignment
                         (identifier)
                         (simple_value
-                          (number))))
+                          (identifier))))
                     (statement
                       (assignment
                         (identifier)
@@ -6341,7 +6269,7 @@ treason_act = {
                             (assignment
                               (identifier)
                               (simple_value
-                                (number))))
+                                (identifier))))
                           (statement
                             (assignment
                               (identifier)
@@ -6355,7 +6283,7 @@ treason_act = {
           (assignment
             (identifier)
             (simple_value
-              (number))))
+              (identifier))))
         (statement
           (assignment
             (identifier)
@@ -6370,7 +6298,8 @@ treason_act = {
                         (simple_value
                           (boolean)))))))
               (statement
-                (logical_statement
+                (assignment
+                  (identifier)
                   (map
                     (statement
                       (assignment
@@ -6378,10 +6307,12 @@ treason_act = {
                         (simple_value
                           (identifier)))))))
               (statement
-                (logical_statement
+                (assignment
+                  (identifier)
                   (map
                     (statement
-                      (logical_statement
+                      (assignment
+                        (identifier)
                         (map
                           (statement
                             (assignment
@@ -6389,7 +6320,8 @@ treason_act = {
                               (simple_value
                                 (string)))))))
                     (statement
-                      (logical_statement
+                      (assignment
+                        (identifier)
                         (map
                           (statement
                             (assignment
@@ -6447,12 +6379,12 @@ treason_act = {
                 (assignment
                   (identifier)
                   (simple_value
-                    (number))))
+                    (identifier))))
               (statement
                 (assignment
                   (identifier)
                   (simple_value
-                    (number)))))))
+                    (identifier)))))))
         (statement
           (assignment
             (identifier)
@@ -6461,7 +6393,7 @@ treason_act = {
                 (assignment
                   (identifier)
                   (simple_value
-                    (number))))
+                    (identifier))))
               (statement
                 (assignment
                   (identifier)
@@ -6470,15 +6402,16 @@ treason_act = {
                       (assignment
                         (identifier)
                         (simple_value
-                          (number))))
+                          (identifier))))
                     (statement
-                      (logical_statement
+                      (assignment
+                        (identifier)
                         (map
                           (statement
                             (assignment
                               (identifier)
                               (simple_value
-                                (number))))))))))
+                                (identifier))))))))))
               (statement
                 (assignment
                   (identifier)
@@ -6487,7 +6420,7 @@ treason_act = {
                       (assignment
                         (identifier)
                         (simple_value
-                          (number))))
+                          (identifier))))
                     (statement
                       (assignment
                         (identifier)
@@ -6496,7 +6429,7 @@ treason_act = {
                             (assignment
                               (identifier)
                               (simple_value
-                                (number))))
+                                (identifier))))
                           (statement
                             (assignment
                               (identifier)
@@ -6510,7 +6443,7 @@ treason_act = {
                       (assignment
                         (identifier)
                         (simple_value
-                          (number))))
+                          (identifier))))
                     (statement
                       (assignment
                         (identifier)
@@ -6519,7 +6452,7 @@ treason_act = {
                             (assignment
                               (identifier)
                               (simple_value
-                                (number))))
+                                (identifier))))
                           (statement
                             (assignment
                               (identifier)
@@ -6533,7 +6466,7 @@ treason_act = {
                 (assignment
                   (identifier)
                   (simple_value
-                    (number))))
+                    (identifier))))
               (statement
                 (assignment
                   (identifier)
@@ -6542,7 +6475,7 @@ treason_act = {
                       (assignment
                         (identifier)
                         (simple_value
-                          (number))))
+                          (identifier))))
                     (statement
                       (assignment
                         (identifier)
@@ -6551,7 +6484,7 @@ treason_act = {
                             (assignment
                               (identifier)
                               (simple_value
-                                (number))))
+                                (identifier))))
                           (statement
                             (assignment
                               (identifier)
@@ -6565,7 +6498,7 @@ treason_act = {
           (assignment
             (identifier)
             (simple_value
-              (number))))
+              (identifier))))
         (statement
           (assignment
             (identifier)
@@ -6596,7 +6529,7 @@ treason_act = {
                 (assignment
                   (identifier)
                   (simple_value
-                    (number)))))))
+                    (identifier)))))))
         (statement
           (assignment
             (identifier)
@@ -6605,7 +6538,7 @@ treason_act = {
                 (assignment
                   (identifier)
                   (simple_value
-                    (number)))))))
+                    (identifier)))))))
         (statement
           (assignment
             (identifier)
@@ -6614,7 +6547,7 @@ treason_act = {
                 (assignment
                   (identifier)
                   (simple_value
-                    (number))))))))))
+                    (identifier))))))))))
   (statement
     (assignment
       (identifier)
@@ -6623,7 +6556,7 @@ treason_act = {
           (assignment
             (identifier)
             (simple_value
-              (number))))
+              (identifier))))
         (statement
           (assignment
             (identifier)
@@ -6644,18 +6577,21 @@ treason_act = {
                   (simple_value
                     (boolean))))
               (statement
-                (logical_statement
+                (assignment
+                  (identifier)
                   (map
                     (statement
                       (assignment
                         (identifier)
                         (simple_value
-                          (number)))))))
+                          (identifier)))))))
               (statement
-                (logical_statement
+                (assignment
+                  (identifier)
                   (map
                     (statement
-                      (logical_statement
+                      (assignment
+                        (identifier)
                         (map
                           (statement
                             (assignment
@@ -6718,7 +6654,7 @@ treason_act = {
                 (assignment
                   (identifier)
                   (simple_value
-                    (number)))))))
+                    (identifier)))))))
         (statement
           (assignment
             (identifier)
@@ -6727,7 +6663,7 @@ treason_act = {
                 (assignment
                   (identifier)
                   (simple_value
-                    (number))))
+                    (identifier))))
               (statement
                 (assignment
                   (identifier)
@@ -6736,139 +6672,10 @@ treason_act = {
                       (assignment
                         (identifier)
                         (simple_value
-                          (number))))
-                    (statement
-                      (logical_statement
-                        (map
-                          (statement
-                            (assignment
-                              (identifier)
-                              (simple_value
-                                (number))))))))))
-              (statement
-                (assignment
-                  (identifier)
-                  (map
+                          (identifier))))
                     (statement
                       (assignment
                         (identifier)
-                        (simple_value
-                          (number))))
-                    (statement
-                      (logical_statement
-                        (map
-                          (statement
-                            (assignment
-                              (identifier)
-                              (simple_value
-                                (number))))))))))
-              (statement
-                (assignment
-                  (identifier)
-                  (map
-                    (statement
-                      (assignment
-                        (identifier)
-                        (simple_value
-                          (number))))
-                    (statement
-                      (logical_statement
-                        (map
-                          (statement
-                            (assignment
-                              (identifier)
-                              (simple_value
-                                (number))))))))))
-              (statement
-                (assignment
-                  (identifier)
-                  (map
-                    (statement
-                      (assignment
-                        (identifier)
-                        (simple_value
-                          (number))))
-                    (statement
-                      (logical_statement
-                        (map
-                          (statement
-                            (assignment
-                              (identifier)
-                              (simple_value
-                                (number)))))))))))))
-        (statement
-          (assignment
-            (identifier)
-            (map
-              (statement
-                (assignment
-                  (identifier)
-                  (simple_value
-                    (number))))
-              (statement
-                (assignment
-                  (identifier)
-                  (map
-                    (statement
-                      (assignment
-                        (identifier)
-                        (simple_value
-                          (number))))
-                    (statement
-                      (logical_statement
-                        (map
-                          (statement
-                            (assignment
-                              (identifier)
-                              (simple_value
-                                (number))))))))))))))))
-  (statement
-    (assignment
-      (identifier)
-      (map
-        (statement
-          (assignment
-            (identifier)
-            (simple_value
-              (number))))
-        (statement
-          (assignment
-            (identifier)
-            (map)))
-        (statement
-          (assignment
-            (identifier)
-            (map
-              (statement
-                (assignment
-                  (identifier)
-                  (simple_value
-                    (number))))
-              (statement
-                (assignment
-                  (identifier)
-                  (simple_value
-                    (number)))))))
-        (statement
-          (assignment
-            (identifier)
-            (map
-              (statement
-                (assignment
-                  (identifier)
-                  (simple_value
-                    (number))))
-              (statement
-                (assignment
-                  (identifier)
-                  (map
-                    (statement
-                      (assignment
-                        (identifier)
-                        (simple_value
-                          (number))))
-                    (statement
-                      (logical_statement
                         (map
                           (statement
                             (assignment
@@ -6883,12 +6690,16 @@ treason_act = {
                       (assignment
                         (identifier)
                         (simple_value
-                          (number))))
+                          (identifier))))
                     (statement
                       (assignment
                         (identifier)
-                        (simple_value
-                          (number)))))))
+                        (map
+                          (statement
+                            (assignment
+                              (identifier)
+                              (simple_value
+                                (identifier))))))))))
               (statement
                 (assignment
                   (identifier)
@@ -6897,12 +6708,16 @@ treason_act = {
                       (assignment
                         (identifier)
                         (simple_value
-                          (number))))
+                          (identifier))))
                     (statement
                       (assignment
                         (identifier)
-                        (simple_value
-                          (number)))))))
+                        (map
+                          (statement
+                            (assignment
+                              (identifier)
+                              (simple_value
+                                (identifier))))))))))
               (statement
                 (assignment
                   (identifier)
@@ -6911,12 +6726,16 @@ treason_act = {
                       (assignment
                         (identifier)
                         (simple_value
-                          (number))))
+                          (identifier))))
                     (statement
                       (assignment
                         (identifier)
-                        (simple_value
-                          (number))))))))))
+                        (map
+                          (statement
+                            (assignment
+                              (identifier)
+                              (simple_value
+                                (identifier)))))))))))))
         (statement
           (assignment
             (identifier)
@@ -6925,4 +6744,127 @@ treason_act = {
                 (assignment
                   (identifier)
                   (simple_value
-                    (number)))))))))))
+                    (identifier))))
+              (statement
+                (assignment
+                  (identifier)
+                  (map
+                    (statement
+                      (assignment
+                        (identifier)
+                        (simple_value
+                          (identifier))))
+                    (statement
+                      (assignment
+                        (identifier)
+                        (map
+                          (statement
+                            (assignment
+                              (identifier)
+                              (simple_value
+                                (identifier))))))))))))))))
+  (statement
+    (assignment
+      (identifier)
+      (map
+        (statement
+          (assignment
+            (identifier)
+            (simple_value
+              (identifier))))
+        (statement
+          (assignment
+            (identifier)
+            (map)))
+        (statement
+          (assignment
+            (identifier)
+            (map
+              (statement
+                (assignment
+                  (identifier)
+                  (simple_value
+                    (identifier))))
+              (statement
+                (assignment
+                  (identifier)
+                  (simple_value
+                    (identifier)))))))
+        (statement
+          (assignment
+            (identifier)
+            (map
+              (statement
+                (assignment
+                  (identifier)
+                  (simple_value
+                    (identifier))))
+              (statement
+                (assignment
+                  (identifier)
+                  (map
+                    (statement
+                      (assignment
+                        (identifier)
+                        (simple_value
+                          (identifier))))
+                    (statement
+                      (assignment
+                        (identifier)
+                        (map
+                          (statement
+                            (assignment
+                              (identifier)
+                              (simple_value
+                                (identifier))))))))))
+              (statement
+                (assignment
+                  (identifier)
+                  (map
+                    (statement
+                      (assignment
+                        (identifier)
+                        (simple_value
+                          (identifier))))
+                    (statement
+                      (assignment
+                        (identifier)
+                        (simple_value
+                          (identifier)))))))
+              (statement
+                (assignment
+                  (identifier)
+                  (map
+                    (statement
+                      (assignment
+                        (identifier)
+                        (simple_value
+                          (identifier))))
+                    (statement
+                      (assignment
+                        (identifier)
+                        (simple_value
+                          (identifier)))))))
+              (statement
+                (assignment
+                  (identifier)
+                  (map
+                    (statement
+                      (assignment
+                        (identifier)
+                        (simple_value
+                          (identifier))))
+                    (statement
+                      (assignment
+                        (identifier)
+                        (simple_value
+                          (identifier))))))))))
+        (statement
+          (assignment
+            (identifier)
+            (map
+              (statement
+                (assignment
+                  (identifier)
+                  (simple_value
+                    (identifier)))))))))))

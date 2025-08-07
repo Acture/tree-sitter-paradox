@@ -22,7 +22,7 @@ module.exports = grammar({
 
 		// top_level_statement: $ => choice(field("top_level_statement", $.statement), field("top_level_block", $.block)),
 
-		assignment: $ => seq(field("key",  choice($.identifier, $.number)), "=", field("value", choice($.simple_value, $.array, $.map))),
+		assignment: $ => seq(field("key",choice($.identifier, $.number)), "=", field("value", choice($.simple_value, $.array, $.map))),
 
 		map: $ => seq("{", repeat(choice($.statement)), "}"),
 
@@ -56,8 +56,8 @@ module.exports = grammar({
 
 		string: $ => /"(?:[^"\\]|\\.)*"/,
 		number: $ => token(/-?(?:\d+\.\d+|\d+|\.\d+)(?:[eE][+-]?\d+)?/),
-		boolean: $ => choice("yes", "no", "true", "false"),
-		identifier: $ => /[A-Za-z0-9_:.@!$%<>-]+/,
+		boolean: $ => token(prec(1, choice("yes", "no", "true", "false"))),
+		identifier: $ =>token(prec(1, /[^\s"={}#]+/)),
 
 		comment: $ => token(seq("#", /.*/)),
 	}
