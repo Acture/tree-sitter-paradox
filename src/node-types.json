@@ -39,6 +39,10 @@
             "named": true
           },
           {
+            "type": "string",
+            "named": true
+          },
+          {
             "type": "template_string",
             "named": true
           },

@@ -31,7 +31,7 @@ module.exports = grammar({
 		// top_level_statement: $ => choice(field("top_level_statement", $.statement), field("top_level_block", $.block)),
 
 		assignment: $ => seq(
-			field("key", choice($.identifier, $.number, $.variable, $.variable_embedded_identifier, $.template_string)),
+			field("key", choice($.identifier, $.number, $.variable, $.variable_embedded_identifier, $.template_string, $.string)),
 			"=",
 			field("value", choice($.simple_value, $.array, $.map, $.variable, $.variable_embedded_identifier))
 		),

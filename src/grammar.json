@@ -41,6 +41,10 @@
               {
                 "type": "SYMBOL",
                 "name": "template_string"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "string"
               }
             ]
           }
