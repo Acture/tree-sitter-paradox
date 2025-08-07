@@ -3,5 +3,8 @@
 (number) @number
 (identifier) @variable
 
-(keyword) @keyword
-(logical_operator) @keyword
+(condition_statement
+  (_) @keyword)
+
+(logical_statement
+  (_) @keyword)
