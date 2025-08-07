@@ -15,6 +15,14 @@ module.exports = grammar({
 	],
 	conflicts: $ => [
 		[$.map, $.array],
+		[$.assignment, $.variable_embedded_identifier],
+		[$.simple_value, $.variable_embedded_identifier],
+		[$.variable_embedded_identifier],
+		[$.assignment, $.statement],
+		[$.variable_embedded_identifier, $.statement],
+		[$.array, $.statement],
+		[$.array, $.statement, $.variable_embedded_identifier],
+
 	],
 
 	rules: {
@@ -23,27 +31,27 @@ module.exports = grammar({
 		// top_level_statement: $ => choice(field("top_level_statement", $.statement), field("top_level_block", $.block)),
 
 		assignment: $ => seq(
-			field("key", choice($.identifier, $.number, $.variable)),
+			field("key", choice($.identifier, $.number, $.variable, $.variable_embedded_identifier)),
 			"=",
-			field("value", choice($.simple_value, $.array, $.map, $.variable))
+			field("value", choice($.simple_value, $.array, $.map, $.variable, $.variable_embedded_identifier))
 		),
 
-		map: $ => seq("{", repeat(choice($.statement)), "}"),
+		map: $ => seq("{", repeat($.statement), "}"),
 
 		// block: $ => seq("{", repeat($.statement), "}"),
 
 		statement: $ => choice(
 			$.macro_map,
-
 			$.assignment,
 			$.condition_statement,
 			$.logical_statement,
+			$.variable, $.variable_embedded_identifier,
 		),
 
 
-		array: $ => seq("{", repeat($.simple_value), "}"),
+		array: $ => seq("{", repeat(choice($.simple_value, $.variable, $.variable_embedded_identifier)), "}"),
 
-		simple_value: $ => choice($.string, $.number, $.boolean, $.identifier,),
+		simple_value: $ => choice($.string, $.number, $.boolean, $.identifier),
 
 		condition_statement: $ => choice(
 			"if", "=", $.map,
@@ -69,6 +77,23 @@ module.exports = grammar({
 		boolean: $ => choice("yes", "no", "true", "false"),
 		variable: $ => seq("$", $.identifier, "$"),
 		identifier: $ => /[^\s"={}\[\]#$]+/,
+		variable_embedded_identifier: $ =>
+			choice(
+				seq(
+					$.identifier,
+					$.variable,
+				),
+				seq(
+					$.variable,
+					$.identifier
+				),
+				seq(
+					$.identifier,
+					$.variable,
+					$.identifier
+				),
+			),
+
 		comment: $ => token(seq("#", /.*/)),
 	}
 });
