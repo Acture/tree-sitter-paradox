@@ -29,6 +29,10 @@
               {
                 "type": "SYMBOL",
                 "name": "number"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "variable"
               }
             ]
           }
@@ -54,6 +58,10 @@
               {
                 "type": "SYMBOL",
                 "name": "map"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "variable"
               }
             ]
           }
@@ -88,6 +96,10 @@
     "statement": {
       "type": "CHOICE",
       "members": [
+        {
+          "type": "SYMBOL",
+          "name": "macro_map"
+        },
         {
           "type": "SYMBOL",
           "name": "assignment"
@@ -252,55 +264,87 @@
         }
       ]
     },
+    "macro_map": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "STRING",
+          "value": "[["
+        },
+        {
+          "type": "FIELD",
+          "name": "key",
+          "content": {
+            "type": "SYMBOL",
+            "name": "identifier"
+          }
+        },
+        {
+          "type": "STRING",
+          "value": "]"
+        },
+        {
+          "type": "REPEAT",
+          "content": {
+            "type": "SYMBOL",
+            "name": "statement"
+          }
+        },
+        {
+          "type": "STRING",
+          "value": "]"
+        }
+      ]
+    },
     "string": {
       "type": "PATTERN",
       "value": "\"(?:[^\"\\\\]|\\\\.)*\""
     },
     "number": {
-      "type": "TOKEN",
-      "content": {
-        "type": "PATTERN",
-        "value": "-?(?:\\d+\\.\\d+|\\d+|\\.\\d+)(?:[eE][+-]?\\d+)?"
-      }
+      "type": "PATTERN",
+      "value": "-?(?:\\d+\\.\\d+|\\d+|\\.\\d+)(?:[eE][+-]?\\d+)?"
     },
     "boolean": {
-      "type": "TOKEN",
-      "content": {
-        "type": "PREC",
-        "value": 1,
-        "content": {
-          "type": "CHOICE",
-          "members": [
-            {
-              "type": "STRING",
-              "value": "yes"
-            },
-            {
-              "type": "STRING",
-              "value": "no"
-            },
-            {
-              "type": "STRING",
-              "value": "true"
-            },
-            {
-              "type": "STRING",
-              "value": "false"
-            }
-          ]
+      "type": "CHOICE",
+      "members": [
+        {
+          "type": "STRING",
+          "value": "yes"
+        },
+        {
+          "type": "STRING",
+          "value": "no"
+        },
+        {
+          "type": "STRING",
+          "value": "true"
+        },
+        {
+          "type": "STRING",
+          "value": "false"
         }
-      }
+      ]
+    },
+    "variable": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "STRING",
+          "value": "$"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "identifier"
+        },
+        {
+          "type": "STRING",
+          "value": "$"
+        }
+      ]
     },
     "identifier": {
-      "type": "TOKEN",
-      "content": {
-        "type": "PREC",
-        "value": 1,
-        "content": {
-          "type": "PATTERN",
-          "value": "[^\\s\"={}#]+"
-        }
-      }
+      "type": "PATTERN",
+      "value": "[^\\s\"={}\\[\\]#$]+"
     },
     "comment": {
       "type": "TOKEN",

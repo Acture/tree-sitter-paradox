@@ -22,13 +22,19 @@ module.exports = grammar({
 
 		// top_level_statement: $ => choice(field("top_level_statement", $.statement), field("top_level_block", $.block)),
 
-		assignment: $ => seq(field("key",choice($.identifier, $.number)), "=", field("value", choice($.simple_value, $.array, $.map))),
+		assignment: $ => seq(
+			field("key", choice($.identifier, $.number, $.variable)),
+			"=",
+			field("value", choice($.simple_value, $.array, $.map, $.variable))
+		),
 
 		map: $ => seq("{", repeat(choice($.statement)), "}"),
 
 		// block: $ => seq("{", repeat($.statement), "}"),
 
 		statement: $ => choice(
+			$.macro_map,
+
 			$.assignment,
 			$.condition_statement,
 			$.logical_statement,
@@ -40,25 +46,29 @@ module.exports = grammar({
 		simple_value: $ => choice($.string, $.number, $.boolean, $.identifier,),
 
 		condition_statement: $ => choice(
-			"if" , "=", $.map,
+			"if", "=", $.map,
 			"limit", "=", $.map,
 			"trigger", "=", $.map,
 			"potential", "=", $.map,
 		),
 
 
-		logical_statement: $ =>
-			choice(
-				seq("AND", "=", $.map),
-				seq("OR", "=", $.map),
-				seq("NOT", "=", $.map),
-			),
+		logical_statement: $ => choice(
+			seq("AND", "=", $.map),
+			seq("OR", "=", $.map),
+			seq("NOT", "=", $.map),
+		),
 
+		macro_map: $ => seq(
+			"[[", field("key", $.identifier), "]",
+			repeat($.statement),
+			"]"
+		),
 		string: $ => /"(?:[^"\\]|\\.)*"/,
-		number: $ => token(/-?(?:\d+\.\d+|\d+|\.\d+)(?:[eE][+-]?\d+)?/),
-		boolean: $ => token(prec(1, choice("yes", "no", "true", "false"))),
-		identifier: $ =>token(prec(1, /[^\s"={}#]+/)),
-
+		number: $ => /-?(?:\d+\.\d+|\d+|\.\d+)(?:[eE][+-]?\d+)?/,
+		boolean: $ => choice("yes", "no", "true", "false"),
+		variable: $ => seq("$", $.identifier, "$"),
+		identifier: $ => /[^\s"={}\[\]#$]+/,
 		comment: $ => token(seq("#", /.*/)),
 	}
 });
