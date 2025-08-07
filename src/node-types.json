@@ -5,10 +5,10 @@
     "fields": {},
     "children": {
       "multiple": true,
-      "required": true,
+      "required": false,
       "types": [
         {
-          "type": "value",
+          "type": "simple_value",
           "named": true
         }
       ]
@@ -61,6 +61,79 @@
     "fields": {}
   },
   {
+    "type": "key",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "identifier",
+          "named": true
+        },
+        {
+          "type": "number",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "keyword",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": false,
+      "types": [
+        {
+          "type": "logical_operator",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "keyword_statement",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": false,
+      "types": [
+        {
+          "type": "keyword",
+          "named": true
+        },
+        {
+          "type": "map",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "logical_operator",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "map",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "statement",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
     "type": "simple_value",
     "named": true,
     "fields": {},
@@ -73,7 +146,7 @@
           "named": true
         },
         {
-          "type": "literal",
+          "type": "identifier",
           "named": true
         },
         {
@@ -91,16 +164,17 @@
     "type": "source_file",
     "named": true,
     "root": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "statement",
-          "named": true
-        }
-      ]
+    "fields": {
+      "top_level_statement": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "top_level_statement",
+            "named": true
+          }
+        ]
+      }
     }
   },
   {
@@ -114,8 +188,38 @@
         {
           "type": "assignment",
           "named": true
+        },
+        {
+          "type": "keyword_statement",
+          "named": true
         }
       ]
+    }
+  },
+  {
+    "type": "top_level_statement",
+    "named": true,
+    "fields": {
+      "top_level_block": {
+        "multiple": false,
+        "required": false,
+        "types": [
+          {
+            "type": "block",
+            "named": true
+          }
+        ]
+      },
+      "top_level_statement": {
+        "multiple": false,
+        "required": false,
+        "types": [
+          {
+            "type": "statement",
+            "named": true
+          }
+        ]
+      }
     }
   },
   {
@@ -131,7 +235,7 @@
           "named": true
         },
         {
-          "type": "block",
+          "type": "map",
           "named": true
         },
         {
@@ -146,21 +250,49 @@
     "named": false
   },
   {
+    "type": "AND",
+    "named": false
+  },
+  {
+    "type": "NOR",
+    "named": false
+  },
+  {
+    "type": "NOT",
+    "named": false
+  },
+  {
+    "type": "OR",
+    "named": false
+  },
+  {
     "type": "comment",
     "named": true,
     "extra": true
+  },
+  {
+    "type": "effect",
+    "named": false
   },
   {
     "type": "false",
     "named": false
   },
   {
-    "type": "key",
+    "type": "identifier",
     "named": true
   },
   {
-    "type": "literal",
-    "named": true
+    "type": "if",
+    "named": false
+  },
+  {
+    "type": "limit",
+    "named": false
+  },
+  {
+    "type": "modifier",
+    "named": false
   },
   {
     "type": "no",
@@ -171,8 +303,16 @@
     "named": true
   },
   {
+    "type": "potential",
+    "named": false
+  },
+  {
     "type": "string",
     "named": true
+  },
+  {
+    "type": "trigger",
+    "named": false
   },
   {
     "type": "true",

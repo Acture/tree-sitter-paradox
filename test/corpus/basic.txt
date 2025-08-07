@@ -7,9 +7,11 @@ foo = "bar"
 --------------------------------------------------------------------------------
 
 (source_file
-  (statement
-    (assignment
-      key: (key)
-      value: (value
-        (simple_value
-          (string))))))
+  (top_level_statement
+    (statement
+      (assignment
+        (key
+          (identifier))
+        (value
+          (simple_value
+            (string)))))))

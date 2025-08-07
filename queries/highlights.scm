@@ -1,22 +1,7 @@
-;; -------- Comments --------
-(comment) @comment
-
-;; -------- Literals & Constants --------
 (string) @string
+(comment) @comment
 (number) @number
-(boolean) @constant.builtin
-(literal) @variable
+(identifier) @variable
 
-;; -------- Identifiers --------
-(key) @property
-
-;; -------- Assignment Structure --------
-(assignment
-  key: (key) @property
-  "=" @operator
-  value: (_) @variable)
-
-;; -------- Punctuation --------
-"=" @operator
-"{" @punctuation.bracket
-"}" @punctuation.bracket
+(keyword) @keyword
+(logical_operator) @keyword

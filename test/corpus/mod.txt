@@ -17,53 +17,60 @@ remote_file_id="2164202838"
 --------------------------------------------------------------------------------
 
 (source_file
-  (statement
-    (assignment
-      (key)
-      (value
-        (simple_value
-          (string)))))
-  (statement
-    (assignment
-      (key)
-      (value
-        (array
-          (value
+  (top_level_statement
+    (statement
+      (assignment
+        (key
+          (identifier))
+        (value
+          (simple_value
+            (string))))))
+  (top_level_statement
+    (statement
+      (assignment
+        (key
+          (identifier))
+        (value
+          (array
             (simple_value
-              (string)))
-          (value
+              (string))
             (simple_value
-              (string)))
-          (value
+              (string))
             (simple_value
-              (string)))
-          (value
+              (string))
             (simple_value
-              (string)))
-          (value
+              (string))
             (simple_value
               (string)))))))
-  (statement
-    (assignment
-      (key)
-      (value
-        (simple_value
-          (string)))))
-  (statement
-    (assignment
-      (key)
-      (value
-        (simple_value
-          (string)))))
-  (statement
-    (assignment
-      (key)
-      (value
-        (simple_value
-          (string)))))
-  (statement
-    (assignment
-      (key)
-      (value
-        (simple_value
-          (string))))))
+  (top_level_statement
+    (statement
+      (assignment
+        (key
+          (identifier))
+        (value
+          (simple_value
+            (string))))))
+  (top_level_statement
+    (statement
+      (assignment
+        (key
+          (identifier))
+        (value
+          (simple_value
+            (string))))))
+  (top_level_statement
+    (statement
+      (assignment
+        (key
+          (identifier))
+        (value
+          (simple_value
+            (string))))))
+  (top_level_statement
+    (statement
+      (assignment
+        (key
+          (identifier))
+        (value
+          (simple_value
+            (string)))))))
