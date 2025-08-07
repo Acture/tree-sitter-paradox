@@ -50,3 +50,4 @@ zig-out/
 *.zip
 
 test/raw_corpus
+node_modules
