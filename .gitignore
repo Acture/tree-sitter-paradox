@@ -51,3 +51,4 @@ zig-out/
 
 test/raw_corpus
 node_modules
+/.junie/
