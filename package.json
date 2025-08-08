@@ -3,7 +3,7 @@
   "version": "0.2.0",
   "description": "Paradox grammar for tree-sitter",
   "repository": "https://github.com/acture/tree-sitter-paradox.git",
-  "license": "AGPL",
+  "license": "AGPL-3.0-only",
   "author": {
     "name": "acture",
     "email": "acturea@gmail.com"
