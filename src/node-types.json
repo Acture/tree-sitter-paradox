@@ -90,33 +90,65 @@
     "fields": {}
   },
   {
+    "type": "condition_keyword",
+    "named": true,
+    "fields": {}
+  },
+  {
     "type": "condition_statement",
     "named": true,
-    "fields": {},
-    "children": {
-      "multiple": false,
-      "required": false,
-      "types": [
-        {
-          "type": "map",
-          "named": true
-        }
-      ]
+    "fields": {
+      "body": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "map",
+            "named": true
+          }
+        ]
+      },
+      "keyword": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "condition_keyword",
+            "named": true
+          }
+        ]
+      }
     }
+  },
+  {
+    "type": "logical_keyword",
+    "named": true,
+    "fields": {}
   },
   {
     "type": "logical_statement",
     "named": true,
-    "fields": {},
-    "children": {
-      "multiple": false,
-      "required": true,
-      "types": [
-        {
-          "type": "map",
-          "named": true
-        }
-      ]
+    "fields": {
+      "body": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "map",
+            "named": true
+          }
+        ]
+      },
+      "keyword": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "logical_keyword",
+            "named": true
+          }
+        ]
+      }
     }
   },
   {
@@ -158,6 +190,32 @@
           "named": true
         }
       ]
+    }
+  },
+  {
+    "type": "scope_statement",
+    "named": true,
+    "fields": {
+      "body": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "map",
+            "named": true
+          }
+        ]
+      },
+      "keyword": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "scope_keyword",
+            "named": true
+          }
+        ]
+      }
     }
   },
   {
@@ -226,6 +284,10 @@
         },
         {
           "type": "macro_map",
+          "named": true
+        },
+        {
+          "type": "scope_statement",
           "named": true
         },
         {
@@ -310,9 +372,21 @@
     "named": false
   },
   {
+    "type": "allow",
+    "named": false
+  },
+  {
     "type": "comment",
     "named": true,
     "extra": true
+  },
+  {
+    "type": "else",
+    "named": false
+  },
+  {
+    "type": "else_if",
+    "named": false
   },
   {
     "type": "false",
@@ -341,6 +415,10 @@
   {
     "type": "potential",
     "named": false
+  },
+  {
+    "type": "scope_keyword",
+    "named": true
   },
   {
     "type": "string",

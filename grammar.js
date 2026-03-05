@@ -7,12 +7,19 @@
 /// <reference types="tree-sitter-cli/dsl" />
 // @ts-check
 
-module.exports = grammar({
-	name: "paradox", fileTypes: ["mod", "txt", "asset", "gui"],
+const RESERVED_CONDITION_KEYWORDS = ["if", "else_if", "else", "limit", "trigger", "potential", "allow"];
+const LOGICAL_KEYWORDS = ["AND", "OR", "NOT"];
 
-	extras: $ => [/\s/,        // 空格、tab、换行（包括 \n）
-		$.comment,   // 注释
+module.exports = grammar({
+	name: "paradox",
+	fileTypes: ["mod", "txt", "asset", "gui"],
+	word: $ => $.identifier,
+
+	extras: $ => [
+		/\s/,
+		$.comment,
 	],
+
 	conflicts: $ => [
 		[$.map, $.array],
 		[$.assignment, $.variable_embedded_identifier],
@@ -22,83 +29,92 @@ module.exports = grammar({
 		[$.variable_embedded_identifier, $.statement],
 		[$.array, $.statement],
 		[$.array, $.statement, $.variable_embedded_identifier],
-		[$.assignment, $.simple_value]
-
+		[$.array, $.variable_embedded_identifier],
+		[$.assignment, $.simple_value],
 	],
 
 	rules: {
 		source_file: $ => repeat(field("top_level_statement", $.statement)),
 
-		// top_level_statement: $ => choice(field("top_level_statement", $.statement), field("top_level_block", $.block)),
-
 		assignment: $ => seq(
-			field("key", choice($.identifier, $.number, $.variable, $.variable_embedded_identifier, $.template_string, $.string)),
+			field("key", choice(
+				$.identifier,
+				$.number,
+				$.variable,
+				$.variable_embedded_identifier,
+				$.template_string,
+				$.string,
+			)),
 			"=",
-			field("value", choice($.simple_value, $.array, $.map, $.variable, $.variable_embedded_identifier))
+			field("value", choice($.simple_value, $.array, $.map, $.variable, $.variable_embedded_identifier)),
 		),
 
 		map: $ => seq("{", repeat($.statement), "}"),
 
-		// block: $ => seq("{", repeat($.statement), "}"),
-
 		statement: $ => choice(
 			$.macro_map,
-			$.assignment,
 			$.condition_statement,
 			$.logical_statement,
-			$.variable, $.variable_embedded_identifier,
-			$.simple_value
+			$.scope_statement,
+			$.assignment,
+			$.variable,
+			$.variable_embedded_identifier,
+			$.simple_value,
 		),
-
 
 		array: $ => seq("{", repeat(choice($.simple_value, $.variable, $.variable_embedded_identifier)), "}"),
 
 		simple_value: $ => choice($.string, $.number, $.boolean, $.identifier),
 
-		condition_statement: $ => choice(
-			"if", "=", $.map,
-			"limit", "=", $.map,
-			"trigger", "=", $.map,
-			"potential", "=", $.map,
+		condition_statement: $ => seq(
+			field("keyword", $.condition_keyword),
+			"=",
+			field("body", $.map),
 		),
 
-
-		logical_statement: $ => choice(
-			seq("AND", "=", $.map),
-			seq("OR", "=", $.map),
-			seq("NOT", "=", $.map),
+		logical_statement: $ => seq(
+			field("keyword", $.logical_keyword),
+			"=",
+			field("body", $.map),
 		),
+
+		scope_statement: $ => seq(
+			field("keyword", $.scope_keyword),
+			"=",
+			field("body", $.map),
+		),
+
+		condition_keyword: _ => choice(...RESERVED_CONDITION_KEYWORDS),
+		logical_keyword: _ => choice(...LOGICAL_KEYWORDS),
+
+		scope_keyword: _ => token(choice(
+			"THIS",
+			"ROOT",
+			/FROM(?:FROM){0,4}/,
+			/PREV(?:PREV){0,4}/,
+		)),
 
 		macro_map: $ => seq(
-			"[[", field("key", $.identifier), "]",
+			"[[",
+			field("key", $.identifier),
+			"]",
 			repeat($.statement),
-			"]"
+			"]",
 		),
-		template_string: $ => token(
-			seq('"', /[^"#\\]*/, "#", /[0-9]+/, /[^"\\]*/, '"')
-		),
-		string: $ =>token(seq('"', repeat(choice(/[^"\\]/, /\\./)), '"')),
-		number: $ => /-?(?:\d+\.\d+|\d+|\.\d+)(?:[eE][+-]?\d+)?/,
-		boolean: $ => choice("yes", "no", "true", "false"),
-		variable: $ => seq("$", $.identifier, "$"),
-		identifier: $ => /[^\s"={}\[\]#$]+/,
-		variable_embedded_identifier: $ =>
-			choice(
-				seq(
-					choice($.number, $.identifier),
-					$.variable,
-				),
-				seq(
-					$.variable,
-					choice($.number, $.identifier)
-				),
-				seq(
-					choice($.number, $.identifier),
-					$.variable,
-					choice($.number, $.identifier)
-				),
-			),
 
-		comment: $ => token(seq("#", /.*/)),
-	}
+		template_string: _ => token(seq('"', /[^"#\\]*/, "#", /[0-9]+/, /[^"\\]*/, '"')),
+		string: _ => token(seq('"', repeat(choice(/[^"\\]/, /\\./)), '"')),
+		number: _ => /-?(?:\d+\.\d+|\d+|\.\d+)(?:[eE][+-]?\d+)?/,
+		boolean: _ => choice("yes", "no", "true", "false"),
+		variable: $ => seq("$", $.identifier, "$"),
+		identifier: _ => token(prec(-1, /[^\s"={}\[\]#$][^\s"={}\[\]#$]*/)),
+
+		variable_embedded_identifier: $ => choice(
+			seq(choice($.number, $.identifier), $.variable),
+			seq($.variable, choice($.number, $.identifier)),
+			seq(choice($.number, $.identifier), $.variable, choice($.number, $.identifier)),
+		),
+
+		comment: _ => token(seq("#", /.*/)),
+	},
 });

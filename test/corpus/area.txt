@@ -4996,155 +4996,6 @@ south_laos_area = { }
   (comment)
   (comment)
   (statement
-    (simple_value
-      (identifier)))
-  (statement
-    (condition_statement))
-  (statement
-    (condition_statement
-      (map
-        (comment)
-        (statement
-          (assignment
-            (identifier)
-            (array
-              (simple_value
-                (number))
-              (simple_value
-                (number))
-              (simple_value
-                (number)))))
-        (statement
-          (simple_value
-            (number)))
-        (statement
-          (simple_value
-            (number)))
-        (statement
-          (simple_value
-            (number)))
-        (statement
-          (simple_value
-            (number)))
-        (statement
-          (simple_value
-            (number))))))
-  (statement
-    (assignment
-      (identifier)
-      (array
-        (comment)
-        (simple_value
-          (number))
-        (simple_value
-          (number))
-        (simple_value
-          (number))
-        (simple_value
-          (number)))))
-  (statement
-    (assignment
-      (identifier)
-      (array
-        (comment)
-        (simple_value
-          (number))
-        (simple_value
-          (number))
-        (simple_value
-          (number))
-        (simple_value
-          (number)))))
-  (statement
-    (assignment
-      (identifier)
-      (array
-        (comment)
-        (simple_value
-          (number))
-        (simple_value
-          (number))
-        (simple_value
-          (number))
-        (simple_value
-          (number)))))
-  (statement
-    (assignment
-      (identifier)
-      (array
-        (comment)
-        (simple_value
-          (number))
-        (simple_value
-          (number))
-        (simple_value
-          (number))
-        (simple_value
-          (number)))))
-  (statement
-    (assignment
-      (identifier)
-      (array
-        (comment)
-        (simple_value
-          (number))
-        (simple_value
-          (number))
-        (simple_value
-          (number))
-        (simple_value
-          (number)))))
-  (statement
-    (assignment
-      (identifier)
-      (array
-        (comment)
-        (simple_value
-          (number))
-        (simple_value
-          (number))
-        (simple_value
-          (number))
-        (simple_value
-          (number))
-        (simple_value
-          (number)))))
-  (statement
-    (assignment
-      (identifier)
-      (map
-        (comment)
-        (statement
-          (assignment
-            (identifier)
-            (array
-              (simple_value
-                (number))
-              (simple_value
-                (number))
-              (simple_value
-                (number)))))
-        (statement
-          (simple_value
-            (number)))
-        (statement
-          (simple_value
-            (number)))
-        (statement
-          (simple_value
-            (number))))))
-  (statement
-    (assignment
-      (identifier)
-      (array
-        (comment)
-        (simple_value
-          (number))
-        (simple_value
-          (number))
-        (simple_value
-          (number)))))
-  (statement
     (assignment
       (identifier)
       (map
@@ -5236,86 +5087,6 @@ south_laos_area = { }
         (simple_value
           (number))
         (simple_value
-          (number)))))
-  (statement
-    (assignment
-      (identifier)
-      (map
-        (comment)
-        (statement
-          (assignment
-            (identifier)
-            (array
-              (simple_value
-                (number))
-              (simple_value
-                (number))
-              (simple_value
-                (number)))))
-        (statement
-          (simple_value
-            (number)))
-        (statement
-          (simple_value
-            (number)))
-        (statement
-          (simple_value
-            (number))))))
-  (statement
-    (assignment
-      (identifier)
-      (array
-        (simple_value
-          (number))
-        (simple_value
-          (number))
-        (simple_value
-          (number)))))
-  (comment)
-  (comment)
-  (comment)
-  (statement
-    (simple_value
-      (identifier)))
-  (statement
-    (condition_statement))
-  (statement
-    (condition_statement
-      (map
-        (comment)
-        (statement
-          (simple_value
-            (number)))
-        (statement
-          (simple_value
-            (number)))
-        (statement
-          (simple_value
-            (number)))
-        (statement
-          (simple_value
-            (number))))))
-  (statement
-    (assignment
-      (identifier)
-      (array
-        (comment)
-        (simple_value
-          (number))
-        (simple_value
-          (number))
-        (simple_value
-          (number))
-        (simple_value
-          (number)))))
-  (statement
-    (assignment
-      (identifier)
-      (array
-        (comment)
-        (simple_value
-          (number))
-        (simple_value
           (number))
         (simple_value
           (number)))))
@@ -5369,18 +5140,24 @@ south_laos_area = { }
           (number))
         (simple_value
           (number)))))
-  (comment)
-  (comment)
-  (comment)
   (statement
-    (simple_value
-      (identifier)))
-  (statement
-    (condition_statement))
-  (statement
-    (condition_statement
+    (assignment
+      (identifier)
       (map
         (comment)
+        (statement
+          (assignment
+            (identifier)
+            (array
+              (simple_value
+                (number))
+              (simple_value
+                (number))
+              (simple_value
+                (number)))))
+        (statement
+          (simple_value
+            (number)))
         (statement
           (simple_value
             (number)))
@@ -5393,6 +5170,209 @@ south_laos_area = { }
         (statement
           (simple_value
             (number))))))
+  (statement
+    (assignment
+      (identifier)
+      (array
+        (comment)
+        (simple_value
+          (number))
+        (simple_value
+          (number))
+        (simple_value
+          (number))
+        (simple_value
+          (number)))))
+  (statement
+    (assignment
+      (identifier)
+      (array
+        (comment)
+        (simple_value
+          (number))
+        (simple_value
+          (number))
+        (simple_value
+          (number))
+        (simple_value
+          (number)))))
+  (statement
+    (assignment
+      (identifier)
+      (array
+        (comment)
+        (simple_value
+          (number))
+        (simple_value
+          (number))
+        (simple_value
+          (number))
+        (simple_value
+          (number)))))
+  (statement
+    (assignment
+      (identifier)
+      (array
+        (comment)
+        (simple_value
+          (number))
+        (simple_value
+          (number))
+        (simple_value
+          (number))
+        (simple_value
+          (number)))))
+  (statement
+    (assignment
+      (identifier)
+      (array
+        (comment)
+        (simple_value
+          (number))
+        (simple_value
+          (number))
+        (simple_value
+          (number)))))
+  (statement
+    (assignment
+      (identifier)
+      (map
+        (comment)
+        (statement
+          (assignment
+            (identifier)
+            (array
+              (simple_value
+                (number))
+              (simple_value
+                (number))
+              (simple_value
+                (number)))))
+        (statement
+          (simple_value
+            (number)))
+        (statement
+          (simple_value
+            (number)))
+        (statement
+          (simple_value
+            (number))))))
+  (statement
+    (assignment
+      (identifier)
+      (array
+        (simple_value
+          (number))
+        (simple_value
+          (number))
+        (simple_value
+          (number)))))
+  (comment)
+  (comment)
+  (comment)
+  (statement
+    (assignment
+      (identifier)
+      (array
+        (comment)
+        (simple_value
+          (number))
+        (simple_value
+          (number))
+        (simple_value
+          (number))
+        (simple_value
+          (number)))))
+  (statement
+    (assignment
+      (identifier)
+      (array
+        (comment)
+        (simple_value
+          (number))
+        (simple_value
+          (number))
+        (simple_value
+          (number))
+        (simple_value
+          (number)))))
+  (statement
+    (assignment
+      (identifier)
+      (array
+        (comment)
+        (simple_value
+          (number))
+        (simple_value
+          (number))
+        (simple_value
+          (number)))))
+  (statement
+    (assignment
+      (identifier)
+      (array
+        (comment)
+        (simple_value
+          (number))
+        (simple_value
+          (number))
+        (simple_value
+          (number))
+        (simple_value
+          (number))
+        (simple_value
+          (number)))))
+  (statement
+    (assignment
+      (identifier)
+      (map
+        (comment)
+        (statement
+          (assignment
+            (identifier)
+            (array
+              (simple_value
+                (number))
+              (simple_value
+                (number))
+              (simple_value
+                (number)))))
+        (statement
+          (simple_value
+            (number)))
+        (statement
+          (simple_value
+            (number)))
+        (statement
+          (simple_value
+            (number))))))
+  (statement
+    (assignment
+      (identifier)
+      (array
+        (comment)
+        (simple_value
+          (number))
+        (simple_value
+          (number))
+        (simple_value
+          (number)))))
+  (comment)
+  (comment)
+  (comment)
+  (statement
+    (assignment
+      (identifier)
+      (array
+        (comment)
+        (simple_value
+          (number))
+        (simple_value
+          (number))
+        (simple_value
+          (number))
+        (simple_value
+          (number)))))
   (statement
     (assignment
       (identifier)
@@ -5622,29 +5602,20 @@ south_laos_area = { }
   (comment)
   (comment)
   (statement
-    (simple_value
-      (identifier)))
-  (statement
-    (condition_statement))
-  (statement
-    (condition_statement
-      (map
+    (assignment
+      (identifier)
+      (array
         (comment)
-        (statement
-          (simple_value
-            (number)))
-        (statement
-          (simple_value
-            (number)))
-        (statement
-          (simple_value
-            (number)))
-        (statement
-          (simple_value
-            (number)))
-        (statement
-          (simple_value
-            (number))))))
+        (simple_value
+          (number))
+        (simple_value
+          (number))
+        (simple_value
+          (number))
+        (simple_value
+          (number))
+        (simple_value
+          (number)))))
   (statement
     (assignment
       (identifier)
@@ -5851,23 +5822,16 @@ south_laos_area = { }
   (comment)
   (comment)
   (statement
-    (simple_value
-      (identifier)))
-  (statement
-    (condition_statement))
-  (statement
-    (condition_statement
-      (map
+    (assignment
+      (identifier)
+      (array
         (comment)
-        (statement
-          (simple_value
-            (number)))
-        (statement
-          (simple_value
-            (number)))
-        (statement
-          (simple_value
-            (number))))))
+        (simple_value
+          (number))
+        (simple_value
+          (number))
+        (simple_value
+          (number)))))
   (statement
     (assignment
       (identifier)
@@ -6048,26 +6012,18 @@ south_laos_area = { }
   (comment)
   (comment)
   (statement
-    (simple_value
-      (identifier)))
-  (statement
-    (condition_statement))
-  (statement
-    (condition_statement
-      (map
+    (assignment
+      (identifier)
+      (array
         (comment)
-        (statement
-          (simple_value
-            (number)))
-        (statement
-          (simple_value
-            (number)))
-        (statement
-          (simple_value
-            (number)))
-        (statement
-          (simple_value
-            (number))))))
+        (simple_value
+          (number))
+        (simple_value
+          (number))
+        (simple_value
+          (number))
+        (simple_value
+          (number)))))
   (statement
     (assignment
       (identifier)
@@ -6279,23 +6235,16 @@ south_laos_area = { }
   (comment)
   (comment)
   (statement
-    (simple_value
-      (identifier)))
-  (statement
-    (condition_statement))
-  (statement
-    (condition_statement
-      (map
+    (assignment
+      (identifier)
+      (array
         (comment)
-        (statement
-          (simple_value
-            (number)))
-        (statement
-          (simple_value
-            (number)))
-        (statement
-          (simple_value
-            (number))))))
+        (simple_value
+          (number))
+        (simple_value
+          (number))
+        (simple_value
+          (number)))))
   (statement
     (assignment
       (identifier)
@@ -6624,23 +6573,16 @@ south_laos_area = { }
           (number)))))
   (comment)
   (statement
-    (simple_value
-      (identifier)))
-  (statement
-    (condition_statement))
-  (statement
-    (condition_statement
-      (map
+    (assignment
+      (identifier)
+      (array
         (comment)
-        (statement
-          (simple_value
-            (number)))
-        (statement
-          (simple_value
-            (number)))
-        (statement
-          (simple_value
-            (number))))))
+        (simple_value
+          (number))
+        (simple_value
+          (number))
+        (simple_value
+          (number)))))
   (statement
     (assignment
       (identifier)
@@ -6973,29 +6915,20 @@ south_laos_area = { }
   (comment)
   (comment)
   (statement
-    (simple_value
-      (identifier)))
-  (statement
-    (condition_statement))
-  (statement
-    (condition_statement
-      (map
+    (assignment
+      (identifier)
+      (array
         (comment)
-        (statement
-          (simple_value
-            (number)))
-        (statement
-          (simple_value
-            (number)))
-        (statement
-          (simple_value
-            (number)))
-        (statement
-          (simple_value
-            (number)))
-        (statement
-          (simple_value
-            (number))))))
+        (simple_value
+          (number))
+        (simple_value
+          (number))
+        (simple_value
+          (number))
+        (simple_value
+          (number))
+        (simple_value
+          (number)))))
   (statement
     (assignment
       (identifier)
@@ -7560,29 +7493,20 @@ south_laos_area = { }
   (comment)
   (comment)
   (statement
-    (simple_value
-      (identifier)))
-  (statement
-    (condition_statement))
-  (statement
-    (condition_statement
-      (map
+    (assignment
+      (identifier)
+      (array
         (comment)
-        (statement
-          (simple_value
-            (number)))
-        (statement
-          (simple_value
-            (number)))
-        (statement
-          (simple_value
-            (number)))
-        (statement
-          (simple_value
-            (number)))
-        (statement
-          (simple_value
-            (number))))))
+        (simple_value
+          (number))
+        (simple_value
+          (number))
+        (simple_value
+          (number))
+        (simple_value
+          (number))
+        (simple_value
+          (number)))))
   (statement
     (assignment
       (identifier)
@@ -7876,23 +7800,16 @@ south_laos_area = { }
   (comment)
   (comment)
   (statement
-    (simple_value
-      (identifier)))
-  (statement
-    (condition_statement))
-  (statement
-    (condition_statement
-      (map
+    (assignment
+      (identifier)
+      (array
         (comment)
-        (statement
-          (simple_value
-            (number)))
-        (statement
-          (simple_value
-            (number)))
-        (statement
-          (simple_value
-            (number))))))
+        (simple_value
+          (number))
+        (simple_value
+          (number))
+        (simple_value
+          (number)))))
   (statement
     (assignment
       (identifier)
@@ -7989,29 +7906,20 @@ south_laos_area = { }
   (comment)
   (comment)
   (statement
-    (simple_value
-      (identifier)))
-  (statement
-    (condition_statement))
-  (statement
-    (condition_statement
-      (map
+    (assignment
+      (identifier)
+      (array
         (comment)
-        (statement
-          (simple_value
-            (number)))
-        (statement
-          (simple_value
-            (number)))
-        (statement
-          (simple_value
-            (number)))
-        (statement
-          (simple_value
-            (number)))
-        (statement
-          (simple_value
-            (number))))))
+        (simple_value
+          (number))
+        (simple_value
+          (number))
+        (simple_value
+          (number))
+        (simple_value
+          (number))
+        (simple_value
+          (number)))))
   (statement
     (assignment
       (identifier)
@@ -8387,29 +8295,20 @@ south_laos_area = { }
   (comment)
   (comment)
   (statement
-    (simple_value
-      (identifier)))
-  (statement
-    (condition_statement))
-  (statement
-    (condition_statement
-      (map
+    (assignment
+      (identifier)
+      (array
         (comment)
-        (statement
-          (simple_value
-            (number)))
-        (statement
-          (simple_value
-            (number)))
-        (statement
-          (simple_value
-            (number)))
-        (statement
-          (simple_value
-            (number)))
-        (statement
-          (simple_value
-            (number))))))
+        (simple_value
+          (number))
+        (simple_value
+          (number))
+        (simple_value
+          (number))
+        (simple_value
+          (number))
+        (simple_value
+          (number)))))
   (statement
     (assignment
       (identifier)
@@ -8652,59 +8551,6 @@ south_laos_area = { }
   (comment)
   (comment)
   (statement
-    (simple_value
-      (identifier)))
-  (statement
-    (condition_statement))
-  (statement
-    (condition_statement
-      (map
-        (comment)
-        (statement
-          (assignment
-            (identifier)
-            (array
-              (simple_value
-                (number))
-              (simple_value
-                (number))
-              (simple_value
-                (number)))))
-        (statement
-          (simple_value
-            (number)))
-        (statement
-          (simple_value
-            (number)))
-        (statement
-          (simple_value
-            (number)))
-        (statement
-          (simple_value
-            (number))))))
-  (statement
-    (assignment
-      (identifier)
-      (array
-        (comment)
-        (simple_value
-          (number))
-        (simple_value
-          (number))
-        (simple_value
-          (number)))))
-  (statement
-    (assignment
-      (identifier)
-      (array
-        (comment)
-        (simple_value
-          (number))
-        (simple_value
-          (number))
-        (simple_value
-          (number)))))
-  (statement
     (assignment
       (identifier)
       (map
@@ -8752,234 +8598,25 @@ south_laos_area = { }
         (simple_value
           (number))
         (simple_value
-          (number))
-        (simple_value
-          (number))
-        (simple_value
           (number)))))
   (statement
     (assignment
       (identifier)
-      (array
-        (comment)
-        (simple_value
-          (number))
-        (simple_value
-          (number))
-        (simple_value
-          (number))
-        (simple_value
-          (number)))))
-  (statement
-    (assignment
-      (identifier)
-      (array
-        (comment)
-        (simple_value
-          (number))
-        (simple_value
-          (number))
-        (simple_value
-          (number))
-        (simple_value
-          (number)))))
-  (statement
-    (assignment
-      (identifier)
-      (array
-        (comment)
-        (simple_value
-          (number))
-        (simple_value
-          (number))
-        (simple_value
-          (number))
-        (simple_value
-          (number)))))
-  (statement
-    (assignment
-      (identifier)
-      (array
-        (comment)
-        (simple_value
-          (number))
-        (simple_value
-          (number))
-        (simple_value
-          (number))
-        (simple_value
-          (number))
-        (simple_value
-          (number)))))
-  (statement
-    (assignment
-      (identifier)
-      (array
-        (comment)
-        (simple_value
-          (number))
-        (simple_value
-          (number))
-        (simple_value
-          (number)))))
-  (statement
-    (assignment
-      (identifier)
-      (array
-        (comment)
-        (simple_value
-          (number))
-        (simple_value
-          (number))
-        (simple_value
-          (number)))))
-  (statement
-    (assignment
-      (identifier)
-      (array
-        (comment)
-        (simple_value
-          (number))
-        (simple_value
-          (number))
-        (simple_value
-          (number)))))
-  (statement
-    (assignment
-      (identifier)
-      (array
-        (comment)
-        (simple_value
-          (number))
-        (simple_value
-          (number))
-        (simple_value
-          (number)))))
-  (statement
-    (assignment
-      (identifier)
-      (array
-        (comment)
-        (simple_value
-          (number))
-        (simple_value
-          (number))
-        (simple_value
-          (number)))))
-  (statement
-    (assignment
-      (identifier)
-      (array
-        (comment)
-        (simple_value
-          (number))
-        (simple_value
-          (number))
-        (simple_value
-          (number)))))
-  (statement
-    (assignment
-      (identifier)
-      (array
-        (comment)
-        (simple_value
-          (number))
-        (simple_value
-          (number))
-        (simple_value
-          (number))
-        (simple_value
-          (number))
-        (simple_value
-          (number)))))
-  (statement
-    (assignment
-      (identifier)
-      (array
-        (comment)
-        (simple_value
-          (number))
-        (simple_value
-          (number))
-        (simple_value
-          (number)))))
-  (statement
-    (assignment
-      (identifier)
-      (array
-        (comment)
-        (simple_value
-          (number))
-        (simple_value
-          (number))
-        (simple_value
-          (number))
-        (simple_value
-          (number)))))
-  (statement
-    (assignment
-      (identifier)
-      (array
-        (comment)
-        (simple_value
-          (number))
-        (simple_value
-          (number))
-        (simple_value
-          (number)))))
-  (statement
-    (assignment
-      (identifier)
-      (array
-        (comment)
-        (simple_value
-          (number))
-        (simple_value
-          (number))
-        (simple_value
-          (number))
-        (simple_value
-          (number)))))
-  (statement
-    (assignment
-      (identifier)
-      (array
-        (comment)
-        (simple_value
-          (number))
-        (simple_value
-          (number))
-        (simple_value
-          (number))
-        (simple_value
-          (number)))))
-  (statement
-    (assignment
-      (identifier)
-      (array
-        (comment)
-        (simple_value
-          (number))
-        (simple_value
-          (number))
-        (simple_value
-          (number))
-        (simple_value
-          (number))
-        (simple_value
-          (number)))))
-  (comment)
-  (comment)
-  (comment)
-  (statement
-    (simple_value
-      (identifier)))
-  (statement
-    (condition_statement))
-  (statement
-    (condition_statement
       (map
         (comment)
+        (statement
+          (assignment
+            (identifier)
+            (array
+              (simple_value
+                (number))
+              (simple_value
+                (number))
+              (simple_value
+                (number)))))
+        (statement
+          (simple_value
+            (number)))
         (statement
           (simple_value
             (number)))
@@ -8989,6 +8626,257 @@ south_laos_area = { }
         (statement
           (simple_value
             (number))))))
+  (statement
+    (assignment
+      (identifier)
+      (array
+        (comment)
+        (simple_value
+          (number))
+        (simple_value
+          (number))
+        (simple_value
+          (number)))))
+  (statement
+    (assignment
+      (identifier)
+      (array
+        (comment)
+        (simple_value
+          (number))
+        (simple_value
+          (number))
+        (simple_value
+          (number))
+        (simple_value
+          (number))
+        (simple_value
+          (number)))))
+  (statement
+    (assignment
+      (identifier)
+      (array
+        (comment)
+        (simple_value
+          (number))
+        (simple_value
+          (number))
+        (simple_value
+          (number))
+        (simple_value
+          (number)))))
+  (statement
+    (assignment
+      (identifier)
+      (array
+        (comment)
+        (simple_value
+          (number))
+        (simple_value
+          (number))
+        (simple_value
+          (number))
+        (simple_value
+          (number)))))
+  (statement
+    (assignment
+      (identifier)
+      (array
+        (comment)
+        (simple_value
+          (number))
+        (simple_value
+          (number))
+        (simple_value
+          (number))
+        (simple_value
+          (number)))))
+  (statement
+    (assignment
+      (identifier)
+      (array
+        (comment)
+        (simple_value
+          (number))
+        (simple_value
+          (number))
+        (simple_value
+          (number))
+        (simple_value
+          (number))
+        (simple_value
+          (number)))))
+  (statement
+    (assignment
+      (identifier)
+      (array
+        (comment)
+        (simple_value
+          (number))
+        (simple_value
+          (number))
+        (simple_value
+          (number)))))
+  (statement
+    (assignment
+      (identifier)
+      (array
+        (comment)
+        (simple_value
+          (number))
+        (simple_value
+          (number))
+        (simple_value
+          (number)))))
+  (statement
+    (assignment
+      (identifier)
+      (array
+        (comment)
+        (simple_value
+          (number))
+        (simple_value
+          (number))
+        (simple_value
+          (number)))))
+  (statement
+    (assignment
+      (identifier)
+      (array
+        (comment)
+        (simple_value
+          (number))
+        (simple_value
+          (number))
+        (simple_value
+          (number)))))
+  (statement
+    (assignment
+      (identifier)
+      (array
+        (comment)
+        (simple_value
+          (number))
+        (simple_value
+          (number))
+        (simple_value
+          (number)))))
+  (statement
+    (assignment
+      (identifier)
+      (array
+        (comment)
+        (simple_value
+          (number))
+        (simple_value
+          (number))
+        (simple_value
+          (number)))))
+  (statement
+    (assignment
+      (identifier)
+      (array
+        (comment)
+        (simple_value
+          (number))
+        (simple_value
+          (number))
+        (simple_value
+          (number))
+        (simple_value
+          (number))
+        (simple_value
+          (number)))))
+  (statement
+    (assignment
+      (identifier)
+      (array
+        (comment)
+        (simple_value
+          (number))
+        (simple_value
+          (number))
+        (simple_value
+          (number)))))
+  (statement
+    (assignment
+      (identifier)
+      (array
+        (comment)
+        (simple_value
+          (number))
+        (simple_value
+          (number))
+        (simple_value
+          (number))
+        (simple_value
+          (number)))))
+  (statement
+    (assignment
+      (identifier)
+      (array
+        (comment)
+        (simple_value
+          (number))
+        (simple_value
+          (number))
+        (simple_value
+          (number)))))
+  (statement
+    (assignment
+      (identifier)
+      (array
+        (comment)
+        (simple_value
+          (number))
+        (simple_value
+          (number))
+        (simple_value
+          (number))
+        (simple_value
+          (number)))))
+  (statement
+    (assignment
+      (identifier)
+      (array
+        (comment)
+        (simple_value
+          (number))
+        (simple_value
+          (number))
+        (simple_value
+          (number))
+        (simple_value
+          (number)))))
+  (statement
+    (assignment
+      (identifier)
+      (array
+        (comment)
+        (simple_value
+          (number))
+        (simple_value
+          (number))
+        (simple_value
+          (number))
+        (simple_value
+          (number))
+        (simple_value
+          (number)))))
+  (comment)
+  (comment)
+  (comment)
+  (statement
+    (assignment
+      (identifier)
+      (array
+        (comment)
+        (simple_value
+          (number))
+        (simple_value
+          (number))
+        (simple_value
+          (number)))))
   (statement
     (assignment
       (identifier)
@@ -9729,23 +9617,16 @@ south_laos_area = { }
   (comment)
   (comment)
   (statement
-    (simple_value
-      (identifier)))
-  (statement
-    (condition_statement))
-  (statement
-    (condition_statement
-      (map
+    (assignment
+      (identifier)
+      (array
         (comment)
-        (statement
-          (simple_value
-            (number)))
-        (statement
-          (simple_value
-            (number)))
-        (statement
-          (simple_value
-            (number))))))
+        (simple_value
+          (number))
+        (simple_value
+          (number))
+        (simple_value
+          (number)))))
   (statement
     (assignment
       (identifier)
@@ -10060,29 +9941,20 @@ south_laos_area = { }
   (comment)
   (comment)
   (statement
-    (simple_value
-      (identifier)))
-  (statement
-    (condition_statement))
-  (statement
-    (condition_statement
-      (map
+    (assignment
+      (identifier)
+      (array
         (comment)
-        (statement
-          (simple_value
-            (number)))
-        (statement
-          (simple_value
-            (number)))
-        (statement
-          (simple_value
-            (number)))
-        (statement
-          (simple_value
-            (number)))
-        (statement
-          (simple_value
-            (number))))))
+        (simple_value
+          (number))
+        (simple_value
+          (number))
+        (simple_value
+          (number))
+        (simple_value
+          (number))
+        (simple_value
+          (number)))))
   (statement
     (assignment
       (identifier)
@@ -10548,29 +10420,20 @@ south_laos_area = { }
   (comment)
   (comment)
   (statement
-    (simple_value
-      (identifier)))
-  (statement
-    (condition_statement))
-  (statement
-    (condition_statement
-      (map
+    (assignment
+      (identifier)
+      (array
         (comment)
-        (statement
-          (simple_value
-            (number)))
-        (statement
-          (simple_value
-            (number)))
-        (statement
-          (simple_value
-            (number)))
-        (statement
-          (simple_value
-            (number)))
-        (statement
-          (simple_value
-            (number))))))
+        (simple_value
+          (number))
+        (simple_value
+          (number))
+        (simple_value
+          (number))
+        (simple_value
+          (number))
+        (simple_value
+          (number)))))
   (statement
     (assignment
       (identifier)
@@ -10930,26 +10793,18 @@ south_laos_area = { }
   (comment)
   (comment)
   (statement
-    (simple_value
-      (identifier)))
-  (statement
-    (condition_statement))
-  (statement
-    (condition_statement
-      (map
+    (assignment
+      (identifier)
+      (array
         (comment)
-        (statement
-          (simple_value
-            (number)))
-        (statement
-          (simple_value
-            (number)))
-        (statement
-          (simple_value
-            (number)))
-        (statement
-          (simple_value
-            (number))))))
+        (simple_value
+          (number))
+        (simple_value
+          (number))
+        (simple_value
+          (number))
+        (simple_value
+          (number)))))
   (statement
     (assignment
       (identifier)
@@ -11841,23 +11696,16 @@ south_laos_area = { }
   (comment)
   (comment)
   (statement
-    (simple_value
-      (identifier)))
-  (statement
-    (condition_statement))
-  (statement
-    (condition_statement
-      (map
+    (assignment
+      (identifier)
+      (array
         (comment)
-        (statement
-          (simple_value
-            (number)))
-        (statement
-          (simple_value
-            (number)))
-        (statement
-          (simple_value
-            (number))))))
+        (simple_value
+          (number))
+        (simple_value
+          (number))
+        (simple_value
+          (number)))))
   (statement
     (assignment
       (identifier)
@@ -12239,23 +12087,16 @@ south_laos_area = { }
   (comment)
   (comment)
   (statement
-    (simple_value
-      (identifier)))
-  (statement
-    (condition_statement))
-  (statement
-    (condition_statement
-      (map
+    (assignment
+      (identifier)
+      (array
         (comment)
-        (statement
-          (simple_value
-            (number)))
-        (statement
-          (simple_value
-            (number)))
-        (statement
-          (simple_value
-            (number))))))
+        (simple_value
+          (number))
+        (simple_value
+          (number))
+        (simple_value
+          (number)))))
   (statement
     (assignment
       (identifier)
@@ -12634,23 +12475,16 @@ south_laos_area = { }
   (comment)
   (comment)
   (statement
-    (simple_value
-      (identifier)))
-  (statement
-    (condition_statement))
-  (statement
-    (condition_statement
-      (map
+    (assignment
+      (identifier)
+      (array
         (comment)
-        (statement
-          (simple_value
-            (number)))
-        (statement
-          (simple_value
-            (number)))
-        (statement
-          (simple_value
-            (number))))))
+        (simple_value
+          (number))
+        (simple_value
+          (number))
+        (simple_value
+          (number)))))
   (statement
     (assignment
       (identifier)
@@ -12896,29 +12730,20 @@ south_laos_area = { }
   (comment)
   (comment)
   (statement
-    (simple_value
-      (identifier)))
-  (statement
-    (condition_statement))
-  (statement
-    (condition_statement
-      (map
+    (assignment
+      (identifier)
+      (array
         (comment)
-        (statement
-          (simple_value
-            (number)))
-        (statement
-          (simple_value
-            (number)))
-        (statement
-          (simple_value
-            (number)))
-        (statement
-          (simple_value
-            (number)))
-        (statement
-          (simple_value
-            (number))))))
+        (simple_value
+          (number))
+        (simple_value
+          (number))
+        (simple_value
+          (number))
+        (simple_value
+          (number))
+        (simple_value
+          (number)))))
   (statement
     (assignment
       (identifier)
@@ -13168,26 +12993,18 @@ south_laos_area = { }
   (comment)
   (comment)
   (statement
-    (simple_value
-      (identifier)))
-  (statement
-    (condition_statement))
-  (statement
-    (condition_statement
-      (map
+    (assignment
+      (identifier)
+      (array
         (comment)
-        (statement
-          (simple_value
-            (number)))
-        (statement
-          (simple_value
-            (number)))
-        (statement
-          (simple_value
-            (number)))
-        (statement
-          (simple_value
-            (number))))))
+        (simple_value
+          (number))
+        (simple_value
+          (number))
+        (simple_value
+          (number))
+        (simple_value
+          (number)))))
   (statement
     (assignment
       (identifier)
@@ -13677,26 +13494,18 @@ south_laos_area = { }
           (number)))))
   (comment)
   (statement
-    (simple_value
-      (identifier)))
-  (statement
-    (condition_statement))
-  (statement
-    (condition_statement
-      (map
+    (assignment
+      (identifier)
+      (array
         (comment)
-        (statement
-          (simple_value
-            (number)))
-        (statement
-          (simple_value
-            (number)))
-        (statement
-          (simple_value
-            (number)))
-        (statement
-          (simple_value
-            (number))))))
+        (simple_value
+          (number))
+        (simple_value
+          (number))
+        (simple_value
+          (number))
+        (simple_value
+          (number)))))
   (statement
     (assignment
       (identifier)
@@ -14043,26 +13852,18 @@ south_laos_area = { }
   (comment)
   (comment)
   (statement
-    (simple_value
-      (identifier)))
-  (statement
-    (condition_statement))
-  (statement
-    (condition_statement
-      (map
+    (assignment
+      (identifier)
+      (array
         (comment)
-        (statement
-          (simple_value
-            (number)))
-        (statement
-          (simple_value
-            (number)))
-        (statement
-          (simple_value
-            (number)))
-        (statement
-          (simple_value
-            (number))))))
+        (simple_value
+          (number))
+        (simple_value
+          (number))
+        (simple_value
+          (number))
+        (simple_value
+          (number)))))
   (statement
     (assignment
       (identifier)
@@ -14855,23 +14656,16 @@ south_laos_area = { }
   (comment)
   (comment)
   (statement
-    (simple_value
-      (identifier)))
-  (statement
-    (condition_statement))
-  (statement
-    (condition_statement
-      (map
+    (assignment
+      (identifier)
+      (array
         (comment)
-        (statement
-          (simple_value
-            (number)))
-        (statement
-          (simple_value
-            (number)))
-        (statement
-          (simple_value
-            (number))))))
+        (simple_value
+          (number))
+        (simple_value
+          (number))
+        (simple_value
+          (number)))))
   (statement
     (assignment
       (identifier)
@@ -16618,12 +16412,8 @@ south_laos_area = { }
   (comment)
   (comment)
   (statement
-    (simple_value
-      (identifier)))
-  (statement
-    (condition_statement))
-  (statement
-    (condition_statement
+    (assignment
+      (identifier)
       (map)))
   (statement
     (assignment
@@ -16646,10 +16436,6 @@ south_laos_area = { }
       (identifier)
       (map)))
   (statement
-    (simple_value
-      (identifier)))
-  (statement
-    (condition_statement))
-  (statement
-    (condition_statement
+    (assignment
+      (identifier)
       (map))))

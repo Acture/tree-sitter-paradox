@@ -3,8 +3,8 @@
 (number) @number
 (identifier) @variable
 
-(condition_statement
-  (_) @keyword)
+(boolean) @constant.builtin
 
-(logical_statement
-  (_) @keyword)
+(condition_keyword) @keyword.control
+(logical_keyword) @keyword.operator
+(scope_keyword) @variable.builtin

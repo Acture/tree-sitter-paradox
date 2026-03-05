@@ -1,6 +1,7 @@
 {
   "$schema": "https://tree-sitter.github.io/tree-sitter/assets/schemas/grammar.schema.json",
   "name": "paradox",
+  "word": "identifier",
   "rules": {
     "source_file": {
       "type": "REPEAT",
@@ -113,15 +114,19 @@
         },
         {
           "type": "SYMBOL",
-          "name": "assignment"
-        },
-        {
-          "type": "SYMBOL",
           "name": "condition_statement"
         },
         {
           "type": "SYMBOL",
           "name": "logical_statement"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "scope_statement"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "assignment"
         },
         {
           "type": "SYMBOL",
@@ -192,6 +197,81 @@
       ]
     },
     "condition_statement": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "FIELD",
+          "name": "keyword",
+          "content": {
+            "type": "SYMBOL",
+            "name": "condition_keyword"
+          }
+        },
+        {
+          "type": "STRING",
+          "value": "="
+        },
+        {
+          "type": "FIELD",
+          "name": "body",
+          "content": {
+            "type": "SYMBOL",
+            "name": "map"
+          }
+        }
+      ]
+    },
+    "logical_statement": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "FIELD",
+          "name": "keyword",
+          "content": {
+            "type": "SYMBOL",
+            "name": "logical_keyword"
+          }
+        },
+        {
+          "type": "STRING",
+          "value": "="
+        },
+        {
+          "type": "FIELD",
+          "name": "body",
+          "content": {
+            "type": "SYMBOL",
+            "name": "map"
+          }
+        }
+      ]
+    },
+    "scope_statement": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "FIELD",
+          "name": "keyword",
+          "content": {
+            "type": "SYMBOL",
+            "name": "scope_keyword"
+          }
+        },
+        {
+          "type": "STRING",
+          "value": "="
+        },
+        {
+          "type": "FIELD",
+          "name": "body",
+          "content": {
+            "type": "SYMBOL",
+            "name": "map"
+          }
+        }
+      ]
+    },
+    "condition_keyword": {
       "type": "CHOICE",
       "members": [
         {
@@ -200,11 +280,11 @@
         },
         {
           "type": "STRING",
-          "value": "="
+          "value": "else_if"
         },
         {
-          "type": "SYMBOL",
-          "name": "map"
+          "type": "STRING",
+          "value": "else"
         },
         {
           "type": "STRING",
@@ -212,23 +292,7 @@
         },
         {
           "type": "STRING",
-          "value": "="
-        },
-        {
-          "type": "SYMBOL",
-          "name": "map"
-        },
-        {
-          "type": "STRING",
           "value": "trigger"
-        },
-        {
-          "type": "STRING",
-          "value": "="
-        },
-        {
-          "type": "SYMBOL",
-          "name": "map"
         },
         {
           "type": "STRING",
@@ -236,69 +300,50 @@
         },
         {
           "type": "STRING",
-          "value": "="
-        },
-        {
-          "type": "SYMBOL",
-          "name": "map"
+          "value": "allow"
         }
       ]
     },
-    "logical_statement": {
+    "logical_keyword": {
       "type": "CHOICE",
       "members": [
         {
-          "type": "SEQ",
-          "members": [
-            {
-              "type": "STRING",
-              "value": "AND"
-            },
-            {
-              "type": "STRING",
-              "value": "="
-            },
-            {
-              "type": "SYMBOL",
-              "name": "map"
-            }
-          ]
+          "type": "STRING",
+          "value": "AND"
         },
         {
-          "type": "SEQ",
-          "members": [
-            {
-              "type": "STRING",
-              "value": "OR"
-            },
-            {
-              "type": "STRING",
-              "value": "="
-            },
-            {
-              "type": "SYMBOL",
-              "name": "map"
-            }
-          ]
+          "type": "STRING",
+          "value": "OR"
         },
         {
-          "type": "SEQ",
-          "members": [
-            {
-              "type": "STRING",
-              "value": "NOT"
-            },
-            {
-              "type": "STRING",
-              "value": "="
-            },
-            {
-              "type": "SYMBOL",
-              "name": "map"
-            }
-          ]
+          "type": "STRING",
+          "value": "NOT"
         }
       ]
+    },
+    "scope_keyword": {
+      "type": "TOKEN",
+      "content": {
+        "type": "CHOICE",
+        "members": [
+          {
+            "type": "STRING",
+            "value": "THIS"
+          },
+          {
+            "type": "STRING",
+            "value": "ROOT"
+          },
+          {
+            "type": "PATTERN",
+            "value": "FROM(?:FROM){0,4}"
+          },
+          {
+            "type": "PATTERN",
+            "value": "PREV(?:PREV){0,4}"
+          }
+        ]
+      }
     },
     "macro_map": {
       "type": "SEQ",
@@ -439,8 +484,15 @@
       ]
     },
     "identifier": {
-      "type": "PATTERN",
-      "value": "[^\\s\"={}\\[\\]#$]+"
+      "type": "TOKEN",
+      "content": {
+        "type": "PREC",
+        "value": -1,
+        "content": {
+          "type": "PATTERN",
+          "value": "[^\\s\"={}\\[\\]#$][^\\s\"={}\\[\\]#$]*"
+        }
+      }
     },
     "variable_embedded_identifier": {
       "type": "CHOICE",
@@ -584,6 +636,10 @@
     [
       "array",
       "statement",
+      "variable_embedded_identifier"
+    ],
+    [
+      "array",
       "variable_embedded_identifier"
     ],
     [

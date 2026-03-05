@@ -15940,12 +15940,8 @@ lost_cultures_group = {
         (comment)
         (comment)
         (statement
-          (simple_value
-            (identifier)))
-        (statement
-          (condition_statement))
-        (statement
-          (condition_statement
+          (assignment
+            (identifier)
             (map
               (statement
                 (assignment
@@ -132911,12 +132907,8 @@ lost_cultures_group = {
                       (identifier))))))))
         (comment)
         (statement
-          (simple_value
-            (identifier)))
-        (statement
-          (condition_statement))
-        (statement
-          (condition_statement
+          (assignment
+            (identifier)
             (map)))
         (statement
           (assignment
@@ -139491,12 +139483,8 @@ lost_cultures_group = {
                 (string))))))))
   (comment)
   (statement
-    (simple_value
-      (identifier)))
-  (statement
-    (condition_statement))
-  (statement
-    (condition_statement
+    (assignment
+      (identifier)
       (map
         (statement
           (assignment
