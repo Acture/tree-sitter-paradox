@@ -134,6 +134,31 @@ When changing grammar.js:
 - Keep changes minimal and add/adjust fixtures in test/corpus to cover new syntax or bug fixes.
 - Update queries/*.scm if node types or structure affecting highlighting change.
 
+## Release automation
+
+This repository uses the official `tree-sitter/workflows` reusable workflows for release assets plus npm and PyPI publication. Crates are published separately with crates.io trusted publishing so no long-lived Cargo token needs to live in GitHub secrets.
+
+Release flow:
+
+1. Update the version consistently in `tree-sitter.json`, `package.json`, `Cargo.toml`, and `pyproject.toml`.
+2. Merge that change to `master`.
+3. The `Version tag` workflow verifies the four versions match, creates the annotated tag `vX.Y.Z`, and pushes it.
+4. The tag triggers:
+   - `Create release` via `tree-sitter/workflows`
+   - npm publication via `tree-sitter/workflows`
+   - PyPI publication via `tree-sitter/workflows`
+   - crates.io publication via trusted publishing in `.github/workflows/package.yml`
+
+If you need a manual recovery path, rerun `Version tag` after fixing the version files, or rerun the existing tag-triggered publish job in GitHub Actions. Publishing itself is intentionally restricted to `v*` tag pushes.
+
+Repository configuration required:
+
+- GitHub secret `NPM_TOKEN` for npm publication
+- GitHub secret `PYPI_TOKEN` for PyPI publication
+- A crates.io trusted publisher configured for this repository with workflow file `package.yml` and environment `release`
+
+The first crates.io release still has to be published manually before trusted publishing can be enabled on crates.io.
+
 ## Supported editors
 Any editor integrating Tree-sitter can load this grammar. For Neovim or Helix, use a plugin that sources the parser and the `queries/highlights.scm` file, or configure them to find the generated library.
 

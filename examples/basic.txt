@@ -1,0 +1,4 @@
+country_event = {
+    id = paradox.42
+    title = paradox.42.t
+}

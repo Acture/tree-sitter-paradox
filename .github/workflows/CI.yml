@@ -5,14 +5,32 @@ on:
     push:
         branches: [ master ]
         paths:
+            - .github/workflows/**
+            - Cargo.toml
+            - Package.swift
+            - binding.gyp
+            - examples/**
+            - go.mod
             - grammar.js
+            - package.json
+            - pyproject.toml
+            - setup.py
             - src/**
             - test/**
             - bindings/**
             - tree-sitter.json
     pull_request:
         paths:
+            - .github/workflows/**
+            - Cargo.toml
+            - Package.swift
+            - binding.gyp
+            - examples/**
+            - go.mod
             - grammar.js
+            - package.json
+            - pyproject.toml
+            - setup.py
             - src/**
             - test/**
             - bindings/**
@@ -43,7 +61,7 @@ jobs:
                 uses: tree-sitter/parse-action@v4
                 id: parse-files
                 with:
-                    files: examples/**
+                    files: examples/**/*
             -   name: Upload failures artifact
                 uses: actions/upload-artifact@v4
                 if: "!cancelled() && steps.parse-files.outcome == 'failure'"

@@ -1,9 +1,8 @@
 name: Create release
 
 on:
-    workflow_dispatch:
     push:
-        tags: ["*"]
+        tags: ["v*"]
 
 concurrency:
     group: ${{github.workflow}}-${{github.ref}}

@@ -1,0 +1,77 @@
+name: Version tag
+
+on:
+    workflow_dispatch:
+    push:
+        branches: [ master ]
+        paths:
+            - Cargo.toml
+            - package.json
+            - pyproject.toml
+            - tree-sitter.json
+
+concurrency:
+    group: ${{github.workflow}}-${{github.ref}}
+    cancel-in-progress: true
+
+permissions:
+    contents: write
+
+jobs:
+    tag:
+        runs-on: ubuntu-latest
+        steps:
+            -   name: Checkout repository
+                uses: actions/checkout@v4
+                with:
+                    fetch-depth: 0
+            -   name: Verify version metadata matches
+                id: version
+                run: |-
+                    tree_sitter_version="$(node -p "require('./tree-sitter.json').metadata.version")"
+                    package_version="$(node -p "require('./package.json').version")"
+                    cargo_version="$(python3 - <<'PY'
+                    import tomllib
+                    from pathlib import Path
+
+                    cargo_toml = Path("Cargo.toml").read_bytes()
+                    print(tomllib.loads(cargo_toml.decode("utf-8"))["package"]["version"])
+                    PY
+                    )"
+                    pyproject_version="$(python3 - <<'PY'
+                    import tomllib
+                    from pathlib import Path
+
+                    pyproject_toml = Path("pyproject.toml").read_bytes()
+                    print(tomllib.loads(pyproject_toml.decode("utf-8"))["project"]["version"])
+                    PY
+                    )"
+
+                    if [ "$tree_sitter_version" != "$package_version" ] || \
+                       [ "$tree_sitter_version" != "$cargo_version" ] || \
+                       [ "$tree_sitter_version" != "$pyproject_version" ]; then
+                      printf 'Version mismatch detected:\n' >&2
+                      printf '  tree-sitter.json: %s\n' "$tree_sitter_version" >&2
+                      printf '  package.json:     %s\n' "$package_version" >&2
+                      printf '  Cargo.toml:       %s\n' "$cargo_version" >&2
+                      printf '  pyproject.toml:   %s\n' "$pyproject_version" >&2
+                      exit 1
+                    fi
+
+                    printf 'version=%s\n' "$tree_sitter_version" >> "$GITHUB_OUTPUT"
+                    printf 'tag=v%s\n' "$tree_sitter_version" >> "$GITHUB_OUTPUT"
+            -   name: Skip if tag already exists
+                id: existing-tag
+                run: |-
+                    if git rev-parse -q --verify "refs/tags/${{steps.version.outputs.tag}}" >/dev/null; then
+                      printf 'exists=true\n' >> "$GITHUB_OUTPUT"
+                    else
+                      printf 'exists=false\n' >> "$GITHUB_OUTPUT"
+                    fi
+            -   name: Create and push release tag
+                if: steps.existing-tag.outputs.exists != 'true'
+                run: |-
+                    git config user.name "github-actions[bot]"
+                    git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+                    git tag -a "${{steps.version.outputs.tag}}" -m "Release ${{steps.version.outputs.tag}}"
+                    git push origin "${{steps.version.outputs.tag}}"
