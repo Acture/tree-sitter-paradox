@@ -1,5 +1,6 @@
-from os import path
+from os import environ, path
 from platform import system
+from subprocess import CalledProcessError, run
 from sysconfig import get_config_var
 
 from setuptools import Extension, find_packages, setup
@@ -21,10 +22,42 @@ macros: list[tuple[str, str | None]] = [
 if limited_api := not get_config_var("Py_GIL_DISABLED"):
     macros.append(("Py_LIMITED_API", "0x030A0000"))
 
+
+def macos_sdk_flags() -> tuple[list[str], list[str]]:
+    if system() != "Darwin":
+        return [], []
+
+    sdk_root = environ.get("SDKROOT", "").strip()
+    if not sdk_root:
+        try:
+            result = run(
+                ["xcrun", "--sdk", "macosx", "--show-sdk-path"],
+                check=True,
+                capture_output=True,
+                text=True,
+            )
+        except (CalledProcessError, FileNotFoundError):
+            return [], []
+        sdk_root = result.stdout.strip()
+
+    if not sdk_root:
+        return [], []
+
+    sdk_flags = ["-isysroot", sdk_root]
+    return sdk_flags, sdk_flags.copy()
+
+
 if system() != "Windows":
     cflags = ["-std=c11", "-fvisibility=hidden"]
+    ldflags: list[str] = []
+
+    # Some macOS Python/clang combinations omit the active SDK from compiler args.
+    sdk_cflags, sdk_ldflags = macos_sdk_flags()
+    cflags.extend(sdk_cflags)
+    ldflags.extend(sdk_ldflags)
 else:
     cflags = ["/std:c11", "/utf-8"]
+    ldflags = []
 
 
 class Build(build):
@@ -63,6 +96,7 @@ setup(
             name="_binding",
             sources=sources,
             extra_compile_args=cflags,
+            extra_link_args=ldflags,
             define_macros=macros,
             include_dirs=["src"],
             py_limited_api=limited_api,

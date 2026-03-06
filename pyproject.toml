@@ -15,7 +15,7 @@ classifiers = [
 ]
 authors = [{ name = "acture", email = "acturea@gmail.com" }]
 requires-python = ">=3.10"
-license.text = "AGPL-3.0-only"
+license = "AGPL-3.0-only"
 readme = "README.md"
 
 [project.urls]
