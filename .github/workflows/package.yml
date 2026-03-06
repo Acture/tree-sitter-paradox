@@ -46,7 +46,103 @@ jobs:
                 run: cargo publish
                 env:
                     CARGO_REGISTRY_TOKEN: ${{steps.auth.outputs.token}}
-    pypi:
-        uses: tree-sitter/workflows/.github/workflows/package-pypi.yml@main
-        secrets:
-            PYPI_API_TOKEN: ${{secrets.PYPI_TOKEN}}
+    pypi-wheels:
+        name: Build PyPI wheels (${{matrix.os}})
+        runs-on: ${{matrix.os}}
+        strategy:
+            fail-fast: false
+            matrix:
+                os: [ ubuntu-latest, windows-latest, macos-latest ]
+        steps:
+            -   name: Checkout repository
+                uses: actions/checkout@v4
+            -   name: Set up Python
+                uses: actions/setup-python@v5
+                with:
+                    python-version: "3.12"
+            -   name: Verify tag matches Python package version
+                run: |-
+                    pyproject_version="$(python3 - <<'PY'
+                    import tomllib
+                    from pathlib import Path
+
+                    pyproject_toml = Path("pyproject.toml").read_bytes()
+                    print(tomllib.loads(pyproject_toml.decode("utf-8"))["project"]["version"])
+                    PY
+                    )"
+                    tag_version="${GITHUB_REF_NAME#v}"
+
+                    if [ "$pyproject_version" != "$tag_version" ]; then
+                      printf 'pyproject.toml version %s does not match tag %s\n' "$pyproject_version" "$GITHUB_REF_NAME" >&2
+                      exit 1
+                    fi
+            -   name: Install wheel build tooling
+                run: python3 -m pip install --upgrade pip cibuildwheel
+            -   name: Build wheels
+                run: python3 -m cibuildwheel --output-dir dist
+            -   name: Upload wheel artifacts
+                uses: actions/upload-artifact@v4
+                with:
+                    name: pypi-dists-${{matrix.os}}
+                    path: dist/*
+                    if-no-files-found: error
+    pypi-sdist:
+        name: Build PyPI sdist
+        runs-on: ubuntu-latest
+        steps:
+            -   name: Checkout repository
+                uses: actions/checkout@v4
+            -   name: Set up Python
+                uses: actions/setup-python@v5
+                with:
+                    python-version: "3.12"
+            -   name: Verify tag matches Python package version
+                run: |-
+                    pyproject_version="$(python3 - <<'PY'
+                    import tomllib
+                    from pathlib import Path
+
+                    pyproject_toml = Path("pyproject.toml").read_bytes()
+                    print(tomllib.loads(pyproject_toml.decode("utf-8"))["project"]["version"])
+                    PY
+                    )"
+                    tag_version="${GITHUB_REF_NAME#v}"
+
+                    if [ "$pyproject_version" != "$tag_version" ]; then
+                      printf 'pyproject.toml version %s does not match tag %s\n' "$pyproject_version" "$GITHUB_REF_NAME" >&2
+                      exit 1
+                    fi
+            -   name: Install sdist build tooling
+                run: python3 -m pip install --upgrade pip build
+            -   name: Build sdist
+                run: python3 -m build --sdist --outdir dist
+            -   name: Upload sdist artifact
+                uses: actions/upload-artifact@v4
+                with:
+                    name: pypi-dists-sdist
+                    path: dist/*
+                    if-no-files-found: error
+    pypi-publish:
+        name: Publish Python package
+        runs-on: ubuntu-latest
+        needs:
+            - pypi-wheels
+            - pypi-sdist
+        environment:
+            name: pypi
+            url: https://pypi.org/p/tree-sitter-paradox
+        permissions:
+            contents: read
+            id-token: write
+        steps:
+            -   name: Download Python distributions
+                uses: actions/download-artifact@v4
+                with:
+                    pattern: pypi-dists-*
+                    path: dist
+                    merge-multiple: true
+            -   name: Publish to PyPI via trusted publishing
+                uses: pypa/gh-action-pypi-publish@release/v1
+                with:
+                    packages-dir: dist
+                    print-hash: true

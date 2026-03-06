@@ -136,7 +136,7 @@ When changing grammar.js:
 
 ## Release automation
 
-This repository uses the official `tree-sitter/workflows` reusable workflows for release assets plus npm and PyPI publication. Crates are published separately with crates.io trusted publishing so no long-lived Cargo token needs to live in GitHub secrets.
+This repository uses the official `tree-sitter/workflows` reusable workflows for release assets plus npm publication. Crates and PyPI are published separately with trusted publishing so no long-lived registry tokens need to live in GitHub secrets.
 
 Release flow:
 
@@ -146,7 +146,8 @@ Release flow:
 4. The tag triggers:
    - `Create release` via `tree-sitter/workflows`
    - npm publication via `tree-sitter/workflows`
-   - PyPI publication via `tree-sitter/workflows`
+   - PyPI wheel and sdist builds in `.github/workflows/package.yml`
+   - PyPI publication via trusted publishing in `.github/workflows/package.yml`
    - crates.io publication via trusted publishing in `.github/workflows/package.yml`
 
 If you need a manual recovery path, rerun `Version tag` after fixing the version files, or rerun the existing tag-triggered publish job in GitHub Actions. Publishing itself is intentionally restricted to `v*` tag pushes.
@@ -154,8 +155,8 @@ If you need a manual recovery path, rerun `Version tag` after fixing the version
 Repository configuration required:
 
 - GitHub secret `NPM_TOKEN` for npm publication
-- GitHub secret `PYPI_TOKEN` for PyPI publication
 - A crates.io trusted publisher configured for this repository with workflow file `package.yml` and environment `release`
+- A PyPI trusted publisher configured for this repository with workflow file `package.yml` and environment `pypi`
 
 The first crates.io release still has to be published manually before trusted publishing can be enabled on crates.io.
 
