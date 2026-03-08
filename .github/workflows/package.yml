@@ -22,7 +22,7 @@ jobs:
             id-token: write
         steps:
             -   name: Checkout repository
-                uses: actions/checkout@v4
+                uses: actions/checkout@v6
             -   name: Verify tag matches crate version
                 run: |-
                     crate_version="$(python3 - <<'PY'
@@ -55,9 +55,9 @@ jobs:
                 os: [ ubuntu-latest, windows-latest, macos-latest ]
         steps:
             -   name: Checkout repository
-                uses: actions/checkout@v4
+                uses: actions/checkout@v6
             -   name: Set up Python
-                uses: actions/setup-python@v5
+                uses: actions/setup-python@v6
                 with:
                     python-version: "3.12"
             -   name: Verify tag matches Python package version
@@ -81,7 +81,7 @@ jobs:
             -   name: Build wheels
                 run: python3 -m cibuildwheel --output-dir dist
             -   name: Upload wheel artifacts
-                uses: actions/upload-artifact@v4
+                uses: actions/upload-artifact@v7
                 with:
                     name: pypi-dists-${{matrix.os}}
                     path: dist/*
@@ -91,9 +91,9 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             -   name: Checkout repository
-                uses: actions/checkout@v4
+                uses: actions/checkout@v6
             -   name: Set up Python
-                uses: actions/setup-python@v5
+                uses: actions/setup-python@v6
                 with:
                     python-version: "3.12"
             -   name: Verify tag matches Python package version
@@ -117,7 +117,7 @@ jobs:
             -   name: Build sdist
                 run: python3 -m build --sdist --outdir dist
             -   name: Upload sdist artifact
-                uses: actions/upload-artifact@v4
+                uses: actions/upload-artifact@v7
                 with:
                     name: pypi-dists-sdist
                     path: dist/*
@@ -136,7 +136,7 @@ jobs:
             id-token: write
         steps:
             -   name: Download Python distributions
-                uses: actions/download-artifact@v4
+                uses: actions/download-artifact@v8
                 with:
                     pattern: pypi-dists-*
                     path: dist
