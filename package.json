@@ -4,12 +4,16 @@
   "description": "Paradox grammar for tree-sitter",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/acture/tree-sitter-paradox.git"
+    "url": "git+https://github.com/Acture/foch.git",
+    "directory": "packages/tree-sitter-paradox"
   },
   "license": "AGPL-3.0-only",
   "author": {
     "name": "acture",
     "email": "acturea@gmail.com"
+  },
+  "engines": {
+    "node": ">=22 <25"
   },
   "main": "bindings/node",
   "types": "bindings/node",
@@ -35,11 +39,11 @@
   },
   "devDependencies": {
     "prebuildify": "^6.0.1",
-    "tree-sitter": "^0.22.4",
+    "tree-sitter": "^0.25.0",
     "tree-sitter-cli": "^0.25.8"
   },
   "peerDependencies": {
-    "tree-sitter": "^0.22.4"
+    "tree-sitter": "^0.25.0"
   },
   "peerDependenciesMeta": {
     "tree-sitter": {
