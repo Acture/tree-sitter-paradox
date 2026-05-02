@@ -1,39 +1,49 @@
 # tree-sitter-paradox
 
-Tree-sitter grammar for the Paradox family of games (e.g., Europa Universalis IV, Crusader Kings, Hearts of Iron) configuration and scripting files. This repository defines the grammar and ships bindings for multiple ecosystems so editors and tools can parse and highlight Paradox scripts.
+Tree-sitter grammar for Paradox grand-strategy configuration and scripting files, including Europa Universalis IV, Crusader Kings, and Hearts of Iron. It ships the grammar, highlight queries, generated parser, and bindings for the ecosystems editors and tools use most often.
 
 ## Features
+
 - Incremental parsing via Tree-sitter
-- Query files for syntax highlighting (queries/*.scm)
-- Multi-language bindings: Node.js, Python, Rust, Swift, and C
-- Corpus tests to validate grammar behavior (test/corpus)
+- Highlight queries for editor integrations (`queries/*.scm`)
+- Bindings for Node.js, Python, Rust, Swift, and C
+- Corpus tests that lock grammar behavior (`test/corpus`)
+- Comment support for `#`, Lua `--` line comments, and level-0 `--[[ ... ]]` block comments
+
+The Lua-style comments keep this grammar aligned with Foch's hand-written parser, which uses the same conventions for EU4 `common/defines/*.lua` files.
 
 ## Repository layout
-- grammar.js — Tree-sitter grammar specification (source of truth)
-- src/ — C sources for the generated parser
-- queries/ — Highlighting and other Tree-sitter queries
-- test/corpus — Tree-sitter CLI corpus tests
-- bindings/ — Bindings and packaging for Node, Python, Rust, Swift, C
-- tree-sitter.json — Grammar metadata
+
+| Path | Purpose |
+| --- | --- |
+| `grammar.js` | Tree-sitter grammar specification and source of truth |
+| `src/` | generated C parser sources that ship to consumers |
+| `queries/` | highlighting and other Tree-sitter queries |
+| `test/corpus` | Tree-sitter CLI corpus fixtures |
+| `bindings/` | bindings and packaging for Node, Python, Rust, Swift, and C |
+| `tree-sitter.json` | grammar metadata |
 
 ## Prerequisites
-- A C/C++ toolchain (for native builds)
-- Node.js (for Node binding/tests)
-- Python 3.10+ (for Python binding/tests)
-- Rust (optional; for crate build)
-- Tree-sitter CLI (optional; for developing and running corpus tests)
-  - Install: `npm i -g tree-sitter-cli` or use the devDependency via `npx tree-sitter`
+
+- C/C++ toolchain for native builds
+- Node.js for the Node binding and tests
+- Python 3.10+ for the Python binding and tests
+- Rust, optional, for crate builds
+- Bun, optional, for `bunx tree-sitter generate`
+- Tree-sitter CLI, optional, for grammar development and corpus tests
+  - Install with `npm i -g tree-sitter-cli`, or use the devDependency via `npx tree-sitter`
 
 ## Quick start
 
 ### Node.js
-Install dependencies (builds the native addon):
+
+Install dependencies; this builds the native addon:
 
 ```sh
 npm install
 ```
 
-Parse some Paradox code:
+Parse Paradox code:
 
 ```js
 const Parser = require('tree-sitter');
@@ -54,6 +64,7 @@ npm test
 ```
 
 ### Python
+
 Install the package in editable mode and run the binding test:
 
 ```sh
@@ -75,7 +86,8 @@ print(tree.root_node)
 ```
 
 ### Rust
-Add the crate in your Cargo.toml (if using this as a dependency from crates.io; otherwise use a path dependency):
+
+Add the crate in your `Cargo.toml` when consuming it from crates.io, or use a path dependency from this repository:
 
 ```toml
 [dependencies]
@@ -86,7 +98,7 @@ tree-sitter-paradox = "0.2"
 Example usage:
 
 ```rust
-use tree_sitter::{Parser, Language};
+use tree_sitter::{Language, Parser};
 use tree_sitter_paradox as paradox;
 
 fn main() {
@@ -98,7 +110,7 @@ fn main() {
 }
 ```
 
-Build the crate in this repo:
+Build the crate in this repository:
 
 ```sh
 cargo build
@@ -108,7 +120,7 @@ cargo build
 
 Common tasks:
 
-- Run corpus tests (via Tree-sitter CLI):
+- Run corpus tests with the Tree-sitter CLI:
   ```sh
   npx tree-sitter test
   # or
@@ -120,29 +132,37 @@ Common tasks:
   npm install
   ```
 
-- Build WASM for playground (optional):
+- Build WASM for the playground, optional:
   ```sh
   npm run prestart
   ```
 
-- Build the C library (optional):
+- Build the C library, optional:
   ```sh
   make
   ```
 
-When changing grammar.js:
-- Keep changes minimal and add/adjust fixtures in test/corpus to cover new syntax or bug fixes.
-- Update queries/*.scm if node types or structure affecting highlighting change.
+- Regenerate `src/parser.c` after grammar changes:
+  ```sh
+  bunx tree-sitter generate
+  ```
+
+Run parser regeneration on Linux, macOS, or WSL. Windows `node-gyp` tooling remains unstable, so the Makefile's "Windows is not supported" line is accurate for grammar developers. Rust consumers of the published crate are unaffected because the regenerated `src/parser.c` ships with the crate.
+
+When changing `grammar.js`:
+
+- Keep changes minimal and add or adjust fixtures in `test/corpus` to cover new syntax or bug fixes.
+- Update `queries/*.scm` when node types or structure changes affect highlighting.
 
 ## Release automation
 
-This repository uses the official `tree-sitter/workflows` reusable workflows for release assets plus npm publication. Crates and PyPI are published separately with trusted publishing so no long-lived registry tokens need to live in GitHub secrets.
+This repository uses the official `tree-sitter/workflows` reusable workflows for release assets and npm publication. Crates and PyPI are published separately with trusted publishing, so no long-lived registry tokens need to live in GitHub secrets.
 
 Release flow:
 
 1. Update the version consistently in `tree-sitter.json`, `package.json`, `Cargo.toml`, and `pyproject.toml`.
 2. Merge that change to `master`.
-3. The `Version tag` workflow verifies the four versions match, creates the annotated tag `vX.Y.Z`, and pushes it.
+3. The `Version tag` workflow verifies that the four versions match, creates the annotated tag `vX.Y.Z`, and pushes it.
 4. The tag triggers:
    - `Create release` via `tree-sitter/workflows`
    - npm publication via `tree-sitter/workflows`
@@ -161,11 +181,14 @@ Repository configuration required:
 The first crates.io release still has to be published manually before trusted publishing can be enabled on crates.io.
 
 ## Supported editors
-Any editor integrating Tree-sitter can load this grammar. For Neovim or Helix, use a plugin that sources the parser and the `queries/highlights.scm` file, or configure them to find the generated library.
+
+Any editor integrating Tree-sitter can load this grammar. For Neovim or Helix, use a plugin that sources the parser and `queries/highlights.scm`, or configure the editor to find the generated library.
 
 ## License
+
 AGPL-3.0-only. See LICENSE for details.
 
 ## Acknowledgments
+
 - Built on Tree-sitter.
 - Inspired by community grammars and Paradox modding documentation.
