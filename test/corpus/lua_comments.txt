@@ -1,0 +1,88 @@
+================================================================================
+hash comment baseline
+================================================================================
+
+# this is a hash comment
+key = value
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (comment)
+  (statement
+    (assignment
+      (identifier)
+      (simple_value
+        (identifier)))))
+
+================================================================================
+double dash line comment
+================================================================================
+
+-- this is a lua line comment
+key = value
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (comment)
+  (statement
+    (assignment
+      (identifier)
+      (simple_value
+        (identifier)))))
+
+================================================================================
+inline double dash after value
+================================================================================
+
+key = value -- trailing comment
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (statement
+    (assignment
+      (identifier)
+      (simple_value
+        (identifier))))
+  (comment))
+
+================================================================================
+double dash block comment level zero
+================================================================================
+
+--[[ block
+spanning lines ]]
+key = value
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (comment)
+  (statement
+    (assignment
+      (identifier)
+      (simple_value
+        (identifier)))))
+
+================================================================================
+double dash block comment inline
+================================================================================
+
+key = value --[[ inline ]] other = thing
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (statement
+    (assignment
+      (identifier)
+      (simple_value
+        (identifier))))
+  (comment)
+  (statement
+    (assignment
+      (identifier)
+      (simple_value
+        (identifier)))))

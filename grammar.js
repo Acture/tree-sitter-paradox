@@ -115,6 +115,19 @@ module.exports = grammar({
 			seq(choice($.number, $.identifier), $.variable, choice($.number, $.identifier)),
 		),
 
-		comment: _ => token(seq("#", /.*/)),
+		comment: $ => choice(
+			$._dash_block_comment,
+			$._dash_line_comment,
+			$._hash_comment,
+		),
+		_hash_comment: _ => token(seq("#", /.*/)),
+		_dash_line_comment: _ => token(seq("--", /[^\n\r]*/)),
+		// TODO: Lua block comments only support level 0 (--[[ ]]); higher
+		// levels (--[=[ ]=] etc) require an external scanner.
+		_dash_block_comment: _ => token(prec(1, seq(
+			"--[[",
+			repeat(choice(/[^\]]/, /\][^\]]/)),
+			"]]",
+		))),
 	},
 });
