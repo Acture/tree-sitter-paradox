@@ -369,10 +369,7 @@ danish_missions_baltic = {
                 (assignment
                   (identifier)
                   (simple_value
-                    (number))))
-              (statement
-                (simple_value
-                  (number)))
+                    (identifier))))
               (statement
                 (assignment
                   (identifier)

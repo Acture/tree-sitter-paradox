@@ -19,7 +19,6 @@ type NodeInfo =
     });
 
 type Language = {
-  language: unknown;
   nodeTypeInfo: NodeInfo[];
 };
 

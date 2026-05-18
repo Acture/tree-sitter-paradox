@@ -2186,8 +2186,8 @@ reduce_propagate_religion_requirements = {
                         (identifier)
                         (variable
                           (identifier)))))))))))))
-  (comment)
-  (comment)
+  (doc_attribute_comment)
+  (doc_attribute_comment)
   (statement
     (assignment
       (identifier)
@@ -2701,10 +2701,7 @@ reduce_propagate_religion_requirements = {
                 (assignment
                   (identifier)
                   (simple_value
-                    (number))))
-              (statement
-                (simple_value
-                  (identifier)))))))))
+                    (identifier))))))))))
   (statement
     (assignment
       (identifier)
@@ -2735,7 +2732,4 @@ reduce_propagate_religion_requirements = {
                 (assignment
                   (identifier)
                   (simple_value
-                    (number))))
-              (statement
-                (simple_value
-                  (identifier))))))))))
+                    (identifier)))))))))))

@@ -1,31 +1,33 @@
 //! This crate provides Paradox language support for the [tree-sitter] parsing library.
 //!
-//! Typically, you will use the [`LANGUAGE`] constant to add this language to a
+//! Typically, you will use the [`language`] function to add this language to a
 //! tree-sitter [`Parser`], and then use the parser to parse some code:
 //!
 //! ```
 //! let code = r#"
 //! "#;
 //! let mut parser = tree_sitter::Parser::new();
-//! let language = tree_sitter_paradox::LANGUAGE;
+//! let language = tree_sitter_paradox::language();
 //! parser
-//!     .set_language(&language.into())
+//!     .set_language(&language)
 //!     .expect("Error loading Paradox parser");
 //! let tree = parser.parse(code, None).unwrap();
 //! assert!(!tree.root_node().has_error());
 //! ```
 //!
-//! [`Parser`]: https://docs.rs/tree-sitter/0.25.8/tree_sitter/struct.Parser.html
+//! [`Parser`]: https://docs.rs/tree-sitter/0.22.6/tree_sitter/struct.Parser.html
 //! [tree-sitter]: https://tree-sitter.github.io/
 
-use tree_sitter_language::LanguageFn;
+use tree_sitter::Language;
 
 extern "C" {
-	fn tree_sitter_paradox() -> *const ();
+	fn tree_sitter_paradox() -> Language;
 }
 
-/// The tree-sitter [`LanguageFn`] for this grammar.
-pub const LANGUAGE: LanguageFn = unsafe { LanguageFn::from_raw(tree_sitter_paradox) };
+/// The tree-sitter [`Language`] for this grammar.
+pub fn language() -> Language {
+	unsafe { tree_sitter_paradox() }
+}
 
 /// The content of the [`node-types.json`] file for this grammar.
 ///
@@ -45,7 +47,7 @@ mod tests {
 	fn test_can_load_grammar() {
 		let mut parser = tree_sitter::Parser::new();
 		parser
-			.set_language(&super::LANGUAGE.into())
+			.set_language(&super::language())
 			.expect("Error loading Paradox parser");
 	}
 }

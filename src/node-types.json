@@ -31,11 +31,27 @@
         "required": true,
         "types": [
           {
+            "type": "condition_keyword",
+            "named": true
+          },
+          {
+            "type": "cwt_type_marker",
+            "named": true
+          },
+          {
+            "type": "cwt_value_ref",
+            "named": true
+          },
+          {
             "type": "identifier",
             "named": true
           },
           {
             "type": "number",
+            "named": true
+          },
+          {
+            "type": "scalar_keyword",
             "named": true
           },
           {
@@ -86,6 +102,11 @@
   },
   {
     "type": "boolean",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "comment",
     "named": true,
     "fields": {}
   },
@@ -231,11 +252,27 @@
           "named": true
         },
         {
+          "type": "cwt_type_marker",
+          "named": true
+        },
+        {
+          "type": "cwt_value_ref",
+          "named": true
+        },
+        {
           "type": "identifier",
           "named": true
         },
         {
           "type": "number",
+          "named": true
+        },
+        {
+          "type": "placeholder_value",
+          "named": true
+        },
+        {
+          "type": "scalar_keyword",
           "named": true
         },
         {
@@ -248,7 +285,6 @@
   {
     "type": "source_file",
     "named": true,
-    "root": true,
     "fields": {
       "top_level_statement": {
         "multiple": true,
@@ -314,6 +350,10 @@
       "required": true,
       "types": [
         {
+          "type": "cwt_type_marker",
+          "named": true
+        },
+        {
           "type": "identifier",
           "named": true
         }
@@ -376,9 +416,16 @@
     "named": false
   },
   {
-    "type": "comment",
-    "named": true,
-    "extra": true
+    "type": "cwt_type_marker",
+    "named": true
+  },
+  {
+    "type": "cwt_value_ref",
+    "named": true
+  },
+  {
+    "type": "doc_attribute_comment",
+    "named": true
   },
   {
     "type": "else",
@@ -413,8 +460,16 @@
     "named": true
   },
   {
+    "type": "placeholder_value",
+    "named": true
+  },
+  {
     "type": "potential",
     "named": false
+  },
+  {
+    "type": "scalar_keyword",
+    "named": true
   },
   {
     "type": "scope_keyword",

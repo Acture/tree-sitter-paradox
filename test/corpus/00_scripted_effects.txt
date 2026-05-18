@@ -17966,9 +17966,9 @@ adopt_technology_group_from_target = {
                         (array
                           (variable
                             (identifier))))))))))))))
-  (comment)
-  (comment)
-  (comment)
+  (doc_attribute_comment)
+  (doc_attribute_comment)
+  (doc_attribute_comment)
   (comment)
   (comment)
   (comment)
@@ -29520,8 +29520,8 @@ adopt_technology_group_from_target = {
                                         (variable
                                           (identifier)))))))))))))))))))))
   (comment)
-  (comment)
-  (comment)
+  (doc_attribute_comment)
+  (doc_attribute_comment)
   (statement
     (assignment
       (identifier)

@@ -3138,10 +3138,7 @@ grand_captain = {
                             (assignment
                               (identifier)
                               (simple_value
-                                (number))))
-                          (statement
-                            (simple_value
-                              (identifier)))))))))
+                                (identifier))))))))))
               (statement
                 (assignment
                   (identifier)
@@ -3334,7 +3331,7 @@ grand_captain = {
                         (simple_value
                           (number))))))))))
         (comment)
-        (comment)
+        (doc_attribute_comment)
         (statement
           (assignment
             (identifier)
@@ -3361,7 +3358,7 @@ grand_captain = {
                         (identifier)
                         (simple_value
                           (number))))))))))
-        (comment)
+        (doc_attribute_comment)
         (comment)
         (statement
           (assignment
@@ -3578,10 +3575,7 @@ grand_captain = {
                             (assignment
                               (identifier)
                               (simple_value
-                                (number))))
-                          (statement
-                            (simple_value
-                              (identifier)))))))))
+                                (identifier))))))))))
               (statement
                 (assignment
                   (identifier)
@@ -3748,7 +3742,7 @@ grand_captain = {
                         (simple_value
                           (number))))))))))
         (comment)
-        (comment)
+        (doc_attribute_comment)
         (statement
           (assignment
             (identifier)
@@ -3775,7 +3769,7 @@ grand_captain = {
                         (identifier)
                         (simple_value
                           (number))))))))))
-        (comment)
+        (doc_attribute_comment)
         (comment)
         (statement
           (assignment
@@ -3966,10 +3960,7 @@ grand_captain = {
                             (assignment
                               (identifier)
                               (simple_value
-                                (number))))
-                          (statement
-                            (simple_value
-                              (identifier)))))))))
+                                (identifier))))))))))
               (statement
                 (assignment
                   (identifier)
@@ -4162,7 +4153,7 @@ grand_captain = {
                         (simple_value
                           (number))))))))))
         (comment)
-        (comment)
+        (doc_attribute_comment)
         (statement
           (assignment
             (identifier)
@@ -4189,7 +4180,7 @@ grand_captain = {
                         (identifier)
                         (simple_value
                           (number))))))))))
-        (comment)
+        (doc_attribute_comment)
         (comment)
         (statement
           (assignment
@@ -4442,10 +4433,7 @@ grand_captain = {
                             (assignment
                               (identifier)
                               (simple_value
-                                (number))))
-                          (statement
-                            (simple_value
-                              (identifier)))))))))
+                                (identifier))))))))))
               (statement
                 (assignment
                   (identifier)
@@ -4647,7 +4635,7 @@ grand_captain = {
                         (simple_value
                           (number))))))))))
         (comment)
-        (comment)
+        (doc_attribute_comment)
         (statement
           (assignment
             (identifier)
@@ -4741,7 +4729,7 @@ grand_captain = {
                         (identifier)
                         (simple_value
                           (number))))))))))
-        (comment)
+        (doc_attribute_comment)
         (statement
           (assignment
             (identifier)
@@ -4937,7 +4925,7 @@ grand_captain = {
                         (identifier)
                         (simple_value
                           (number))))))))))
-        (comment)
+        (doc_attribute_comment)
         (comment)
         (statement
           (assignment
@@ -5128,10 +5116,7 @@ grand_captain = {
                             (assignment
                               (identifier)
                               (simple_value
-                                (number))))
-                          (statement
-                            (simple_value
-                              (identifier)))))))))
+                                (identifier))))))))))
               (statement
                 (assignment
                   (identifier)
@@ -5355,7 +5340,7 @@ grand_captain = {
                         (simple_value
                           (number))))))))))
         (comment)
-        (comment)
+        (doc_attribute_comment)
         (statement
           (assignment
             (identifier)
@@ -5382,7 +5367,7 @@ grand_captain = {
                         (identifier)
                         (simple_value
                           (number))))))))))
-        (comment)
+        (doc_attribute_comment)
         (comment)
         (statement
           (assignment
@@ -5627,10 +5612,7 @@ grand_captain = {
                             (assignment
                               (identifier)
                               (simple_value
-                                (number))))
-                          (statement
-                            (simple_value
-                              (identifier)))))))))
+                                (identifier))))))))))
               (statement
                 (assignment
                   (identifier)
@@ -6077,7 +6059,7 @@ grand_captain = {
                         (simple_value
                           (number))))))))))
         (comment)
-        (comment)
+        (doc_attribute_comment)
         (statement
           (assignment
             (identifier)
@@ -6104,7 +6086,7 @@ grand_captain = {
                         (identifier)
                         (simple_value
                           (number))))))))))
-        (comment)
+        (doc_attribute_comment)
         (comment)
         (statement
           (assignment
@@ -6344,10 +6326,7 @@ grand_captain = {
                             (assignment
                               (identifier)
                               (simple_value
-                                (number))))
-                          (statement
-                            (simple_value
-                              (identifier)))))))))
+                                (identifier))))))))))
               (statement
                 (assignment
                   (identifier)
@@ -6592,7 +6571,7 @@ grand_captain = {
                         (simple_value
                           (number))))))))))
         (comment)
-        (comment)
+        (doc_attribute_comment)
         (statement
           (assignment
             (identifier)
@@ -6619,7 +6598,7 @@ grand_captain = {
                         (identifier)
                         (simple_value
                           (number))))))))))
-        (comment)
+        (doc_attribute_comment)
         (comment)
         (statement
           (assignment
@@ -7119,7 +7098,7 @@ grand_captain = {
                         (simple_value
                           (number))))))))))
         (comment)
-        (comment)
+        (doc_attribute_comment)
         (statement
           (assignment
             (identifier)
@@ -7146,7 +7125,7 @@ grand_captain = {
                         (identifier)
                         (simple_value
                           (number))))))))))
-        (comment)
+        (doc_attribute_comment)
         (comment)
         (statement
           (assignment
@@ -7374,7 +7353,7 @@ grand_captain = {
                         (simple_value
                           (number))))))))))
         (comment)
-        (comment)
+        (doc_attribute_comment)
         (statement
           (assignment
             (identifier)
@@ -7401,7 +7380,7 @@ grand_captain = {
                         (identifier)
                         (simple_value
                           (number))))))))))
-        (comment)
+        (doc_attribute_comment)
         (comment)
         (statement
           (assignment
@@ -7796,7 +7775,7 @@ grand_captain = {
                         (simple_value
                           (number))))))))))
         (comment)
-        (comment)
+        (doc_attribute_comment)
         (statement
           (assignment
             (identifier)
@@ -7901,7 +7880,7 @@ grand_captain = {
                         (identifier)
                         (simple_value
                           (number))))))))))
-        (comment)
+        (doc_attribute_comment)
         (comment)
         (statement
           (assignment
@@ -8122,7 +8101,7 @@ grand_captain = {
                         (simple_value
                           (number))))))))))
         (comment)
-        (comment)
+        (doc_attribute_comment)
         (statement
           (assignment
             (identifier)
@@ -8149,7 +8128,7 @@ grand_captain = {
                         (identifier)
                         (simple_value
                           (number))))))))))
-        (comment)
+        (doc_attribute_comment)
         (comment)
         (statement
           (assignment
@@ -8408,7 +8387,7 @@ grand_captain = {
                         (simple_value
                           (number))))))))))
         (comment)
-        (comment)
+        (doc_attribute_comment)
         (statement
           (assignment
             (identifier)
@@ -8461,7 +8440,7 @@ grand_captain = {
                         (identifier)
                         (simple_value
                           (number))))))))))
-        (comment)
+        (doc_attribute_comment)
         (comment)
         (statement
           (assignment
@@ -8786,7 +8765,7 @@ grand_captain = {
                         (simple_value
                           (number))))))))))
         (comment)
-        (comment)
+        (doc_attribute_comment)
         (statement
           (assignment
             (identifier)
@@ -8813,7 +8792,7 @@ grand_captain = {
                         (identifier)
                         (simple_value
                           (number))))))))))
-        (comment)
+        (doc_attribute_comment)
         (comment)
         (statement
           (assignment
@@ -9020,7 +8999,7 @@ grand_captain = {
                         (simple_value
                           (number))))))))))
         (comment)
-        (comment)
+        (doc_attribute_comment)
         (statement
           (assignment
             (identifier)
@@ -9047,7 +9026,7 @@ grand_captain = {
                         (identifier)
                         (simple_value
                           (number))))))))))
-        (comment)
+        (doc_attribute_comment)
         (comment)
         (statement
           (assignment
@@ -9279,7 +9258,7 @@ grand_captain = {
                         (simple_value
                           (number))))))))))
         (comment)
-        (comment)
+        (doc_attribute_comment)
         (statement
           (assignment
             (identifier)
@@ -9306,7 +9285,7 @@ grand_captain = {
                         (identifier)
                         (simple_value
                           (number))))))))))
-        (comment)
+        (doc_attribute_comment)
         (comment)
         (statement
           (assignment
@@ -9565,7 +9544,7 @@ grand_captain = {
                         (simple_value
                           (boolean))))))))))
         (comment)
-        (comment)
+        (doc_attribute_comment)
         (statement
           (assignment
             (identifier)
@@ -9618,7 +9597,7 @@ grand_captain = {
                         (identifier)
                         (simple_value
                           (number))))))))))
-        (comment)
+        (doc_attribute_comment)
         (comment)
         (statement
           (assignment
@@ -9825,7 +9804,7 @@ grand_captain = {
                         (simple_value
                           (number))))))))))
         (comment)
-        (comment)
+        (doc_attribute_comment)
         (statement
           (assignment
             (identifier)
@@ -9852,7 +9831,7 @@ grand_captain = {
                         (identifier)
                         (simple_value
                           (number))))))))))
-        (comment)
+        (doc_attribute_comment)
         (comment)
         (statement
           (assignment
@@ -10059,7 +10038,7 @@ grand_captain = {
                         (simple_value
                           (boolean))))))))))
         (comment)
-        (comment)
+        (doc_attribute_comment)
         (statement
           (assignment
             (identifier)
@@ -10112,7 +10091,7 @@ grand_captain = {
                         (identifier)
                         (simple_value
                           (number))))))))))
-        (comment)
+        (doc_attribute_comment)
         (comment)
         (statement
           (assignment
@@ -10333,7 +10312,7 @@ grand_captain = {
                         (simple_value
                           (boolean))))))))))
         (comment)
-        (comment)
+        (doc_attribute_comment)
         (statement
           (assignment
             (identifier)
@@ -10360,7 +10339,7 @@ grand_captain = {
                         (identifier)
                         (simple_value
                           (number))))))))))
-        (comment)
+        (doc_attribute_comment)
         (comment)
         (statement
           (assignment
@@ -10581,7 +10560,7 @@ grand_captain = {
                         (simple_value
                           (number))))))))))
         (comment)
-        (comment)
+        (doc_attribute_comment)
         (statement
           (assignment
             (identifier)
@@ -10634,7 +10613,7 @@ grand_captain = {
                         (identifier)
                         (simple_value
                           (number))))))))))
-        (comment)
+        (doc_attribute_comment)
         (comment)
         (statement
           (assignment
@@ -10815,7 +10794,7 @@ grand_captain = {
                         (simple_value
                           (number))))))))))
         (comment)
-        (comment)
+        (doc_attribute_comment)
         (statement
           (assignment
             (identifier)
@@ -10842,7 +10821,7 @@ grand_captain = {
                         (identifier)
                         (simple_value
                           (number))))))))))
-        (comment)
+        (doc_attribute_comment)
         (comment)
         (statement
           (assignment
