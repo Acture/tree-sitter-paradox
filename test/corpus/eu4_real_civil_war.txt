@@ -150,7 +150,7 @@ civil_war = {
       (identifier)
       (map
         (statement
-          (condition_statement
+          (assignment
             (condition_keyword)
             (map
               (statement
@@ -276,11 +276,11 @@ civil_war = {
                   (simple_value
                     (number))))
               (statement
-                (condition_statement
+                (assignment
                   (condition_keyword)
                   (map
                     (statement
-                      (condition_statement
+                      (assignment
                         (condition_keyword)
                         (map
                           (statement
@@ -303,7 +303,7 @@ civil_war = {
                               (simple_value
                                 (number)))))))
                     (statement
-                      (condition_statement
+                      (assignment
                         (condition_keyword)
                         (map
                           (statement
@@ -329,11 +329,11 @@ civil_war = {
                         (simple_value
                           (boolean))))
                     (statement
-                      (condition_statement
+                      (assignment
                         (condition_keyword)
                         (map
                           (statement
-                            (condition_statement
+                            (assignment
                               (condition_keyword)
                               (map
                                 (statement
@@ -352,7 +352,7 @@ civil_war = {
                               (simple_value
                                 (number))))
                           (statement
-                            (condition_statement
+                            (assignment
                               (condition_keyword)
                               (map
                                 (statement
@@ -474,11 +474,11 @@ civil_war = {
             (identifier)
             (map
               (statement
-                (condition_statement
+                (assignment
                   (condition_keyword)
                   (map
                     (statement
-                      (condition_statement
+                      (assignment
                         (condition_keyword)
                         (map
                           (statement
@@ -497,7 +497,7 @@ civil_war = {
                         (simple_value
                           (number))))
                     (statement
-                      (condition_statement
+                      (assignment
                         (condition_keyword)
                         (map
                           (statement
