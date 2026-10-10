@@ -158,9 +158,11 @@ module.exports = grammar({
 		// prec(2) keeps `--` comments winning over cwt_type_marker (prec 1),
 		// so e.g. `--[[ … ]]` lexes as a comment rather than a `word[…]` marker.
 		_dash_line_comment: _ => token(prec(2, seq("--", /[^\n\r]*/))),
+		// prec(3) lets a complete `--[[ … ]]` win over the longer `--` line comment,
+		// so code after an inline block comment on the same line still parses.
 		// TODO: Lua block comments only support level 0 (--[[ ]]); higher
 		// levels (--[=[ ]=] etc) require an external scanner.
-		_dash_block_comment: _ => token(prec(2, seq(
+		_dash_block_comment: _ => token(prec(3, seq(
 			"--[[",
 			repeat(choice(/[^\]]/, /\][^\]]/)),
 			"]]",

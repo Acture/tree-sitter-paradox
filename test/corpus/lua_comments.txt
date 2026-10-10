@@ -80,4 +80,9 @@ key = value --[[ inline ]] other = thing
       (identifier)
       (simple_value
         (identifier))))
-  (comment))
+  (comment)
+  (statement
+    (assignment
+      (identifier)
+      (simple_value
+        (identifier)))))
