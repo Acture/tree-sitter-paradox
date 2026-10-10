@@ -3,6 +3,9 @@ name: Publish package
 on:
     push:
         tags: ["v*"]
+    # version-tag.yml dispatches this for the tags it creates: a tag pushed
+    # with GITHUB_TOKEN starts no push workflow.
+    workflow_dispatch:
 
 concurrency:
     group: ${{github.workflow}}-${{github.ref}}

@@ -1,0 +1,74 @@
+================================================================================
+CWT alias keys and placeholder assignments
+================================================================================
+
+alias[trigger:enum[country_tags]] = {
+	alias_name[trigger] = alias_match_left[trigger]
+}
+
+<mission> = {
+	icon = <sprite>
+}
+
+int = {
+	alias_name[effect] = alias_match_left[effect]
+}
+
+range = int[0..255
+limit = scalar
+placeholder = ---
+templated = ancestor_$enum[ancestor_key]$_personality
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (statement
+    (assignment
+      (cwt_type_marker)
+      (map
+        (statement
+          (assignment
+            (cwt_type_marker)
+            (simple_value
+              (cwt_type_marker)))))))
+  (statement
+    (assignment
+      (cwt_value_ref)
+      (map
+        (statement
+          (assignment
+            (identifier)
+            (simple_value
+              (cwt_value_ref)))))))
+  (statement
+    (assignment
+      (scalar_keyword)
+      (map
+        (statement
+          (assignment
+            (cwt_type_marker)
+            (simple_value
+              (cwt_type_marker)))))))
+  (statement
+    (assignment
+      (identifier)
+      (simple_value
+        (cwt_type_marker))))
+  (statement
+    (assignment
+      (condition_keyword)
+      (simple_value
+        (scalar_keyword))))
+  (statement
+    (assignment
+      (identifier)
+      (simple_value
+        (placeholder_value))))
+  (statement
+    (assignment
+      (identifier)
+      (variable_embedded_identifier
+        (identifier)
+        (variable
+          (cwt_type_marker))
+        (identifier)))))
